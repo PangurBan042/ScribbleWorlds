@@ -40,5 +40,4 @@ public class HeartsViewModel: ObservableObject {
                                             count: count,
                                             tempCount: tempCount)
     }
-    
 }

@@ -11,7 +11,7 @@ import SwiftUI
 
 struct ScribbleWorldsApp: App {
     @Environment(\.scenePhase) private var scenePhase
-  
+   
     var body: some Scene {
         
         WindowGroup {

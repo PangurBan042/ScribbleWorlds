@@ -51,7 +51,4 @@ public class GoalViewModel: ObservableObject {
     func getAllData(packId:UUID, currentLand: String) -> [Goal] {
         return  CoreDataManager.instance.getAllGoals(packId: packId, currentLand: currentLand)
     }
-        
-    
 }
-    

@@ -51,7 +51,7 @@ class CoreDataManager {
         packEntity.type = packDefault.type
         packEntity.helpPages = packDefault.helpPages
         packEntity.currentLand = packDefault.currentLand
-       
+        let _ = print("In CoreDataManager... packEntity.currentLand: \(packEntity.currentLand)")
         
         let settingsEntity = SettingsEntity(context: persistentContainer.viewContext)
         settingsEntity.id = UUID()
@@ -93,7 +93,6 @@ class CoreDataManager {
         saveData()
         
         
-        let _ = print("In CoreDataManager/infoEntity...")
         let infoEntity = InfoEntity(context: persistentContainer.viewContext)
         infoEntity.id = UUID()
         infoEntity.packId = packEntity.id
@@ -716,22 +715,22 @@ class CoreDataManager {
     }
     
     
-    func getPackNames() -> [String] {
-        let request: NSFetchRequest<PackEntity> = PackEntity.fetchRequest()
-        request.returnsObjectsAsFaults = false
-        var fetchResults = [String]()
-        
-        do {
-            let result = try persistentContainer.viewContext.fetch(request)
-            for data in result {
-                fetchResults.append(data.name)
-            }
-        } catch {
-            print("Fetching Failed")
-        }
-        
-        return fetchResults
-    }
+//    func getPackNames() -> [String] {
+//        let request: NSFetchRequest<PackEntity> = PackEntity.fetchRequest()
+//        request.returnsObjectsAsFaults = false
+//        var fetchResults = [String]()
+//        
+//        do {
+//            let result = try persistentContainer.viewContext.fetch(request)
+//            for data in result {
+//                fetchResults.append(data.name)
+//            }
+//        } catch {
+//            print("Fetching Failed")
+//        }
+//        
+//        return fetchResults
+//    }
     
     
     func getLandNames(packId: UUID) -> [String] {

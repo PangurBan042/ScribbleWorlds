@@ -127,7 +127,4 @@ public class FightViewModel: ObservableObject {
     func getAllData(landId:UUID) -> [Fight] {
         return  CoreDataManager.instance.getAllFights(landId: landId)
     }
-        
-    
 }
-    

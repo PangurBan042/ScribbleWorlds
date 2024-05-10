@@ -9,11 +9,11 @@ import SwiftUI
 
 struct LoadAdventureView: View {
     @ObservedObject var viewManager: ViewManager
+    @ObservedObject var packViewModel: PackViewModel = PackViewModel()
     @Binding var activeSheet:ActiveSheet?
     @Binding var packId: UUID
     
     @State var adventureViewModel: AdventureViewModel = AdventureViewModel()
-   // var packViewModel: PackViewModel = PackViewModel()
     @State var allAdventurePacks: [Adventure] = [Adventure]()
     @State private var overText = false
     let layout = [
@@ -77,8 +77,8 @@ struct LoadAdventureView: View {
                         VStack (alignment: .center, spacing:0){
                             
                             Button {
-                     //           packViewModel.getData(packId: adventure.packId)
-                   //             packId = packViewModel.id
+                               packViewModel.getData(packId: adventure.packId)
+                                packId = packViewModel.id
                                 activeSheet = .viewControllerAdventure
                             } label : {
                                 VStack (spacing:0){
@@ -102,7 +102,7 @@ struct LoadAdventureView: View {
                             }
                             
                             Button {
-//                                packViewModel.deleteData(id: adventure.packId)
+                                packViewModel.deleteData(id: adventure.packId)
                                 adventureViewModel.deleteData(id: adventure.id)
                                 allAdventurePacks = adventureViewModel.getAllAdventures()
                                 allAdventurePacks.sort(by: {$0.packDate > $1.packDate})

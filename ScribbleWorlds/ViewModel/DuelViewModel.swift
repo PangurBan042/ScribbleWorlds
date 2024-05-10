@@ -35,8 +35,5 @@ public class DuelViewModel: ObservableObject {
                             characterHearts: characterHearts,
                             fightName: fightName,
                             showDuelView: showDuelView)
- 
     }
-
-    
 }

@@ -49,7 +49,6 @@ class CanvasViewModel: ObservableObject {
         toolColor = canvasData.toolColor
         toolType = canvasData.toolType
         toolWidth = canvasData.toolWidth
-        
-    }
     
+    }
 }

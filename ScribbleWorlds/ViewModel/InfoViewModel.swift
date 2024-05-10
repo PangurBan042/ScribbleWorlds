@@ -102,9 +102,5 @@ public class InfoViewModel: ObservableObject {
             defensePoints = armorValue + shieldValue + helmValue
             CoreDataManager.instance.updateInfoHelm(id: id, helmName: helmName, helmValue: helmValue, defensePoints: defensePoints)
         }
-        
-       
     }
-    
 }
-

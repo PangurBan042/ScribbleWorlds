@@ -100,6 +100,4 @@ class LandViewModel: ObservableObject {
         autoPlaceNames = landData.autoPlaceNames
         currentArticles = landData.currentArticles
     }
-    
 }
-    

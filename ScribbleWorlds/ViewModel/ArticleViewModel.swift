@@ -207,7 +207,4 @@ public class ArticleViewModel: ObservableObject {
     func getAllData(packId:UUID) -> [Article] {
         return CoreDataManager.instance.getAllArticles(packId: packId)
     }
-    
 }
-    
-

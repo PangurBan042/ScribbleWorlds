@@ -48,4 +48,3 @@
 //    var readInfo: Bool = false
 //    var on: [Bool] = []
 //}
-//
