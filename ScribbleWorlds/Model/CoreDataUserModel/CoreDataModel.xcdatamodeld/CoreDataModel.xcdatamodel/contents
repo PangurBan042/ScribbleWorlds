@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22203.2" systemVersion="23F5074a" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="AdventureEntity" representedClassName="AdventureEntity" syncable="YES">
+        <attribute name="idW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="packDateW" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="packIdW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="packNameW" optional="YES" attributeType="String"/>
+        <attribute name="thumbnailW" optional="YES" attributeType="Binary"/>
+    </entity>
+    <entity name="PackEntity" representedClassName="PackEntity" syncable="YES">
+        <attribute name="currentLandW" optional="YES" attributeType="String"/>
+        <attribute name="dateW" optional="YES" attributeType="String"/>
+        <attribute name="helpPagesW" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="idW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="nameW" optional="YES" attributeType="String"/>
+        <attribute name="typeW" optional="YES" attributeType="String"/>
+    </entity>
+</model>

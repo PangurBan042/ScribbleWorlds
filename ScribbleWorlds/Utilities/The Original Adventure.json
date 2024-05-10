@@ -1,0 +1,6007 @@
+{
+   "name":"The Original Adventure",
+   "type":"Adventure",
+   "settings": {
+       "autofill": "Color",
+       "showCharacter": true
+   },
+   "helpPages":[
+      "Adventure Help Page 1",
+      "Adventure Help Page 2"
+   ],
+   "currentLand":"Grasslands",
+   "currentLandThumbnail":"UltimateAdventure",
+   "landOrder":[
+      "Grasslands",
+      "Cave",
+      "Desert",
+      "Temple",
+      "Mountain",
+      "Mine",
+      "Tundra",
+      "Ice Cave",
+      "Lava",
+      "Lava Cave"
+   ],
+   "info":{
+      "level":0,
+      "allLevels":[
+         "Noob Adventurer",
+         "Seasoned Spelunker",
+         "Jaunty Epidemologist",
+         "Master Mountainer",
+         "Tundra Tracker",
+         "Volcanologist Hero"],
+      "weaponName":"",
+      "weaponValue":0,
+      "armorName":"",
+      "armorValue":0,
+      "shieldName":"",
+      "shieldValue":0,
+      "helmName":"",
+      "helmValue":0,
+      "attackPoints":0,
+      "defensePoints":0
+   },
+   "heart":[
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+   ],
+   "water":[
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+   ],
+   "description":"You are in search of the largest poop, negotiating the giant trolls of the forest, sand rooms of the dessicated desert and many more.",
+   "tools":[
+      
+   ],
+   "items":[
+      
+   ],
+   "articles":[
+      {
+         "name":"Weapon",
+         "category": "Weapon",
+         "type":"Weapon",
+         "permanent":true,
+         "info":"",
+         "value": 0,
+         "on":[
+            
+         ]
+      },
+      {
+         "name":"Armor",
+         "category":"Armor",
+         "type":"Armor",
+         "permanent":true,
+         "info":"",
+         "value": 0,
+         "on":[
+            
+         ]
+      },
+      {
+         "name":"Shield",
+         "category":"Shield",
+         "type":"Shield",
+         "permanent":true,
+         "info":"",
+         "value": 0,
+         "on":[
+            
+         ]
+      },
+      {
+         "name":"Helm",
+         "category":"Helm",
+         "type":"Helm",
+         "permanent":true,
+         "info":"",
+         "value": 0,
+         "on":[
+            
+         ]
+      },
+      {
+         "name":"Potions",
+         "category":"Potion",
+         "type":"Potion",
+         "permanent":false,
+         "info":"",
+         "value": 0,
+         "on":[
+            
+         ]
+      },
+      {
+         "name":"Clothing",
+         "category":"Clothing",
+         "type":"Clothing",
+         "permanent":false,
+         "info":"",
+         "value": 0,
+         "on":[
+            
+         ]
+      },
+      {
+         "name":"Items",
+         "category":"Items",
+         "type":"Items",
+         "permanent":false,
+         "info":"",
+         "value": 0,
+         "on":[
+            
+         ]
+      },
+      {
+         "name":"Monster Drops",
+         "category":"Monster Drop",
+         "type":"Monster Drop",
+         "permanent":false,
+         "info":"",
+         "value": 0,
+         "on":[
+            
+         ]
+      },
+      {
+         "name":"Coins",
+         "category":"Coin",
+         "type":"Coin",
+         "permanent":false,
+         "info":"",
+         "value": 0,
+         "on":[
+            
+         ]
+      },
+      {
+         "name":"Jewels",
+         "category":"Jewel",
+         "type":"Jewel",
+         "permanent":false,
+         "info":"",
+         "value": 0,
+         "on":[
+            
+         ]
+      },
+      {
+         "name":"Tools",
+         "category":"Tool",
+         "type":"Tool",
+         "permanent":false,
+         "info":"",
+         "value": 0,
+         "on":[
+            
+         ]
+      },
+      {
+         "name":"Grass Sword",
+         "category":"Weapon",
+         "type":"Attack",
+         "permanent":true,
+         "info":"Fight Win Heart 1",
+         "value": 1,
+         "on":[
+            false
+         ]
+      },
+          {
+             "name":"Bone Club",
+             "category":"Weapon",
+             "type":"Attack",
+             "permanent":true,
+             "info":"Fight Win Heart 1",
+             "value": 2,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Shamshir",
+             "category":"Weapon",
+             "type":"Attack",
+             "permanent":true,
+             "info":"+3 Attack",
+             "value": 3,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Battle Axe",
+             "category":"Weapon",
+             "type":"Attack",
+             "permanent":true,
+             "info":"+3 Attack",
+             "value": 3,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Scorpion Stinger Club",
+             "category":"Weapon",
+             "type":"Attack",
+             "permanent":true,
+             "info":"Poisonous, dangerous, awesome",
+             "value": 4,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Badger Claw Knuckledusters",
+             "category":"Weapon",
+             "type":"Attack",
+             "permanent":true,
+             "info":"Like brass knuckles, but with claws",
+             "value": 2,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Grass Armor",
+             "category":"Armor",
+             "type":"Defense",
+             "permanent":true,
+             "info":"Fight Monster Heart 1",
+             "value": 1,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Wood Shield",
+             "category":"Shield",
+             "type":"Defense",
+             "permanent":true,
+             "info":"Fight Monster Heart 1",
+             "value": 1,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Plate Armor",
+             "category":"Armor",
+             "type":"Defense",
+             "permanent":true,
+             "info":"+2 Attack",
+             "value": 2,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Duergar Dwarf Helmet",
+             "category":"Helm",
+             "type":"Defense",
+             "permanent":true,
+             "info":"+2 Defense",
+             "value": 2,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Mining Helm",
+             "category":"Helm",
+             "type":"Defense",
+             "permanent":true,
+             "info":"+2 Defense",
+             "value": 2,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Hatchet",
+             "category":"Tool",
+             "type":"",
+             "permanent":false,
+             "info":"Single use, chops down a regular tree",
+             "value": 0,
+             "on":[
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"Pickaxe",
+             "category":"Tool",
+             "type":"",
+             "permanent":false,
+             "info":"Single use, breaks up a regular rock",
+             "value": 0,
+             "on":[
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"Oily Torch",
+             "category":"Tool",
+             "type":"",
+             "permanent":false,
+             "info":"Use once, take one less damage in fight",
+             "value": 0,
+             "on":[
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"Dynamite",
+             "category":"Tool",
+             "type":"",
+             "permanent":false,
+             "info":"Single use, explodes a big tree or rock",
+             "value": 0,
+             "on":[
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"Water Skin",
+             "category":"Tool",
+             "type":"Water",
+             "permanent":false,
+             "info":"Single use, refills your canteen",
+             "value": 1,
+             "on":[
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"Grass Potion",
+             "category":"Potion",
+             "type":"Heart",
+             "permanent":false,
+             "info":"Tastes terrible, but restores one heart",
+             "value": 3,
+             "on":[
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"Desert Balm",
+             "category":"Item",
+             "type":"Heart",
+             "permanent":false,
+             "info":"Smells of spices. Restore two hearts.",
+             "value": 2,
+             "on":[
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"First Aid Kit",
+             "category":"Item",
+             "type":"Heart",
+             "permanent":false,
+             "info":"Bandages etc, restore three hearts",
+             "value": 3,
+             "on":[
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"Ice Ointment",
+             "category":"Item",
+             "type":"Heart",
+             "permanent":false,
+             "info":"+3 hearts - may just be ice cream",
+             "value": 3,
+             "on":[
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"Tundra Potion",
+             "category":"Potion",
+             "type":"Enemy Heart",
+             "permanent":false,
+             "info":"Rancid seal flavor, -4 hearts",
+             "value": -4,
+             "on":[
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"Lava Potion",
+             "category":"Potion",
+             "type":"",
+             "permanent":false,
+             "info":"Maybe not one you should drink",
+             "value": 2,
+             "on":[
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"Desert Thobe",
+             "category":"Clothing",
+             "type":"",
+             "permanent":false,
+             "info":"Desert robes protect against the sand mites",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Desert Scarf",
+             "category":"Clothing",
+             "type":"",
+             "permanent":false,
+             "info":"Desert scarf protect against the sun",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Crampons",
+             "category":"Item",
+             "type":"",
+             "permanent":false,
+             "info":"Foot daggers to help you grip the ice",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Ice Axe",
+             "category":"Item",
+             "type":"",
+             "permanent":false,
+             "info":"A mountaineering axe",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Camping Gear",
+             "category":"Item",
+             "type":"",
+             "permanent":false,
+             "info":"Flint, steel, oil stove, tent, and blanket",
+             "bonusType": "",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Mittens",
+             "category":"Clothing",
+             "type":"",
+             "permanent":false,
+             "info":"They go on your hands silly",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Snowsuit",
+             "category":"Clothing",
+             "type":"",
+             "permanent":false,
+             "info":"Warm and comfy, like snow pajamas",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Snowshoes",
+             "category":"Clothing",
+             "type":"",
+             "permanent":false,
+             "info":"Shoes, but for walking on snow",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Cool Pants",
+             "category":"Clothing",
+             "type":"",
+             "permanent":false,
+             "info":"Insulated pants to keep your hiney cool",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Rubber Boots",
+             "category":"Clothing",
+             "type":"",
+             "permanent":false,
+             "info":"These keep your feel from buring up",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Heat Goggles",
+             "category":"Clothing",
+             "type":"",
+             "permanent":false,
+             "info":"Protects you from fire monster attacks",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Grass Coin",
+             "category":"Coin",
+             "type":"",
+             "permanent":false,
+             "info":"Collectible! Collect em all!",
+             "value": 0,
+             "on":[
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"Cave Coin",
+             "category":"Coin",
+             "type":"",
+             "permanent":false,
+             "info":"Collectible! Collect em all!",
+             "value": 0,
+             "on":[
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"Desert Coin",
+             "category":"Coin",
+             "type":"",
+             "permanent":false,
+             "info":"Printed with the face of an ancient king",
+             "value": 0,
+             "on":[
+                false,
+                false,
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"Mountain Coin",
+             "category":"Coin",
+             "type":"",
+             "permanent":false,
+             "info":"Older than the hills, ancient iron",
+             "value": 0,
+             "on":[
+                false,
+                false,
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"Ice Coin",
+             "category":"Coin",
+             "type":"",
+             "permanent":false,
+             "info":"Made of ice that does melt",
+             "value": 0,
+             "on":[
+                false,
+                false,
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"Tundra Coin",
+             "category":"Coin",
+             "type":"",
+             "permanent":false,
+             "info":"Made of ice that never melts",
+             "value": 0,
+             "on":[
+                false,
+                false,
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"Lava Coin",
+             "category":"Coin",
+             "type":"",
+             "permanent":false,
+             "info":"Literally burns a hole in your pocket",
+             "value": 0,
+             "on":[
+                false,
+                false,
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"Diamond",
+             "category":"Jewel",
+             "type":"",
+             "permanent":false,
+             "info":"Shiny and captivating",
+             "value": 0,
+             "on":[
+                false,
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"Ruby",
+             "category":"Jewel",
+             "type":"",
+             "permanent":false,
+             "info":"Blood red, like your gaping wounds",
+             "value": 0,
+             "on":[
+                false,
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"Opal",
+             "category":"Jewel",
+             "type":"",
+             "permanent":false,
+             "info":"Multicolored ore will make you rich",
+             "value": 0,
+             "on":[
+                false,
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"Map Fragment",
+             "category":"Item",
+             "type":"",
+             "permanent":false,
+             "info":"Collect all 4, find burried treasure (4 coins)",
+             "value": 0,
+             "on":[
+                false,
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"Shrinking Spell",
+             "category":"Spell",
+             "type":"Enemy Heart",
+             "permanent":false,
+             "info":"Single use, shrinks monster to 1-heart foe.",
+             "value": -3,
+             "on":[
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+             ]
+          },
+          {
+             "name":"Pet Mouse",
+             "category":"Pet",
+             "type":"",
+             "permanent":false,
+             "info":"Such a cute little mousie! In your pocket",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Pet Lizard",
+             "category":"Pet",
+             "type":"",
+             "permanent":false,
+             "info":"You found this fellow hiding under a rock",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Pet Stone Golem",
+             "category":"Pet",
+             "type":"",
+             "permanent":false,
+             "info":"Like the big one, but little! In your pocket",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Pet Wooly Snake",
+             "category":"Pet",
+             "type":"",
+             "permanent":false,
+             "info":"When they aren't giant, they are cute :)",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Pet Fire Fox",
+             "category":"Pet",
+             "type":"",
+             "permanent":false,
+             "info":"They are nice if you raise them from a pup",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Grass Wand",
+             "category":"Wand",
+             "type":"",
+             "permanent":false,
+             "info":"Intricately twisted grasses, unknown magic.",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Cactus Wand",
+             "category":"Wand",
+             "type":"",
+             "permanent":false,
+             "info":"Careful there - this one is spikey",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Dowsing Rod",
+             "category":"Wand",
+             "type":"",
+             "permanent":false,
+             "info":"A mining tool to find natural springs, can be used to refill your water skin anywhere.",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Ice Crown",
+             "category":"Clothing",
+             "type":"",
+             "permanent":false,
+             "info":"You feel like growing a beard and flying.",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Lava Bucket",
+             "category":"Item",
+             "type":"",
+             "permanent":false,
+             "info":"Mining away song, this bucket will be handy.",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Genie Bottle",
+             "category":"Item",
+             "type":"",
+             "permanent":false,
+             "info":"Three wishes to change any map tile",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Dragon Lightning Sword",
+             "category":"Weapon",
+             "type":"Attack",
+             "permanent":true,
+             "info":"This is an awesome +5 weapon.",
+             "value": 5,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Bathrobe",
+             "category":"Clothing",
+             "type":"",
+             "permanent":false,
+             "info":"Who left a bathrobe out here in the wild?",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Dirty Old Toothbrush",
+             "category":"Item",
+             "type":"",
+             "permanent":false,
+             "info":"At least your teeth will be clean!",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"The Latest iPhone Phone Phone",
+             "category":"Item",
+             "type":"",
+             "permanent":false,
+             "info":"No chargers anywhere though",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"The Secret Box of Secrets",
+             "category":"Item",
+             "type":"",
+             "permanent":false,
+             "info":"What is in the box anyways? It will not open no matter how hard you try. Sometimes it emits strange sounds.",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Candied Gopher Poops",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"A rare delicacy from the Evil Gopher",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Mangy Squirrel Pelt",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"This rabid squirrel pelt smells bad",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Pet Hidey Cat",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Once defeated, it is a loyal pet",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Beefy Bison Burger Boots",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Waste no part of the bison please",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Spiky Berries of Ouchiness",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"The spiky bush had spiky berries",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Frog Tongue Rope",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"A giant frog tongue makes a good rope",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Sentient Mud Sample Jar",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"You kept some to take home with you",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Swamp Goblin Friendship",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Once defeated, you become friends",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Stinky Skunk Pelt",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"What will you do with all this fur",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Even Moar Mangy Squirrel Pelts",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"You collected the whole gang of pelts",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Moose Antler Back-Scratcher",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"What better use for these antlers",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Pet Angry Tree Rootling",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"You will raise it to be kind",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Giant Worm Guts",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Maybe you will need these later",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Awesome Snake Head",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"This tunnel snake head looks cools",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Slimy Cave Slime Treasure",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Still slimy, this gold was inside it",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Spiky Root Sap Syrup",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Like maple syrup, but spicier",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Baby Stone Golem Poops",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"They look like diamonds, but are they?",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Bespoke Lawyer Suit",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"If you need to look good you can now",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Cave Bear Hat",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Looks awesome with a lawyer suit",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Scarab Beetle Brooch",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"You can clasp your cloak with this",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Ant Lion Poison",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"One of the rarest poisons on earth",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Nomad Raider Loyalty",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"For sparing their lives, they are loyal",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Undead Wight Treasure Loot",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Silver buckles and golden rings",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Three Cursed Djinni Wishes",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"You won - you get three cursed wishes",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Magic Sand Golem Sand",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"It writhes and moves in the bottle",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Cactus Root Fruity Fruit",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Delicious and refreshing",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Sandy Wormy Toothy Thing",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Could make a letter opener maybe",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Wormy Sandy Sand",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"You keep it in the golem sand bottle",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Mummy Curse",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"You wonder what the curse will be",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Skeleton Guard Clipboard",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Now yu can do bureaucracy too",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Pillager Mountain Map",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Not good for much but looks cool",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Great Raven Feathers",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"You wear them like an awesome cloak",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Mountain Ogre Loincloth",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Why did you choose to keep this?",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Dire Wolf Skull",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Wear it on your shoulder like armor",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Stone Troll Skull Bell",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Ring it to scare away trolls",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Goblin Miner Friendship",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"You are collecting goblin friends!",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Acid Slime Super Acid Jar",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Use this slime to cut glass!",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Drow Elf Coins and Potions",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Arcane figures cover these objects",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Surly Attitude and Acne",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"How kind of teenagers to share these",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Arctic Hare Pelt",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"You almost have nough for a coat",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Snow Weasel Pelt",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"These are so soft and fluffy!",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Tundra Bear Skin Coat",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Lined with your other pelts, so comfy",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Walrus Tusk Walking Stick",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Looks awesome as you walk along",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Magic Snowman Hat",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"You can bring (evil) Frosty to life",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Knowledge of the Ice Giant",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Now you know if it was made of ice",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Snow Ant Colony",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"It is fun to watch them dig",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Dead Explorer Goggles",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"They help block the icy wind",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Ice Worm Tooth Necklace",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Stays cold even in the bright sun",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Diamond Troll Diamonds",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"He ran off but left these behind",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Ice Dragon Scales",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"You saw them on your shirt as armor",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Lava Lizard Skin Gloves",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Protects your hands from lava",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Phoenix Feather",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Looks so cool, does nothing useful",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Murder Hornet Stingers",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Seems like these could be useful later",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Lava Golem Scientific Sample",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"In a special jar for doing science to",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Red Dragon Scales",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"May as well sew these on too",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+             "name":"Zealous Acolyte Hymnal",
+             "category":"Monster Drop",
+             "type":"",
+             "permanent":false,
+             "info":"Now you can sing ARG-LAG B-LUGWA",
+             "value": 0,
+             "on":[
+                false
+             ]
+          },
+          {
+              "name":"Insanity of the Elder Gods",
+              "category":"Monster Drop",
+              "type":"",
+              "permanent":false,
+              "info":"You won, or did you? You do not feel as sane as you did before defeating it.",
+              "value": 0,
+              "on":[
+                  false
+              ]
+          }
+   ],
+   "lands":[
+      {
+         "name":"Grasslands",
+         "questPages":[
+            "Grasslands Quest Page"
+         ],
+         "gridSize":10,
+         "youAreHereX": 0.5,
+         "youAreHereY": 5.5,
+         "elements":[
+            [
+               "Grass Key",
+               "",
+               "",
+               "",
+               "Grass Chest",
+               "Grass Cave",
+               "",
+               "",
+               "",
+               "Grass Key"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Short Grass"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "Short Grass",
+               "Short Grass",
+               "",
+               "",
+               "",
+               "Grass Chest",
+               "",
+               "",
+               "Grass Key",
+               "Grass Chest"
+            ],
+            [
+               "Short Grass",
+               "Short Grass",
+               "Grass Cave",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Grass Monster",
+               "Grass Chest"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "Grass Key",
+               "Short Grass",
+               "",
+               "",
+               "Grass Chest",
+               "Grass Cave",
+               "",
+               "",
+               "Short Grass",
+               "Grass Key"
+            ]
+         ],
+         "priorLand":"",
+         "afterLand":"Cave",
+         "spinnerIndex":0,
+         "currentTab":"Grasslands",
+         "spinnerBackground":"Grasslands",
+         "autoPlaceNames":[
+             "Grasslands",
+             "Swamp",
+             "Forest"
+         ],
+         "spinnerNames":[
+            "Grasslands",
+            "Swamp",
+            "Forest",
+            "New Biome",
+            "Fight",
+            "Grasslands Loot"
+         ],
+         "tabNames":[
+            "Grasslands",
+            "Swamp",
+            "Forest",
+            "New Biome",
+            "Fight",
+            "Loot"
+         ],
+         "goals":[
+            "Defeat the Dainty Dragon",
+            "Feed the Gregarious Goat",
+            "Feed the Gregarious Goat",
+            "Feed the Gregarious Goat",
+            "Feed The Gregarious Goat",
+            "Find 3 Chiseled Chests"
+         ],
+         "fightHeading":"Grassland Grumps",
+         "currentFight":"Evil Gopher",
+         "fights":[
+            {
+               "name":"Evil Gopher",
+               "nextFight":"Rabid Squirrel",
+               "info":"Angry, hungry, probably evil. A gopher pops out of the ground ready to rumble and make you regret your day.",
+               "article": "Grass Potion",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Rabid Squirrel",
+               "nextFight":"Hidey Cat",
+               "info":"The rabid squirrel is not going to let the gophers have all the fun.  It is convinced you are stealing acorrns, and it looks quite fierce.",
+               "article":"Grass Sword",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Hidey Cat",
+               "nextFight":"Angry Bison",
+               "info":"What a cute little kitty, hiding in the grass! Only it is not little, and it is hiding so it can pounce on you and play with you like a rag dog.",
+               "article":"Hatchet",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Angry Bison",
+               "nextFight":"Spiky Bush",
+               "info":"You probably should not have worn bright red trousers, as it seems to have enraged this very, very large bison.",
+               "article":"Pickaxe",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Spiky Bush",
+               "nextFight":"Swamp Goblin",
+               "info":"Your toughest opponent yet. Spikey bush pokes you with thorns and hurts a lot. It does not know it is fighting you - it is just a bush.",
+               "article":"Pet Mouse",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Swamp Goblin",
+               "nextFight":"Stinky Skunk",
+               "info":"Some of your best friends are goblins! You tell this to the goblin that jumps out at you, waving a stick and threatening your life. It bites your finger and does not let go.",
+               "article":"Swamp Goblin Friendship",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Stinky Skunk",
+               "nextFight":"Squirrel Gang",
+               "info":"Stinky! Nuff said.",
+               "article":"First Aid Kit",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Squirrel Gang",
+               "nextFight":"Grass Golem",
+               "info":"Remember that rabid squirrel from the grasslands? His forest cousins are even crazier!",
+               "article":"Even Moar Mangy Squirrel Pelts",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Grass Golem",
+               "nextFight":"Defeated",
+               "info":"The Grass Golem looks so cute lumbering about the plains. Aww, look at it devour that cute little bunny. Wait, what? Oh no, it saw us!",
+               "article":"Grass Armor",
+               "level":1,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Cave",
+         "questPages":[
+            "Cave Quest Page"
+         ],
+         "gridSize":10,
+         "youAreHereX": 2.5,
+         "youAreHereY": 5.5,
+         "elements":[
+            [
+               "Cave Key",
+               "",
+               "",
+               "",
+               "",
+               "Cave Ladder",
+               "Cave Chest",
+               "",
+               "",
+               "Cave Key"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "Cave Chest",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Cave Key",
+               "",
+               "",
+               "",
+               "Cave Chest"
+            ],
+            [
+               "",
+               "Cave Dirt",
+               "Cave Ladder",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Cave Dirt",
+               "Cave Monster",
+               "Cave Chest"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Cave Chest",
+               "",
+               "",
+               ""
+            ],
+            [
+               "Cave Key",
+               "",
+               "",
+               "",
+               "",
+               "Cave Ladder",
+               "",
+               "",
+               "",
+               "Cave Key"
+            ]
+         ],
+         "priorLand":"Grasslands",
+         "afterLand":"Desert",
+         "spinnerIndex":2,
+         "currentTab":"Cave",
+         "spinnerBackground":"Cave",
+         "autoPlaceNames":[
+             "Cave",
+         ],
+         "spinnerNames":[
+            "Cave",
+            "Fight",
+            "Cave Loot"
+         ],
+         "tabNames":[
+            "Cave",
+            "Fight",
+            "Loot"
+         ],
+         "goals":[
+            "Climb Tree Beard",
+            "Release the Trapped Toad",
+            "Find 6 Chained Chests",
+            "Walk the Knife Edge"
+         ],
+         "fightHeading":"Cave Corruptions",
+         "currentFight":"Giant Worm",
+         "fights":[
+            {
+               "name":"Giant Worm",
+               "nextFight":"Tunnel Snake",
+               "info":"A happy dirt eating pink night-crawler, just like you put on your fish hooks. But as big as the tunnel. Not evil exactly, just omnivorous.",
+               "article":"Giant Worm Guts",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Tunnel Snake",
+               "nextFight":"Slimy Cave Slime",
+               "info":"You thought you had learned not to step on snakes, but unfortunately you did not learn. Ouch!",
+               "article":"Awesome Snake Head",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Slimy Cave Slime",
+               "nextFight":"Nasty Goblin",
+               "info":"No self respecting adventurer can go home without having defeated a slime monster of some sort. This is your moment. No one tells you how gross and slimy it really is.",
+               "article":"Slimy Cave Slime Treasure",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Nasty Goblin",
+               "nextFight":"Spiky Bush Roots",
+               "info":"Once again you announce your love and support of goblins and goblin-kind.  This goblin sits down to listen, then tries to stab you in the back.",
+               "article":"Candied Gopher Poops",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Spiky Bush Roots",
+               "nextFight":"Small Stone Golem",
+               "info":"The spiky bush is even spikier on the bottom parts, filling these caves and tunnels with crazy ouchy tentacle roots.",
+               "article":"Spiky Root Sap Syrup",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Small Stone Golem",
+               "nextFight":"Subterranean Lawyers",
+               "info":"What a cute little stone golem! It barely reaches your knees which it is punching and hitting. Ouch that hurts! Stop it cute litte stone golem!",
+               "article":"Baby Stone Golem Poops",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Subterranean Lawyers",
+               "nextFight":"Cave Bear",
+               "info":"A horde of lawyers in bespoke suits runs around the corner, threatening subpoenas and lawsuits unless you hand over your treasure. You appeal to the court of butt-kicking.",
+               "article":"Bespoke Lawyer Suit",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Cave Bear",
+               "nextFight":"Stone Golem",
+               "info":"A bear. In a cave. A cave bear in a cave. It feels like a smaller cave now, what with this giant hungry bear coming after you.",
+               "article":"Cave Bear Hat",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Stone Golem",
+               "nextFight":"Defeated",
+               "info":"The Stone Golem does not take kindly to people ransacking through its dark cave system. It does not take kindly to anyone, actually. You learn this when you bump into it in the deepest recesses of the caves.",
+               "article":"",
+               "level":1,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            }
+
+         ]
+      },
+      {
+         "name":"Desert",
+         "questPages":[
+            "Desert Quest Page"
+         ],
+         "gridSize":13,
+         "youAreHereX": 0.5,
+         "youAreHereY": 5.5,
+         "elements":[
+            [
+               "Desert Key",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Desert Chest",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Desert Key"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Desert Cactus",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "Desert Sand",
+               "Desert Sand",
+               "",
+               "",
+               "",
+               "Desert Cactus",
+               "Desert Key",
+               "Desert Monster",
+               "",
+               "",
+               "",
+               "Desert Sand",
+               ""
+            ],
+            [
+               "Desert Sand",
+               "Desert Sand",
+               "",
+               "",
+               "",
+               "",
+               "Desert Cactus",
+               "Desert Cave",
+               "",
+               "",
+               "Tall Grass",
+               "Water",
+               "Desert Chest"
+            ],
+            [
+               "",
+               "",
+               "",
+               "Desert Chest",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock",
+               "Water",
+               "Water",
+               "Desert Sand"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Desert Cactus",
+               "",
+               "",
+               "",
+               "",
+               "Tall Grass",
+               "Tall Grass",
+               "Desert Sand"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Desert Chest",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "Desert Key",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Desert Key"
+            ]
+         ],
+         "priorLand":"Cave",
+         "afterLand":"Temple",
+         "spinnerIndex":1,
+         "currentTab":"Desert",
+         "spinnerBackground":"Desert",
+         "autoPlaceNames":[
+            "Desert"
+         ],
+         "spinnerNames":[
+            "Desert",
+            "Fight",
+            "Desert Loot"
+         ],
+         "tabNames":[
+            "Desert",
+            "Fight",
+            "Loot"
+         ],
+         "goals":[
+            "Electric Eel",
+            "Ambitious Alligator"
+         ],
+         "fightHeading":"Desert Demons",
+         "currentFight":"Scarab Beetles",
+         "fights":[
+            {
+               "name":"Scarab Beetles",
+               "nextFight":"Giant Ant Lion",
+               "info":"Giant dung beetles, flinging dung at you. Why do people fill ancient temples with these, you wonder, as you dodge rotten feces.",
+               "article":"Scarab Beetle Brooch",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Giant Ant Lion",
+               "nextFight":"Nomad Raiders",
+               "info":"This is not a sand dune, it is an ant lion pit. You see the giant larvae at the bottom, poison slathering its pincers, and shudder in fear as you slide towards it.",
+               "article":"Ant Lion Poison",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Nomad Raiders",
+               "nextFight":"Undead Wight",
+               "info":"Ambushed! Raiders spring from the sand, with their eyes on your treasure and water.",
+               "article":"Nomad Raider Loyalty",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Undead Wight",
+               "nextFight":"Djinni Bottle",
+               "info":"These husks of former adventurers who did not surviv the desert crossing are angry at you for existing. Raised from the dead in ancient temples, they want you to join their ranks.",
+               "article":"Undead Wight Treasure Loot",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Djinni Bottle",
+               "nextFight":"Sand Golem",
+               "info":"A golden lamd, lying in the sand. You rub it, eager for your three wishes. The Djinni that emerges wants you to take its place - unless you can defeat it.",
+               "article":"Three Cursed Djinni Wishes",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Sand Golem",
+               "nextFight":"Angry Cactus",
+               "info":"You start to wonder who left all these golems running about mucking things up. You would like to have a word with them. The golem says nothing as it mashes you with sandy arms.",
+               "article":"Magic Sand Golem Sand",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Angry Cactus",
+               "nextFight":"Sand-Shark-Nado",
+               "info":"",
+               "article":"Cactus Root Fruity Fruit",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Sand-Shark-Nado",
+               "nextFight":"Giant Vulture",
+               "info":"",
+               "article":"Candied Gopher Poops",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Giant Vulture",
+               "nextFight":"Defeated",
+               "info":"The vultures were indeed watching you carefully. One of them is not willing to wait until you die all by yourself. As it soars down from above, you realize it is ten feet tall. Good luck!",
+               "article":"",
+               "level":1,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Temple",
+         "questPages":[
+            "Temple Quest Page"
+         ],
+         "gridSize":13,
+         "youAreHereX": 7.5,
+         "youAreHereY": 6.5,
+         "elements":[
+            [
+               "Desert Chest",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Desert Chest"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Desert Chest",
+               "",
+               "Desert Key",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "Desert Chest",
+               "",
+               "",
+               "",
+               "Desert Monster",
+               "",
+               "",
+               "",
+               "Desert Chest",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "Desert Monster",
+               "",
+               "Desert Sand",
+               "",
+               "Desert Monster",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "Desert Chest",
+               "",
+               "",
+               "",
+               "Cave In",
+               "",
+               "",
+               "",
+               "Desert Chest",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Desert Sand",
+               "Desert Sand",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Desert Sand",
+               "",
+               "",
+               "",
+               "Desert Chest",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "Desert Chest",
+               "Cave In",
+               "",
+               "",
+               "Desert Sand",
+               "Cave In",
+               "Desert Monster",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Desert Monster",
+               "",
+               "",
+               "",
+               "Desert Chest",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Desert Chest",
+               "",
+               "Desert Chest",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "Desert Chest",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Desert Chest"
+            ]
+         ],
+         "priorLand":"Desert",
+         "afterLand":"Mountain",
+         "spinnerIndex":2,
+         "currentTab":"Temple",
+         "spinnerBackground":"Temple",
+         "autoPlaceNames":[
+            "Temple"
+         ],
+         "spinnerNames":[
+            "Temple",
+            "Fight",
+            "Temple Loot"
+         ],
+         "tabNames":[
+            "Temple",
+            "Fight",
+            "Loot"
+         ],
+         "goals":[
+            "Climb Tree Beard",
+            "Release the Trapped Toad",
+            "Find 6 Chained Chests",
+            "Walk the Knife Edge"
+         ],
+         "fightHeading":"Temple Terrors",
+         "currentFight":"Sandy Wormy Thing",
+         "fights":[
+            {
+               "name":"Sandy Wormy Thing",
+               "nextFight":"Wormy Sandy Thing",
+               "info":"This wormy thing is quite sandy, probably because it is a (hungry) worm in sand.",
+               "article":"Sandy Wormy Toothy Thing",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Wormy Sandy Thing",
+               "nextFight":"Evil Undead Wight",
+               "info":"This sandy thing seems pretty wormy - but it is made out of sand. It is also hungry.",
+               "article":"Wormy Sandy Sand",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Evil Undead Wight",
+               "nextFight":"Mummy of the Mummy",
+               "info":"This undead wight is not the cheerful scone baking kind, but more the killing you while cackling kind.",
+               "article":"Candied Gopher Poops",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Mummy of the Mummy",
+               "nextFight":"Spiky Cactus Roots",
+               "info":"You want your own mummy when the mummy of the mummy mumbles something about the curse of the temple.",
+               "article":"Mummy Curse",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Spiky Cactus Roots",
+               "nextFight":"Skeleton Guard",
+               "info":"What is it with spiky ouchy roots? Even here in the desert, you find yourself battling many spiky things.",
+               "article":"Cactus Root Fruity Fruit",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Skeleton Guard",
+               "nextFight":"Mi-Go the Temple Crab",
+               "info":"This one is a real bureaucrat, and your paperwork is not in order. You did not know you needed a temple raiding form submitted in triplicate.",
+               "article":"Skeleton Guard Clipboard",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Mi-Go the Temple Crab",
+               "nextFight":"Defeated",
+               "info":"This crab seems to be from another world, it seems crab like but also alien. It is muttering ancient phrases that feel full of power, the chattering is driving you mad. Can you defeat Mi-Go before you lose your sanity?",
+               "article":"",
+               "level":1,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Mountain",
+         "questPages":[
+            "Mountain Quest Page"
+         ],
+         "gridSize":15,
+         "youAreHereX": 0.5,
+         "youAreHereY": 6.5,
+         "elements":[
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock",
+               "Snow Chest",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock"
+            ],
+            [
+               "",
+               "",
+               "Snow Chest",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "SnowChest",
+               "",
+               "",
+               "Rock"
+            ],
+            [
+               "",
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "Rock",
+               "",
+               "",
+               "Rock"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Big Rock",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Big Rock"
+            ],
+            [
+               "Short Grass",
+               "Rock",
+               "",
+               "",
+               "",
+               "",
+               "Rock",
+               "Snow Key",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Snow Chest"
+            ],
+            [
+               "Short Grass",
+               "Short Grass",
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Mine Monster",
+               "Snow Chest"
+            ],
+            [
+               "",
+               "",
+               "",
+               "Grass Cave",
+               "Rock",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock"
+            ],
+            [
+               "",
+               "",
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "",
+               "Rock",
+               "",
+               "Rock"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock",
+               "Snow Chest",
+               "",
+               "",
+               "",
+               "Cave In",
+               "Snow Chest",
+               "",
+               "Rock"
+            ],
+            [
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock"
+            ],
+            [
+               "Snow Chest",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock"
+            ]
+         ],
+         "priorLand":"Temple",
+         "afterLand":"Mine",
+         "spinnerIndex":1,
+         "currentTab":"Mountain",
+         "spinnerBackground":"Mountain",
+         "autoPlaceNames":[
+             "Mountain"
+         ],
+         "spinnerNames":[
+            "Mountain",
+            "Fight",
+            "Mountain Loot"
+         ],
+         "tabNames":[
+            "Mountain",
+            "Fight",
+            "Loot"
+         ],
+         "goals":[
+            "Electric Eel",
+            "Ambitious Alligator"
+         ],
+         "fightHeading":"Mountain Monsters",
+         "currentFight":"Giant Scorpion",
+         "fights":[
+            {
+               "name":"Giant Scorpion",
+               "nextFight":"Lone Pillager",
+               "info":"Just like it says on the tin - this here is one giant scorpion, with a big spiky tail and far too many legs.",
+               "article":"Pillager Mountain Map",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Lone Pillager",
+               "nextFight":"Great Raven",
+               "info":"Every mountain range has its share of bandits hiding in the hills. This fellow aims to eat your food, steal your treasure, and wear your skin as a coat. You politely suggest that this not happen. You agree to disagree, violently.",
+               "article":"Pillager Mountain Map",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Great Raven",
+               "nextFight":"Mountain Ogre",
+               "info":"A wise beast, about thrice your size, it considers all ground dwellers variations of mice to be eaten.",
+               "article":"Great Raven Feathers",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Mountain Ogre",
+               "nextFight":"Dire Wolf",
+               "info":"The mountaineer's guide says ogres eat people. You wonder how the ecology works with so few people and so many ogres. Maybe they eat scorpions.",
+               "article":"Mountain Ogre Loincloth",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Dire Wolf",
+               "nextFight":"Stone Troll",
+               "info":"These extinct canines are huge and strong. And apparently not extinct, as this mama wolf does her best to feed you to her cute little slobbering puppies.",
+               "article":"Dire Wolf Skull",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Stone Troll",
+               "nextFight":"Mountain Giant",
+               "info":"That cave did not go underground - it was a trail nest. Do ythey lay eggs, you wonder, making a note in your notebook while dodging troll club bludgeon attacks.",
+               "article":"Stone Troll Skull Bell",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Mountain Giant",
+               "nextFight":"Defeated",
+               "info":"The Mountain Giant loves adventures. It loves them in sandwiches, in stews, and on great crackers. You try convincing him to go vegan, but he just goes and eats vegans. You decide you need to end his reign of terror.",
+               "article":"",
+               "level":1,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Mine",
+         "questPages":[
+            "Mine Quest Page"
+         ],
+         "gridSize":15,
+         "youAreHereX": 0.5,
+         "youAreHereY": 6.5,
+         "elements":[
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock",
+               "Snow Chest",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock"
+            ],
+            [
+               "",
+               "",
+               "Snow Chest",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "SnowChest",
+               "",
+               "",
+               "Rock"
+            ],
+            [
+               "",
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "Rock",
+               "",
+               "",
+               "Rock"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Big Rock",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Big Rock"
+            ],
+            [
+               "Short Grass",
+               "Rock",
+               "",
+               "",
+               "",
+               "",
+               "Rock",
+               "Snow Key",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Snow Chest"
+            ],
+            [
+               "Short Grass",
+               "Short Grass",
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Mine Monster",
+               "Snow Chest"
+            ],
+            [
+               "",
+               "",
+               "",
+               "Grass Cave",
+               "Rock",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock"
+            ],
+            [
+               "",
+               "",
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "",
+               "Rock",
+               "",
+               "Rock"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock",
+               "Snow Chest",
+               "",
+               "",
+               "",
+               "Cave In",
+               "Snow Chest",
+               "",
+               "Rock"
+            ],
+            [
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock"
+            ],
+            [
+               "Snow Chest",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Rock"
+            ]
+         ],
+         "priorLand":"Mountain",
+         "afterLand":"Tundra",
+         "spinnerIndex":1,
+         "currentTab":"Mine",
+         "spinnerBackground":"Mine",
+         "autoPlaceNames":[
+             "Mine"
+         ],
+         "spinnerNames":[
+            "Mine",
+            "Fight",
+            "Mine Loot"
+         ],
+         "tabNames":[
+            "Mine",
+            "Fight",
+            "Loot"
+         ],
+         "goals":[
+            "Climb Tree Beard",
+            "Release the Trapped Toad",
+            "Find 6 Chained Chests",
+            "Walk the Knife Edge"
+         ],
+         "fightHeading":"Mine Musks",
+         "currentFight":"Rabid Badger",
+         "fights":[
+            {
+               "name":"Rabid Badger",
+               "nextFight":"Goblin Miners",
+               "info":"Of all the fearsome critters about, a badger is about the most fierce. Even the cave bears stay away.",
+               "article":"",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Goblin Miners",
+               "nextFight":"Acid Slime",
+               "info":"You are starting to feel bad about all the goblin murdering you have been doing, but these miners leave you no choice, as they wildly swing their pickaxes at you. Gain +2 pickaxes.",
+               "article":"Goblin Miner Friendship",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Acid Slime",
+               "nextFight":"Duergar Dwarf",
+               "info":"This slime lumbers about the caves, corroding and digesting rock and any creatures that get in its way.",
+               "article":"Acid Slime Super Acid Jar",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Duergar Dwarf",
+               "nextFight":"Drow Elf Party",
+               "info":"These gray dwarves are known for their slave trading ways - they will not work hard if they can enslave others and make them work instead. If you lose, at least you will be alive (though as their slave, you will wish you were not).",
+               "article":"Acid Slime Super Acid Jar",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Drow Elf Party",
+               "nextFight":"Teenagers",
+               "info":"Dark hair, pale skinned, these elves look mean. They take prisoners too, but for the purpose of blood sacrifice. It is probably best if you win.",
+               "article":"Drow Elf Coins and Potions",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Teenagers",
+               "nextFight":"Cave Horror",
+               "info":"Bad attitudes, crazy clothes, and they are spray painting crude phrases on the cave walls. Teens mean trouble.",
+               "article":"Surly Attitude and Acne",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Cave Horror",
+               "nextFight":"Defeated",
+               "info":"Deep down in the deep down deeppy dark downy down, you stat to be afraid. It is right to be afraid. Be afraid. The cave horror is here waiting for you to stumble into its lair. Good luck!",
+               "article":"",
+               "level":1,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Tundra",
+         "questPages":[
+            "Tundra Quest Page"
+         ],
+         "gridSize":17,
+         "youAreHereX": 0.5,
+         "youAreHereY": 7.5,
+         "elements":[
+            [
+               "Snow Key",
+               "Snow Chest",
+               "Ice",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Ice",
+               "Snow Key"
+            ],
+            [
+               "Ice",
+               "Ice",
+               "",
+               "",
+               "Ice",
+               "Snow Chest",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Ice"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Ice",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Ice",
+               "Snow Chest",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Small Pine",
+               "",
+               "",
+               "",
+               "Ice",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Snow Rock",
+               "Snow Key",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "Snow Cave",
+               "",
+               "",
+               "",
+               "Deep Snow",
+               "",
+               "Ice",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Ice",
+               "Ice",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "Snow",
+               "Deep Snow",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Ice",
+               "Snow Chest",
+               "Ice",
+               "Snow Monster",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "Snow",
+               "Snow",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Deep Snow",
+               "",
+               "Ice",
+               "Snow Chest",
+               "Ice",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Ice",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Ice",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "Snow Key",
+               "",
+               "",
+               "",
+               "Ice",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Ice",
+               "Snow Chest",
+               "",
+               "",
+               "",
+               "Ice",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Ice",
+               "Snow Chest",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Ice",
+               "Snow Key",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "Ice",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Ice"
+            ],
+            [
+               "Snow Key",
+               "Ice",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Ice",
+               "Snow Key"
+            ]
+         ],
+         "priorLand":"Mine",
+         "afterLand":"Ice Cave",
+         "spinnerIndex":1,
+         "currentTab":"Tundra",
+         "spinnerBackground":"Tundra",
+         "autoPlaceNames":[
+            "Tundra"
+         ],
+         "spinnerNames":[
+            "Tundra",
+            "Fight",
+            "Tundra Loot"
+         ],
+         "tabNames":[
+            "Tundra",
+            "Fight",
+            "Loot"
+         ],
+         "goals":[
+            "Electric Eel",
+            "Ambitious Alligator"
+         ],
+         "fightHeading":"Tundra Thugs",
+         "currentFight":"Arctic Hare",
+         "fights":[
+            {
+               "name":"Arctic Hare",
+               "nextFight":"Snow Weasel",
+               "info":"Like the bunny from Monty Python and the Search for the Holly Grail, but bigger and far more dangerous. You do not have a Holdy Hand Grenade, but dynamite takes them out in a pinch.",
+               "article":"Arctic Hare Pelt",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Snow Weasel",
+               "nextFight":"Tundra Bear",
+               "info":"A pack of snow white weasels are hunting you, popping up here and there from snow tunnels. Fast and bitey, but oh so cute.",
+               "article":"Snow Weasel Pelt",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Tundra Bear",
+               "nextFight":"Crazed Walrus",
+               "info":"Like a polar bear, but more tundra-like. What is tundra like? Big, toothy, smart, and hungry. Tundra colored.",
+               "article":"Tundra Bear Skin Coat",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Crazed Walrus",
+               "nextFight":"Magic Snowman",
+               "info":"This walrus is in the wrong place - the tundra is far from the ocean. Is it amorous or angry? Either way, it is coming for you and you are concerned.",
+               "article":"Walrus Tusk Walking Stick",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Magic Snowman",
+               "nextFight":"Ice Giant",
+               "info":"Top hat, carrot stick nose, razor sharp stick arms - some chaotic evil snow wizard had too much fun.",
+               "article":"Magic Snowman Hat",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Ice Giant",
+               "nextFight":"Wooly Snake",
+               "info":"Is an ice giant a giant made of ice, or a giant who lives in the icy north? You ask politely, which only angers it further. You can find out after you dispatch it.",
+               "article":"Knowledge of the Ice Giant",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Wooly Snake",
+               "nextFight":"Defeated",
+               "info":"You saw wooly muskox on your tundra trip. The wooly snake is oh so much larger, towering over you. It might be an herbivore! You offer it some carrots. It sniffs them, then attempts to eat you. Not an herbivore. Time to fight for your life!",
+               "article":"",
+               "level":1,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Ice Cave",
+         "questPages":[
+            "Ice Cave Quest Page"
+         ],
+         "gridSize":17,
+         "youAreHereX": 0.5,
+         "youAreHereY": 6.5,
+         "elements":[
+            [
+               "Snow Chest",
+               "Ice Rock",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Snow Key",
+               "",
+               "",
+               "",
+               "",
+               "Ice Rock",
+               "Snow Chest"
+            ],
+            [
+               "Ice Rock",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Ice Rock"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Snow Key",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "Snow ",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Snow Key",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "Snow",
+               "Snow Ladder",
+               "Snow",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "Snow",
+               "Ice",
+               "Ice",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Ice",
+               "Ice",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Ice",
+               "Snow Chest",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Ice Rock"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Ice",
+               "",
+               "",
+               "",
+               "Ice Rock",
+               "",
+               "",
+               "Snow Chest"
+            ],
+            [
+               "Snow Key",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Ice",
+               "Snow Key",
+               "",
+               "",
+               "Ice Rock",
+               "Snow Monster",
+               "",
+               "Snow Chest"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Ice Rock"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Snow Key",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "Ice Rock",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Ice Rock"
+            ],
+            [
+               "Snow Chest",
+               "Ice Rock",
+               "",
+               "",
+               "",
+               "",
+               "Snow Key",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Ice Rock",
+               "Snow Chest"
+            ]
+         ],
+         "priorLand":"Tundra",
+         "afterLand":"Lava",
+         "spinnerIndex":2,
+         "currentTab":"Ice Cave",
+         "spinnerBackground":"Ice Cave",
+         "autoPlaceNames":[
+            "Ice Cave"
+         ],
+         "spinnerNames":[
+            "Ice Cave",
+            "Fight",
+            "Ice Cave Loot"
+         ],
+         "tabNames":[
+            "Ice Cave",
+            "Fight",
+            "Loot"
+         ],
+         "goals":[
+            "Climb Tree Beard",
+            "Release the Trapped Toad",
+            "Find 6 Chained Chests",
+            "Walk the Knife Edge"
+         ],
+         "fightHeading":"Icey Icks",
+         "currentFight":"Snow Ants",
+         "fights":[
+            {
+               "name":"Snow Ants",
+               "nextFight":"Dead Explorer",
+               "info":"Is ther nowhere in the world free of ants? These ants are ruthlessly efficient at gathering nutrients for their queen - and you are a bunch of nutrients.",
+               "article":"Snow Ant Colony",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Dead Explorer",
+               "nextFight":"Ice Worm",
+               "info":"This freozen explorer looks worse for the wear, but found it too cold to die completely - wandering around trying to steal back warmth from the living.",
+               "article":"Dead Explorer Goggles",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Ice Worm",
+               "nextFight":"Ice Horror",
+               "info":"Sharp rows of teeth for chewing through ice, you almost wish the wooly snake were here instead.",
+               "article":"Ice Worm Tooth Necklace",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Ice Horror",
+               "nextFight":"Diamond Troll",
+               "info":"Everything this creature touches freezes, in grotesque pastures. You see icy statues of past explorers who failed to succeed in the fight.",
+               "article":"Candied Gopher Poops",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Diamond Troll",
+               "nextFight":"Ice Dragon",
+               "info":"The smartest of all trolls, Diamond Troll is stalking you through the caverns, his brilliant armored sides rendering him near invisible among the icy walls.",
+               "article":"Diamond Troll Diamonds",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Ice Dragon",
+               "nextFight":"Gnoph-Kew",
+               "info":"Your classic blue-scaled, ice-breathing, large-taloned, smart, hungry, and greedy dragon. You just wonder why there are so many of them in these caverns.",
+               "article":"Ice Dragon Scales",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Gnoph-Kew",
+               "nextFight":"Defeated",
+               "info":"What is this even? It seems to be a six legged narwhal polar bear, or something. It is hungry, and definitely evil. Win or die!",
+               "article":"",
+               "level":1,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Lava",
+         "questPages":[
+            "Lava Quest Page"
+         ],
+         "gridSize":20,
+         "youAreHereX": 0.5,
+         "youAreHereY": 9.5,
+         "elements":[
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Small Lava",
+               "Small Lava",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "Lava Chest",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Small Lava",
+               "Small Lava",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Chest",
+               ""
+            ],
+            [
+               "",
+               "",
+               "Lava Rock",
+               "Small Lava",
+               "",
+               "",
+               "",
+               "Lava Tube",
+               "Small Lava",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Small Lava",
+               "Lava Rock",
+               ""
+            ],
+            [
+               "",
+               "",
+               "Small Lava",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Rock",
+               "Small Lava",
+               "",
+               "",
+               "",
+               "Lava Key",
+               "",
+               "",
+               "",
+               "Small Lava",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Small Lava",
+               "Small Lava",
+               "",
+               "Fire Tree",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "Lava Key",
+               "",
+               "",
+               "",
+               "",
+               "Lava Key",
+               "",
+               "",
+               "",
+               "Lava Rock",
+               "Small Lava",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Small Lava",
+               "Small Lava",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Small Lava",
+               "Lava Rock",
+               "Lava Key",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Small Lava",
+               "Small Lava",
+               "Small Lava",
+               "Lava Tube",
+               "",
+               "",
+               "",
+               "Fire Tree",
+               "",
+               "Lava Key",
+               "Lava Chest"
+            ],
+            [
+               "Burnt Grass",
+               "Spiky Rocks",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Rock",
+               "Small Lava",
+               "Small Lava",
+               "Small Lava",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "Burnt Grass",
+               "Burnt Grass",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Small Lava",
+               "Lava Chest",
+               "Lava Tube",
+               "Small Lava",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Monster"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Fire Tree",
+               "",
+               "Lava Rock",
+               "Small Lava",
+               "Lava Chest",
+               "Lava Chest",
+               "Small Lava",
+               "Small Lava",
+               "",
+               "",
+               "",
+               "",
+               "Lava Key",
+               "Lava Chest"
+            ],
+            [
+               "",
+               "",
+               "",
+               "Lava Key",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Small Lava",
+               "Small Lava",
+               "Small Lava",
+               "Small Lava",
+               "Small Lava",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Rock",
+               "Small Lava",
+               "Small Lava",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Rock",
+               "Small Lava",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Key",
+               "",
+               "",
+               "",
+               "Small Lava",
+               "Lava Rock",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "Small Lava",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Fire Tree",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Small Lava",
+               "Lava Rock",
+               "Lava Tube",
+               "Small Lava",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "Lava Rock",
+               "Small Lava",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Small Lava",
+               "Small Lava",
+               "Lava Rock",
+               "",
+               ""
+            ],
+            [
+               "",
+               "Lava Chest",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Small Lava",
+               "Small Lava",
+               "Lava Chest",
+               "Lava Key"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Tube",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Small Lava",
+               "Small Lava",
+               "Lava Rock"
+            ]
+         ],
+         "priorLand":"Ice Cave",
+         "afterLand":"Lava Cave",
+         "spinnerIndex":1,
+         "currentTab":"Lava",
+         "spinnerBackground":"Lava",
+         "autoPlaceNames":[
+            "Lava"
+         ],
+         "spinnerNames":[
+            "Lava",
+            "Fight",
+            "Lava Loot"
+         ],
+         "tabNames":[
+            "Lava",
+            "Fight",
+            "Loot"
+         ],
+         "goals":[
+            "Electric Eel",
+            "Ambitious Alligator"
+         ],
+         "fightHeading":"Lava Louts",
+         "currentFight":"Fire Fox",
+         "fights":[
+            {
+               "name":"Fire Fox",
+               "nextFight":"Lava Lizard",
+               "info":"Red fur constantly aflame, this quick footed foe nips at your heels and will not leave you alone.",
+               "article":"Candied Gopher Poops",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Lava Lizard",
+               "nextFight":"Phoenix",
+               "info":"These cold blooded creatures are hot and quick after soaking in a lave pool all afternoon - you have never seen a lizard move so quickly. And lizards generally move quickly.",
+               "article":"Lava Lizard Skin Gloves",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Phoenix",
+               "nextFight":"Murder Hornets",
+               "info":"They seem to be migrating through here, burning themselves up then coming back to life again.",
+               "article":"Phoenix Feather",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Murder Hornets",
+               "nextFight":"Lava Golem",
+               "info":"You read articles about these, but it did not mention they are twice your size and angry all the time.",
+               "article":"Murder Hornet Stingers",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Lava Golem",
+               "nextFight":"Red Dragon",
+               "info":"Enought with the golems already. How exactly are you supposed to defeat a 10 foot tall creature of molten lava? You better figure out fast, or else.",
+               "article":"Lava Golem Scientific Sample",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Red Dragon",
+               "nextFight":"Livid Lavamancers",
+               "info":"Dragon. Red. Fire. Run!",
+               "article":"Red Dragon Scales",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Livid Lavamancers",
+               "nextFight":"Defeated",
+               "info":"These Lavamancers are determined to keep the secrets of lava magic to themselves and will do anything to accomplish their goals. It does not help that you chastised them for sacrificig cute kittens to the lava gods-now they are truly angry. At least you saved a few kitties. Can you also save yourself?",
+               "article":"",
+               "level":1,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Lava Cave",
+         "questPages":[
+            "Lava Cave Quest Page"
+         ],
+         "gridSize":20,
+         "youAreHereX": 0.5,
+         "youAreHereY": 9.5,
+         "elements":[
+            [
+               "Lava Key",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Chest",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Key"
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Ladder",
+               "Lava Cave Spiky Rocks",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Cave Spiky Rocks",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Chest",
+               "",
+               ""
+            ],
+            [
+               "",
+               "Lava Chest",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Key",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Key",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Cave Spiky Rocks",
+               "Lava Ladder",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Violet Crystal",
+               "Lava Cave Spiky Rocks",
+               "Violet Crystal",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "Lava Chest",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Cave Spiky Rocks",
+               "Lava Cave Spiky Rocks",
+               "Lava Ladder",
+               "Lava Cave Spiky Rocks",
+               "Lava Cave Spiky Rocks",
+               "",
+               "",
+               "",
+               "",
+               "Lava Chest",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Violet Crystal",
+               "Lava Cave Spiky Rocks",
+               "Violet Crystal",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Cave Spiky Rocks",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Key",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Key",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Cave Spiky Rocks",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Cave Spiky Rocks",
+               "Lava Ladder",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "Lava Chest",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Cave Spiky Rocks",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Chest",
+               ""
+            ],
+            [
+               "",
+               "",
+               "",
+               "",
+               "",
+               "Lava Key",
+               "",
+               "",
+               "Lava Cave Spiky Rocks",
+               "Lava Ladder",
+               "",
+               "Lava Monster",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ]
+         ],
+         "priorLand":"Lava",
+         "afterLand":"",
+         "spinnerIndex":2,
+         "currentTab":"Lava Cave",
+         "spinnerBackground":"Lava Cave",
+         "autoPlaceNames":[
+            "Lava Cave"
+         ],
+         "spinnerNames":[
+            "Lava Cave",
+            "Fight",
+            "Lava Cave Loot"
+         ],
+         "tabNames":[
+            "Lava Cave",
+            "Fight",
+            "Loot"
+         ],
+         "goals":[
+            "Climb Tree Beard",
+            "Release the Trapped Toad",
+            "Find 6 Chained Chests",
+            "Walk the Knife Edge"
+         ],
+         "fightHeading":"Lava Lechers",
+         "currentFight":"Orc Raider",
+         "fights":[
+            {
+               "name":"Orc Raider",
+               "nextFight":"Steam Slime",
+               "info":"You made it all this way without killing an orc, but your luck ran out.",
+               "article":"Candied Gopher Poops",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Steam Slime",
+               "nextFight":"Sentient Lava",
+               "info":"Enough with the slimes. Is this even a slime? Less substantive and more substantial, this slime has transmogrified itself to an angry steam cloud.",
+               "article":"Candied Gopher Poops",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Sentient Lava",
+               "nextFight":"Zealous Acolytes",
+               "info":"Close cousin to sentient mud, this lava climbs out of tis bubling pool to make adventurer barbecue skewers.",
+               "article":"Candied Gopher Poops",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Zealous Acolytes",
+               "nextFight":"Evil Sorcerer",
+               "info":"Chanting strange words, these acolytes are hastening the end of the world as they worship their demented elder god.",
+               "article":"Zealous Acolyte Hymnal",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Evil Sorcerer",
+               "nextFight":"Elder God",
+               "info":"Are there any good sorcerers? Not this one. Cackling maniacally, thought it feels a bit forced. Get him talking, then take him down while he rambles on about his evil plans for world domination.",
+               "article":"Candied Gopher Poops",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Elder God",
+               "nextFight":"Some Kind of Monster Thing",
+               "info":"Cthulhu has nothing on this creature. Why did those zealous welcome this thing to our plane of existence? Well, you will just have to take the garbage out, or to the nearest dimensional portal at any rate. World ending death gods have no place in our well ordered universe - at least if you have anything to say about it! ",
+               "article":"Insanity of the Elder Gods",
+               "level":0,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            },
+            {
+               "name":"Some Kind of Monster Thing",
+               "nextFight":"Defeated",
+               "info":"I am a descriptive block of text talking about this very interesting and snarkily funny some kind of monster thing. It is totally different than the monster in the snow caverns. Really, promise.",
+               "article":"",
+               "level":1,
+               "attackPoints": 0,
+               "defensePoints": 0,
+               "on":[
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+               ]
+            }
+         ]
+      }
+   ]
+}
+
+

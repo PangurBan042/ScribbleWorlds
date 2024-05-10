@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "spinner",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/PangurBan042/Spinner.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f1e12970343581d53126ee62833bcdea026f18ba"
+      }
+    }
+  ],
+  "version" : 2
+}

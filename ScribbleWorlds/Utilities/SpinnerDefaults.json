@@ -1,0 +1,5113 @@
+[
+    {
+        "name": "Grasslands",
+        "wedges": [
+            {
+                "name": "Small Tree",
+                "imageName": "Small Tree",
+                "info": "I am a small tree.",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Monster",
+                "imageName": "Grass Monster",
+                "info": "I smell like freshly mowed grass.",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Grass is easy to walk on - yay!",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water",
+                "imageName": "Water",
+                "info": "Blocks your path",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Cave",
+                "imageName": "Grass Cave",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Big Tree",
+                "imageName": "Big Tree",
+                "info": "Blocks your path unless you have two hatchets",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Chest",
+                "imageName": "Grass Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Big Rock",
+                "imageName": "Big Rock",
+                "info": "Blocks your path unless you have two pickaxes",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Easy to walk on - yay!",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Monster",
+                "imageName": "Grass Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Easy to walk on - yay!",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Rock",
+                "imageName": "Rock",
+                "info": "Blocks your path unless you would like to use one your pickaxes",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Easy to walk on yay!",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Tall Grass",
+                "imageName": "Tall Grass",
+                "info": "(-1 Heart) Hard to walk through, lose a heart",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Easy to walk on - yay!",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Cave",
+                "imageName": "Grass Cave",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water",
+                "imageName": "Water",
+                "info": "Blocks your path",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Tall Grass",
+                "imageName": "Tall Grass",
+                "info": "Hard to walk through",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "New Biome",
+                "imageName": "New Biome",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Rock",
+                "imageName": "Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Small Tree",
+                "imageName": "Small Tree",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Small Tree",
+                "imageName": "Small Tree",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Monster",
+                "imageName": "Grass Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Small Tree",
+                "imageName": "Small Tree",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Tall Grass",
+                "imageName": "Tall Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Rock",
+                "imageName": "Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Tall Grass",
+                "imageName": "Tall Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Swamp",
+        "wedges": [
+            {
+                "name": "Rock",
+                "imageName": "Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Tall Grass",
+                "imageName": "Tall Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Swamp Deep Mud",
+                "imageName": "Swamp Deep Mud",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Monster",
+                "imageName": "Cave Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water",
+                "imageName": "Water",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Swamp Cave",
+                "imageName": "Swamp Cave",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Big Water",
+                "imageName": "Big Water",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Chest",
+                "imageName": "Grass Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Big Rock",
+                "imageName": "Big Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Monster",
+                "imageName": "Cave Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Rock",
+                "imageName": "Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Tall Grass",
+                "imageName": "Tall Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Swamp Cave",
+                "imageName": "Swamp Cave",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water",
+                "imageName": "Water",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Tall Grass",
+                "imageName": "Tall Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "New Biome",
+                "imageName": "New Biome",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Chest",
+                "imageName": "Grass Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Rock",
+                "imageName": "Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Swamp Deep Mud",
+                "imageName": "Swamp Deep Mud",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Swamp Deep Mud",
+                "imageName": "Swamp Deep Mud",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Monster",
+                "imageName": "Cave Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Swamp Deep Mud",
+                "imageName": "Swamp Deep Mud",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Tall Grass",
+                "imageName": "Tall Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Cave",
+        "wedges": [
+            {
+                "name": "Cave Deep Mud",
+                "imageName": "Cave Deep Mud",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Dirt",
+                "imageName": "Cave Dirt",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Monster",
+                "imageName": "Cave Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Chest",
+                "imageName": "Cave Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water",
+                "imageName": "Water",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Ladder",
+                "imageName": "Cave Ladder",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Big Rock",
+                "imageName": "Big Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Rock",
+                "imageName": "Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Mushroom",
+                "imageName": "Cave Mushroom",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Dirt",
+                "imageName": "Cave Dirt",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Monster",
+                "imageName": "Cave Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Dirt",
+                "imageName": "Cave Dirt",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Rock",
+                "imageName": "Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Dirt",
+                "imageName": "Cave Dirt",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Deep Mud",
+                "imageName": "Cave Deep Mud",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Rock",
+                "imageName": "Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Ladder",
+                "imageName": "Cave Ladder",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water",
+                "imageName": "Water",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Deep Mud",
+                "imageName": "Cave Deep Mud",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Rock",
+                "imageName": "Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Chest",
+                "imageName": "Cave Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Dirt",
+                "imageName": "Cave Dirt",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Rock",
+                "imageName": "Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Mushroom",
+                "imageName": "Cave Mushroom",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Dirt",
+                "imageName": "Cave Dirt",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water",
+                "imageName": "Water",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Monster",
+                "imageName": "Cave Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Mushroom",
+                "imageName": "Cave Mushroom",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Dirt",
+                "imageName": "Cave Dirt",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Rock",
+                "imageName": "Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Big Water",
+                "imageName": "Big Water",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Rock",
+                "imageName": "Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Forest",
+        "wedges": [
+            {
+                "name": "Tall Grass",
+                "imageName": "Tall Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Small Tree",
+                "imageName": "Small Tree",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Monster",
+                "imageName": "Grass Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water",
+                "imageName": "Water",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Cave",
+                "imageName": "Grass Cave",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Big Tree",
+                "imageName": "Big Tree",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Chest",
+                "imageName": "Grass Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Small Tree",
+                "imageName": "Small Tree",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Monster",
+                "imageName": "Grass Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Small Tree",
+                "imageName": "Small Tree",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water",
+                "imageName": "Water",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Big Tree",
+                "imageName": "Big Tree",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Cave",
+                "imageName": "Grass Cave",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water",
+                "imageName": "Water",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Small Tree",
+                "imageName": "Small Tree",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "New Biome",
+                "imageName": "New Biome",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Chest",
+                "imageName": "Grass Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Rock",
+                "imageName": "Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Small Tree",
+                "imageName": "Small Tree",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Big Tree",
+                "imageName": "Big Tree",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Monster",
+                "imageName": "Grass Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Small Tree",
+                "imageName": "Small Tree",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Tall Grass",
+                "imageName": "Tall Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Small Tree",
+                "imageName": "Small Tree",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Desert",
+        "wedges": [
+            {
+                "name": "Desert Deep Sand",
+                "imageName": "Desert Deep Sand",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Sand",
+                "imageName": "Desert Sand",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Monster",
+                "imageName": "Desert Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Chest",
+                "imageName": "Desert Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water",
+                "imageName": "Water",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Cave",
+                "imageName": "Desert Cave",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Big Rock",
+                "imageName": "Big Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Cactus",
+                "imageName": "Desert Cactus",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Big Water",
+                "imageName": "Big Water",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Sand",
+                "imageName": "Desert Sand",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Cactus",
+                "imageName": "Desert Cactus",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Monster",
+                "imageName": "Desert Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Chest",
+                "imageName": "Desert Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Sand",
+                "imageName": "Desert Sand",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Deep Sand",
+                "imageName": "Desert Deep Sand",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Sand",
+                "imageName": "Desert Sand",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Cave",
+                "imageName": "Desert Cave",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water",
+                "imageName": "Water",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Deep Sand",
+                "imageName": "Desert Deep Sand",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "New Biome",
+                "imageName": "New Biome",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Chest",
+                "imageName": "Desert Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Sand",
+                "imageName": "Desert Sand",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Rock",
+                "imageName": "Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Cactus",
+                "imageName": "Desert Cactus",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Sand",
+                "imageName": "Desert Sand",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Cactus",
+                "imageName": "Desert Cactus",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Monster",
+                "imageName": "Desert Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Cactus",
+                "imageName": "Desert Cactus",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Sand",
+                "imageName": "Desert Sand",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Deep Sand",
+                "imageName": "Desert Deep Sand",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Sand",
+                "imageName": "Desert Sand",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Rock",
+                "imageName": "Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Fight",
+        "wedges": [
+            {
+                "name": "Defend Yourself",
+                "imageName": "Defense Points Zero",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Defend Yourself with a +1 defense points",
+                "imageName": "Defense Points Positive 1",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Defend Yourself with a +2 defense points",
+                "imageName": "Defense Points Positive 2",
+                "info": "Blah",
+                "type": "",
+                "value": 3
+            },
+            {
+                "name": "Defend Yourself with a +3 defense points",
+                "imageName": "Defense Points Positive 3",
+                "info": "Blah",
+                "type": "",
+                "value": 3
+            },
+            {
+                "name": "Defend Yourself with a +4 defense points",
+                "imageName": "Defense Points Positive 4",
+                "info": "Blah",
+                "type": "",
+                "value": 4
+            },
+            {
+                "name": "Defend Yourself with a -1 defense points",
+                "imageName": "Defense Points Negative 1",
+                "info": "Blah",
+                "type": "",
+                "value": -1
+            },
+            {
+                "name": "Defend Yourself with a -2 defense points",
+                "imageName": "Defense Points Negative 2",
+                "info": "Blah",
+                "type": "",
+                "value": -2
+            },
+            {
+                "name": "Defend Yourself with a -3 defense points",
+                "imageName": "Defense Points Negative 3",
+                "info": "Blah",
+                "type": "",
+                "value": -3
+            },
+            {
+                "name": "Attack with a +1 attack points",
+                "imageName": "Attack Points Positive 1",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Attack with a +2 attack points",
+                "imageName": "Attack Points Positive 2",
+                "info": "Blah",
+                "type": "",
+                "value": 2
+            },
+            {
+                "name": "Attack with a +3 attack points",
+                "imageName": "Attack Points Positive 3",
+                "info": "Blah",
+                "type": "",
+                "value": 3
+            },
+            {
+                "name": "Attack with a +4 attack points",
+                "imageName": "Attack Points Positive 4",
+                "info": "Blah",
+                "type": "",
+                "value": 4
+            },
+            {
+                "name": "Attack with a -1 attack points",
+                "imageName": "Attack Points Negative 1",
+                "info": "Blah",
+                "type": "",
+                "value": -1
+            },
+            {
+                "name": "Attack with a -2 attack points",
+                "imageName": "Attack Points Negative 2",
+                "info": "Blah",
+                "type": "",
+                "value": -2
+            },
+            {
+                "name": "Attack with a -3 attack points",
+                "imageName": "Attack Points Negative 3",
+                "info": "Blah",
+                "type": "",
+                "value": -3
+            },
+            {
+                "name": "Attack with a +1 attack points",
+                "imageName": "Attack Points Positive 1",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Attack with a +1 attack points",
+                "imageName": "Attack Points Positive 1",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Temple",
+        "wedges": [
+            {
+                "name": "Cave In",
+                "imageName": "Cave In",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Sand",
+                "imageName": "Desert Sand",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Monster",
+                "imageName": "Desert Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Special Chest",
+                "imageName": "Special Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Pot",
+                "imageName": "Desert Pot",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Ladder",
+                "imageName": "Desert Ladder",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Key",
+                "imageName": "Desert Key",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Sand",
+                "imageName": "Desert Sand",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Special Chest",
+                "imageName": "Special Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Pot",
+                "imageName": "Desert Pot",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Monster",
+                "imageName": "Desert Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Sand",
+                "imageName": "Desert Sand",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Key",
+                "imageName": "Desert Key",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Sand",
+                "imageName": "Desert Sand",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave In",
+                "imageName": "Cave In",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Sand",
+                "imageName": "Desert Sand",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Ladder",
+                "imageName": "Desert Ladder",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Special Chest",
+                "imageName": "Special Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Key",
+                "imageName": "Desert Key",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water",
+                "imageName": "Water",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Special Chest",
+                "imageName": "Special Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Sand",
+                "imageName": "Desert Sand",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Special Chest",
+                "imageName": "Special Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Pot",
+                "imageName": "Desert Pot",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Sand",
+                "imageName": "Desert Sand",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave In",
+                "imageName": "Cave In",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Monster",
+                "imageName": "Desert Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Pot",
+                "imageName": "Desert Pot",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Sand",
+                "imageName": "Desert Sand",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave In",
+                "imageName": "Cave In",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Sand",
+                "imageName": "Desert Sand",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Key",
+                "imageName": "Desert Key",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Mountain",
+        "wedges": [
+            {
+                "name": "Rock",
+                "imageName": "Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow",
+                "imageName": "Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Small Pine",
+                "imageName": "Small Pine",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Monster",
+                "imageName": "Grass Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water",
+                "imageName": "Water",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Cave",
+                "imageName": "Grass Cave",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Big Pine Tree",
+                "imageName": "Big Pine Tree",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Chest",
+                "imageName": "Grass Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Big Rock",
+                "imageName": "Big Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Monster",
+                "imageName": "Grass Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow Rock",
+                "imageName": "Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Big Snow Rock",
+                "imageName": "Big Snow Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Rock",
+                "imageName": "Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Cave",
+                "imageName": "Grass Cave",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water",
+                "imageName": "Water",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Rock",
+                "imageName": "Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "New Biome",
+                "imageName": "New Biome",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Cave",
+                "imageName": "Grass Cave",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow",
+                "imageName": "Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow Rock",
+                "imageName": "Snow Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Small Pine",
+                "imageName": "Small Pine",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Small Pine",
+                "imageName": "Small Pine",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Monster",
+                "imageName": "Grass Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Small Pine",
+                "imageName": "Small Pine",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Monster",
+                "imageName": "Grass Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Short Grass",
+                "imageName": "Short Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Mine",
+        "wedges": [
+            {
+                "name": "Mine Rail NS",
+                "imageName": "Mine Rail NS",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Mine Rail NS",
+                "imageName": "Mine Rail NS",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Big Purple Crystal",
+                "imageName": "Big Purple Crystal",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave In",
+                "imageName": "Cave In",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Mine Rail EW",
+                "imageName": "Mine Rail EW",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Mine Monster",
+                "imageName": "Mine Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Mine Chest",
+                "imageName": "Mine Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water",
+                "imageName": "Water",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Mine Ladder",
+                "imageName": "Mine Ladder",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Big Rock",
+                "imageName": "Big Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Rock",
+                "imageName": "Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Purple Crystal",
+                "imageName": "Purple Crystal",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Mine Rail EW",
+                "imageName": "Mine Rail EW",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Mine Monster",
+                "imageName": "Mine Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Mine Rail NS",
+                "imageName": "Mine Rail NS",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Rock",
+                "imageName": "Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Mine Rail EW",
+                "imageName": "Mine Rail EW",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave In",
+                "imageName": "Cave In",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Mine Rail NS",
+                "imageName": "Mine Rail NS",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Mine Ladder",
+                "imageName": "Mine Ladder",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Mine Chest",
+                "imageName": "Mine Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave In",
+                "imageName": "Cave In",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "New Biome",
+                "imageName": "New Biome",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Mine Chest",
+                "imageName": "Mine Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Mine Rail EW",
+                "imageName": "Mine Rail EW",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Rock",
+                "imageName": "Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Big Purple Crystal",
+                "imageName": "Big Purple Crystal",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Mine Rail NS",
+                "imageName": "Mine Rail NS",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave In",
+                "imageName": "Cave In",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Mine Monster",
+                "imageName": "Mine Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Purple Crystal",
+                "imageName": "Purple Crystal",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Mine Rail EW",
+                "imageName": "Mine Rail EW",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave In",
+                "imageName": "Cave In",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Tundra",
+        "wedges": [
+            {
+                "name": "Big Pine Tree",
+                "imageName": "Big Pine Tree",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Deep Snow",
+                "imageName": "Deep Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow",
+                "imageName": "Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow Monster",
+                "imageName": "Snow Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow Chest",
+                "imageName": "Snow Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Ice",
+                "imageName": "Ice",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow Cave",
+                "imageName": "Snow Cave",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Big Snow Rock",
+                "imageName": "Big Snow Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow Rock",
+                "imageName": "Snow Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Small Pine",
+                "imageName": "Small Pine",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow",
+                "imageName": "Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow Monster",
+                "imageName": "Snow Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow",
+                "imageName": "Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Ice",
+                "imageName": "Ice",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow",
+                "imageName": "Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Deep Snow",
+                "imageName": "Deep Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow",
+                "imageName": "Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow Cave",
+                "imageName": "Snow Cave",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow Chest",
+                "imageName": "Snow Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Deep Snow",
+                "imageName": "Deep Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "New Biome",
+                "imageName": "New Biome",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow Chest",
+                "imageName": "Snow Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow",
+                "imageName": "Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Deep Snow",
+                "imageName": "Deep Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow Monster",
+                "imageName": "Snow Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Small Pine",
+                "imageName": "Small Pine",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow",
+                "imageName": "Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Deep Snow",
+                "imageName": "Deep Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow",
+                "imageName": "Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Ice Cave",
+        "wedges": [
+            {
+                "name": "Big Blue Crystal",
+                "imageName": "Big Blue Crystal",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Deep Snow",
+                "imageName": "Deep Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow",
+                "imageName": "Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow Monster",
+                "imageName": "Snow Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow Chest",
+                "imageName": "Snow Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Ice",
+                "imageName": "Ice",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow Ladder",
+                "imageName": "Snow Ladder",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Big Ice Rock",
+                "imageName": "Big Ice Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Ice Rock",
+                "imageName": "Ice Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Blue Crystal",
+                "imageName": "Blue Crystal",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow",
+                "imageName": "Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow Monster",
+                "imageName": "Snow Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow",
+                "imageName": "Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Ice",
+                "imageName": "Ice",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow",
+                "imageName": "Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Deep Snow",
+                "imageName": "Deep Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow",
+                "imageName": "Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow Ladder",
+                "imageName": "Snow Ladder",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow Chest",
+                "imageName": "Snow Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Deep Snow",
+                "imageName": "Deep Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "New Biome",
+                "imageName": "New Biome",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow Chest",
+                "imageName": "Snow Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow",
+                "imageName": "Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Ice Rock",
+                "imageName": "Ice Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Ice",
+                "imageName": "Ice",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow",
+                "imageName": "Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Deep Snow",
+                "imageName": "Deep Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow Monster",
+                "imageName": "Snow Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Blue Crystal",
+                "imageName": "Blue Crystal",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow",
+                "imageName": "Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Deep Snow",
+                "imageName": "Deep Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Snow",
+                "imageName": "Snow",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Lava",
+        "wedges": [
+            {
+                "name": "Large Fire Tree",
+                "imageName": "Large Fire Tree",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Spiky Rocks",
+                "imageName": "Spiky Rocks",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Burnt Grass",
+                "imageName": "Burnt Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Monster",
+                "imageName": "Lava Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Large Fire Tree",
+                "imageName": "Large Fire Tree",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Chest",
+                "imageName": "Lava Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Small Lava",
+                "imageName": "Small Lava",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Tube",
+                "imageName": "Lava Tube",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Large Lava Rock",
+                "imageName": "Large Lava Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Rock",
+                "imageName": "Lava Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Fire Tree",
+                "imageName": "Fire Tree",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Burnt Grass",
+                "imageName": "Burnt Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Monster",
+                "imageName": "Lava Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Burnt Grass",
+                "imageName": "Burnt Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Small Lava",
+                "imageName": "Small Lava",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Burnt Grass",
+                "imageName": "Burnt Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Spiky Rocks",
+                "imageName": "Spiky Rocks",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Burnt Grass",
+                "imageName": "Burnt Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Ladder",
+                "imageName": "Lava Ladder",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Chest",
+                "imageName": "Lava Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Spiky Rocks",
+                "imageName": "Spiky Rocks",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "New Biome",
+                "imageName": "New Biome",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Chest",
+                "imageName": "Lava Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Burnt Grass",
+                "imageName": "Burnt Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Rock",
+                "imageName": "Lava Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Small Lava",
+                "imageName": "Small Lava",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Burnt Grass",
+                "imageName": "Burnt Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Spiky Rocks",
+                "imageName": "Spiky Rocks",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Monster",
+                "imageName": "Lava Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Fire Tree",
+                "imageName": "Fire Tree",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Burnt Grass",
+                "imageName": "Burnt Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Spiky Rocks",
+                "imageName": "Spiky Rocks",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Burnt Grass",
+                "imageName": "Burnt Grass",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Lava Cave",
+        "wedges": [
+            {
+                "name": "Large Violet Crystal",
+                "imageName": "Large Violet Crystal",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Spiky Rocks",
+                "imageName": "Lava Cave Spiky Rocks",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Floor",
+                "imageName": "Lava Cave Floor",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Monster",
+                "imageName": "Lava Cave Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Chest",
+                "imageName": "Lava Cave Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Small Lava",
+                "imageName": "Small Lava",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Ladder",
+                "imageName": "Lava Cave Ladder",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Large Lava Rock",
+                "imageName": "Large Lava Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Rock",
+                "imageName": "Lava Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Purple Crystal",
+                "imageName": "Purple Crystal",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Floor",
+                "imageName": "Lava Cave Floor",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Monster",
+                "imageName": "Lava Cave Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Floor",
+                "imageName": "Lava Cave Floor",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Small Lava",
+                "imageName": "Small Lava",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Floor",
+                "imageName": "Lava Cave Floor",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Spiky Rocks",
+                "imageName": "Lava Cave Spiky Rocks",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Floor",
+                "imageName": "Lava Cave Floor",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Ladder",
+                "imageName": "Lava Cave Ladder",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Chest",
+                "imageName": "Lava Cave Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Spiky Rocks",
+                "imageName": "Lava Cave Spiky Rocks",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "New Biome",
+                "imageName": "New Biome",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Chest",
+                "imageName": "Lava Cave Chest",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Floor",
+                "imageName": "Lava Cave Floor",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Rock",
+                "imageName": "Lava Rock",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Small Lava",
+                "imageName": "Small Lava",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Floor",
+                "imageName": "Lava Cave Floor",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Spiky Rocks",
+                "imageName": "Lava Cave Spiky Rocks",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Monster",
+                "imageName": "Lava Cave Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Monster",
+                "imageName": "Lava Cave Monster",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Purple Crystal",
+                "imageName": "Purple Crystal",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Floor",
+                "imageName": "Lava Cave Floor",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Spiky Rocks",
+                "imageName": "Lava Cave Spiky Rocks",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Lava Cave Floor",
+                "imageName": "Lava Cave Floor",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Adventure Loot",
+        "wedges": [
+            {
+                "name": "Zero",
+                "imageName": "Zero",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "One",
+                "imageName": "One",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Two",
+                "imageName": "Two",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Three",
+                "imageName": "Three",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Loot",
+        "wedges": [
+            {
+                "name": "Zero",
+                "imageName": "Zero",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "One",
+                "imageName": "One",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Two",
+                "imageName": "Two",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Three",
+                "imageName": "Three",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Grasslands Loot",
+        "wedges": [
+            {
+                "name": "Grass Armor",
+                "imageName": "Grass Armor",
+                "info": "Fight Monster Heart 1",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Coin",
+                "imageName": "Grass Coin",
+                "info": "Collectible! Collect em all!",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Map Fragment",
+                "imageName": "Map Fragment",
+                "info": "Collect all 4, find burried treasure (4 coins)",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Hatchet",
+                "imageName": "Hatchet",
+                "info": "Single use, chops down a regular tree",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Potion",
+                "imageName": "Grass Potion",
+                "info": "Tastes terrible, but restores one heart",
+                "type": "",
+                "value": -1
+            },
+            {
+                "name": "Genie Bottle",
+                "imageName": "Genie Bottle",
+                "info": "Three wishes to change any map tile",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pickaxe",
+                "imageName": "Pickaxe",
+                "info": "Single use, breaks up a regular rock",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Coin",
+                "imageName": "Grass Coin",
+                "info": "Collectible! Collect em all!",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Camping Gear",
+                "imageName": "Camping Gear",
+                "info": "Flint, steel, oil stove, tent, and blanket",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Hatchet",
+                "imageName": "Hatchet",
+                "info": "Single use, chops down a regular tree",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Potion",
+                "imageName": "Grass Potion",
+                "info": "Tastes terrible, but restores one heart",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Sword",
+                "imageName": "Grass Sword",
+                "info": "Fight Win Heart 1",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pickaxe",
+                "imageName": "Pickaxe",
+                "info": "Single use, breaks up a regular rock",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Coin",
+                "imageName": "Grass Coin",
+                "info": "Collectible! Collect em all!",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Hatchet",
+                "imageName": "Hatchet",
+                "info": "Single use, chops down a regular tree",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Potion",
+                "imageName": "Grass Potion",
+                "info": "Tastes terrible, but restores one heart",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pickaxe",
+                "imageName": "Pickaxe",
+                "info": "Single use, breaks up a regular rock",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pet Mouse",
+                "imageName": "Pet Mouse",
+                "info": "Such a cute little mousie! In your pocket",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Wand",
+                "imageName": "Grass Wand",
+                "info": "Intricately twisted grasses, unknown magic.",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pickaxe",
+                "imageName": "Pickaxe",
+                "info": "Single use, breaks up a regular rock",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Shrinking Spell",
+                "imageName": "Shrinking Spell",
+                "info": "Single use, shrinks monster to 1-heart foe.",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Cave Loot",
+        "wedges": [
+            {
+                "name": "Bone Club",
+                "imageName": "Bone Club",
+                "info": "Fight Win Heart 1",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Coin",
+                "imageName": "Cave Coin",
+                "info": "Collectible! Collect em all!",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Map Fragment",
+                "imageName": "Map Fragment",
+                "info": "Collect all 4, find burried treasure (4 coins)",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Oily Torch",
+                "imageName": "Oily Torch",
+                "info": "Use once, take one less damage in fight",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Potion",
+                "imageName": "Grass Potion",
+                "info": "Tastes terrible, but restores one heart",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Genie Bottle",
+                "imageName": "Genie Bottle",
+                "info": "Three wishes to change any map tile",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pickaxe",
+                "imageName": "Pickaxe",
+                "info": "Single use, breaks up a regular rock",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Coin",
+                "imageName": "Cave Coin",
+                "info": "Collectible! Collect em all!",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Camping Gear",
+                "imageName": "Camping Gear",
+                "info": "Flint, steel, oil stove, tent, and blanket",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Oily Torch",
+                "imageName": "Oily Torch",
+                "info": "Use once, take one less damage in fight",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Potion",
+                "imageName": "Grass Potion",
+                "info": "Tastes terrible, but restores one heart",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Wood Shield",
+                "imageName": "Wood Shield",
+                "info": "Fight Win Heart 1",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pickaxe",
+                "imageName": "Pickaxe",
+                "info": "Single use, breaks up a regular rock",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cave Coin",
+                "imageName": "Cave Coin",
+                "info": "Collectible! Collect em all!",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Oily Torch",
+                "imageName": "Oily Torch",
+                "info": "Use once, take one less damage in fight",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Potion",
+                "imageName": "Grass Potion",
+                "info": "Tastes terrible, but restores one heart",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pickaxe",
+                "imageName": "Pickaxe",
+                "info": "Single use, breaks up a regular rock",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pet Mouse",
+                "imageName": "Pet Mouse",
+                "info": "Such a cute little mousie! In your pocket",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grass Wand",
+                "imageName": "Grass Wand",
+                "info": "Intricately twisted grasses, unknown magic.",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pickaxe",
+                "imageName": "Pickaxe",
+                "info": "Single use, breaks up a regular rock (x2)",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Shrinking Spell",
+                "imageName": "Shrinking Spell",
+                "info": "Single use, shrinks monster to 1-heart foe.",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Desert Loot",
+        "wedges": [
+            {
+                "name": "Desert Coin",
+                "imageName": "Desert Coin",
+                "info": "Collect all 4, find burried treasure (4 coins)",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water Skin",
+                "imageName": "Water Skin",
+                "info": "Single use, refills your canteen",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Balm",
+                "imageName": "Desert Balm",
+                "info": "Smells of spices. Restore two hearts.",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pickaxe",
+                "imageName": "Pickaxe",
+                "info": "Single use, breaks up a regular rock",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Shamshir",
+                "imageName": "Shamshir",
+                "info": "Fight Win Heart 1",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Genie Bottle",
+                "imageName": "Genie Bottle",
+                "info": "Three wishes to change any map tile",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Dirty Old Toothbrush",
+                "imageName": "Dirty Old Toothbrush",
+                "info": "At least your teeth will be clean!",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Coin",
+                "imageName": "Desert Coin",
+                "info": "Collect all 4, find burried treasure (4 coins)",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water Skin",
+                "imageName": "Water Skin",
+                "info": "Single use, refills your canteen",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Balm",
+                "imageName": "Desert Balm",
+                "info": "Smells of spices. Restore two hearts.",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pickaxe",
+                "imageName": "Pickaxe",
+                "info": "Single use, breaks up a regular rock",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pet Lizard",
+                "imageName": "Pet Lizard",
+                "info": "You found this fellow hiding under a rock",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Thobe",
+                "imageName": "Desert Thobe",
+                "info": "Desert robes protect against the sun",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water Skin",
+                "imageName": "Water Skin",
+                "info": "Single use, refills your canteen",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Balm",
+                "imageName": "Desert Balm",
+                "info": "Smells of spices. Restore two hearts.",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pickaxe",
+                "imageName": "Pickaxe",
+                "info": "Single use, breaks up a regular rock",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cactus Wand",
+                "imageName": "Cactus Wand",
+                "info": "Careful there - this one is spikey",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Balm",
+                "imageName": "Desert Balm",
+                "info": "Smells of spices. Restore two hearts.",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Scarf",
+                "imageName": "Desert Scarf",
+                "info": "",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Map Fragment",
+                "imageName": "Map Fragment",
+                "info": "Collect all 4, find burried treasure (4 coins)",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Shrinking Spell",
+                "imageName": "Shrinking Spell",
+                "info": "Single use, shrinks monster to 1-heart foe.",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Temple Loot",
+        "wedges": [
+            {
+                "name": "Desert Coin",
+                "imageName": "Desert Coin",
+                "info": "Collect all 4, find burried treasure (4 coins)",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water Skin",
+                "imageName": "Water Skin",
+                "info": "Single use, refills your canteen",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Oily Torch",
+                "imageName": "Oily Torch",
+                "info": "Use once, take one less damage in fight",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pickaxe",
+                "imageName": "Pickaxe",
+                "info": "Single use, breaks up a regular rock",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Genie Bottle",
+                "imageName": "Genie Bottle",
+                "info": "Three wishes to change any map tile",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Dirty Old Toothbrush",
+                "imageName": "Dirty Old Toothbrush",
+                "info": "At least your teeth will be clean!",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Coin",
+                "imageName": "Desert Coin",
+                "info": "Collect all 4, find burried treasure (4 coins)",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water Skin",
+                "imageName": "Water Skin",
+                "info": "Single use, refills your canteen",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Oily Torch",
+                "imageName": "Oily Torch",
+                "info": "Use once, take one less damage in fight",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pickaxe",
+                "imageName": "Pickaxe",
+                "info": "Single use, breaks up a regular rock",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pet Lizard",
+                "imageName": "Pet Lizard",
+                "info": "You found this fellow hiding under a rock",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Thobe",
+                "imageName": "Desert Thobe",
+                "info": "Desert robes protect against the sun",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water Skin",
+                "imageName": "Water Skin",
+                "info": "Single use, refills your canteen",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Desert Balm",
+                "imageName": "Desert Balm",
+                "info": "Smells of spices. Restore two hearts.",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pickaxe",
+                "imageName": "Pickaxe",
+                "info": "Single use, breaks up a regular rock",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Cactus Wand",
+                "imageName": "Cactus Wand",
+                "info": "Careful there - this one is spikey",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Oily Torch",
+                "imageName": "Oily Torch",
+                "info": "Use once, take one less damage in fight.",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Map Fragment",
+                "imageName": "Map Fragment",
+                "info": "Collect all 4, find burried treasure (4 coins)",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Shrinking Spell",
+                "imageName": "Shrinking Spell",
+                "info": "Single use, shrinks monster to 1-heart foe.",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pickaxe",
+                "imageName": "Pickaxe",
+                "info": "Single use, breaks up a regular rock",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Mountain Loot",
+        "wedges": [
+            {
+                "name": "Scorpion Stinger Club",
+                "imageName": "Scorpion Stinger Club",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pet Stone Golem",
+                "imageName": "Pet Stone Golem",
+                "info": "Like the big one, but little! In your pocket",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Dynamite",
+                "imageName": "Dynamite",
+                "info": "Single use, explodes a big tree or rock (x2)",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Mountain Coin",
+                "imageName": "Mountain Coin",
+                "info": "Collect all 4, find burried treasure (4 coins)",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water Skin",
+                "imageName": "Water Skin",
+                "info": "Single use, refills your canteen",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "First Aid Kit",
+                "imageName": "First Aid Kit",
+                "info": "Bandages etc, restore three hearts",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pickaxe",
+                "imageName": "Pickaxe",
+                "info": "Single use, breaks up a regular rock",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Dowsing Rod",
+                "imageName": "Dowsing Rod",
+                "info": "A mining tool to find natural springs, can be used to refill your water skin anywhere.",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Dirty Old Toothbrush",
+                "imageName": "Dirty Old Toothbrush",
+                "info": "At least your teeth will be clean!",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Mountain Coin",
+                "imageName": "Mountain Coin",
+                "info": "Collect all 4, find burried treasure (4 coins)",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water Skin",
+                "imageName": "Water Skin",
+                "info": "Single use, refills your canteen",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "First Aid Kit",
+                "imageName": "First Aid Kit",
+                "info": "Bandages etc, restore three hearts",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pickaxe",
+                "imageName": "Pickaxe",
+                "info": "Single use, breaks up a regular rock",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Crampons",
+                "imageName": "Crampons",
+                "info": "Foot daggers to help you grip the ice",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Ice Axe",
+                "imageName": "Ice Axe",
+                "info": "A mountaineering axe",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "First Aid Kit",
+                "imageName": "First Aid Kit",
+                "info": "Bandages etc, restore three hearts",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Dynamite",
+                "imageName": "Dynamite",
+                "info": "Single use, breaks up a regular rock (x2)",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Mountain Coin",
+                "imageName": "Mountain Coin",
+                "info": "Collect all 4, find burried treasure (4 coins)",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water Skin",
+                "imageName": "Water Skin",
+                "info": "Single use, refills your canteen",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pickaxe",
+                "imageName": "Pickaxe",
+                "info": "Single use, breaks up a regular rock",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "First Aid Kit",
+                "imageName": "First Aid Kit",
+                "info": "Bandages etc, restore three hearts",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Map Fragment",
+                "imageName": "Map Fragment",
+                "info": "Collect all 4, find burried treasure (4 coins)",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Shrinking Spell",
+                "imageName": "Shrinking Spell",
+                "info": "Single use, shrinks monster to 1-heart foe.",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Pickaxe",
+                "imageName": "Pickaxe",
+                "info": "Single use, breaks up a regular rock",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "First Aid Kit",
+                "imageName": "First Aid Kit",
+                "info": "Bandages etc, restore three hearts",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+    "name": "Mine Loot",
+    "wedges": [
+        {
+            "name": "Badger Claw Knuckledusters",
+            "imageName": "Badger Claw Knuckledusters",
+            "info": "Hairy and dangerous!",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Duergar Dwarf Helmet",
+            "imageName": "Duergar Dwarf Helmet",
+            "info": "Hairy and dangerous!",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Pet Stone Golem",
+            "imageName": "Pet Stone Golem",
+            "info": "Like the big one, but little! In your pocket",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Battle Axe",
+            "imageName": "Battle Axe",
+            "info": "Fight Win Heart 1",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Mountain Coin",
+            "imageName": "Mountain Coin",
+            "info": "Collect all 4, find burried treasure (4 coins)",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Mining Helm",
+            "imageName": "Mining Helm",
+            "info": "Fight Monster Heart 1",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "First Aid Kit",
+            "imageName": "First Aid Kit",
+            "info": "Bandages etc, restore three hearts",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Dynamite",
+            "imageName": "Dynamite",
+            "info": "Single use, breaks up a regular rock (x2)",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Dowsing Rod",
+            "imageName": "Dowsing Rod",
+            "info": "A mining tool to find natural springs, can be used to refill your water skin anywhere.",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Dirty Old Toothbrush",
+            "imageName": "Dirty Old Toothbrush",
+            "info": "At least your teeth will be clean!",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Mountain Coin",
+            "imageName": "Mountain Coin",
+            "info": "Collect all 4, find burried treasure (4 coins)",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Mining Helm",
+            "imageName": "Mining Helm",
+            "info": "Fight Monster Heart 1",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "First Aid Kit",
+            "imageName": "First Aid Kit",
+            "info": "Bandages etc, restore three hearts",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Pickaxe",
+            "imageName": "Pickaxe",
+            "info": "Single use, breaks up a regular rock",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Crampons",
+            "imageName": "Crampons",
+            "info": "Foot daggers to help you grip the ice",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Ice Axe",
+            "imageName": "Ice Axe",
+            "info": "A mountaineering axe",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "First Aid Kit",
+            "imageName": "First Aid Kit",
+            "info": "Bandages etc, restore three hearts",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Plate Armor",
+            "imageName": "Plate Armor",
+            "info": "Fight Monster Heart 1",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Mountain Coin",
+            "imageName": "Mountain Coin",
+            "info": "Collect all 4, find burried treasure (4 coins)",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Mining Helm",
+            "imageName": "Mining Helm",
+            "info": "Fight Monster Heart 1",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Dynamite",
+            "imageName": "Dynamite",
+            "info": "Single use, breaks up a regular rock (x2)",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "First Aid Kit",
+            "imageName": "First Aid Kit",
+            "info": "Bandages etc, restore three hearts",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Map Fragment",
+            "imageName": "Map Fragment",
+            "info": "Collect all 4, find burried treasure (4 coins)",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Shrinking Spell",
+            "imageName": "Shrinking Spell",
+            "info": "Single use, shrinks monster to 1-heart foe.",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "First Aid Kit",
+            "imageName": "First Aid Kit",
+            "info": "Bandages etc, restore three hearts",
+            "type": "",
+            "value": 1
+        }
+    ]
+    },
+    {
+    "name": "Tundra Loot",
+    "wedges": [
+        {
+            "name": "Pet Wooly Snake",
+            "imageName": "Pet Wooly Snake",
+            "info": "When they aren't giant, they are cute :)",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Mittens",
+            "imageName": "Mittens",
+            "info": "They go on your hands silly",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Tundra Coin",
+            "imageName": "Tundra Coin",
+            "info": "Collect all 4, find burried treasure (4 coins)",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Ice Crown",
+            "imageName": "Ice Crown",
+            "info": "You feel like growing a beard and flying.",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Tundra Potion",
+            "imageName": "Tundra Potion",
+            "info": "Fight Monster Heart 1",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Pickaxe",
+            "imageName": "Pickaxe",
+            "info": "Single use, breaks up a regular rock",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Tundra Coin",
+            "imageName": "Tundra Coin",
+            "info": "Collect all 4, find burried treasure (4 coins)",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Ice Axe",
+            "imageName": "Ice Axe",
+            "info": "A mountaineering axe",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Tundra Potion",
+            "imageName": "Tundra Potion",
+            "info": "Fight Monster Heart 1",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Pickaxe",
+            "imageName": "Pickaxe",
+            "info": "Single use, breaks up a regular rock",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Crampons",
+            "imageName": "Crampons",
+            "info": "Foot daggers to help you grip the ice",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Snowsuit",
+            "imageName": "Snowsuit",
+            "info": "Warm and comfy, like snow pajamas",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Tundra Potion",
+            "imageName": "Tundra Potion",
+            "info": "Fight Monster Heart 1",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Tundra Coin",
+            "imageName": "Tundra Coin",
+            "info": "Collect all 4, find burried treasure (4 coins)",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Pickaxe",
+            "imageName": "Pickaxe",
+            "info": "Single use, breaks up a regular rock ",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Bathrobe",
+            "imageName": "Bathrobe",
+            "info": "Who left a bathrobe out here in the wild?",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Tundra Potion",
+            "imageName": "Tundra Potion",
+            "info": "Fight Monster Heart 1",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Ice Ointment",
+            "imageName": "Ice Potion",
+            "info": "+3 Hearts but may be just a cream",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Snowshoes",
+            "imageName": "Snowshoes",
+            "info": "Shoes, but for walking on snow",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Pickaxe",
+            "imageName": "Pickaxe",
+            "info": "Single use, breaks up a regular rock ",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Snowsuit",
+            "imageName": "Snowsuit",
+            "info": "Warm and comfy, like snow pajamas",
+            "type": "",
+            "value": 1
+        }
+    ]
+    },
+    {
+    "name": "Ice Cave Loot",
+    "wedges": [
+        {
+            "name": "Pet Wooly Snake",
+            "imageName": "Pet Wooly Snake",
+            "info": "When they aren't giant, they are cute :)",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Mittens",
+            "imageName": "Mittens",
+            "info": "They go on your hands silly",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Ice Coin",
+            "imageName": "Ice Coin",
+            "info": "Collect all 4, find burried treasure (4 coins)",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Ice Crown",
+            "imageName": "Ice Crown",
+            "info": "You feel like growing a beard and flying.",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Tundra Potion",
+            "imageName": "Tundra Potion",
+            "info": "Fight Monster Heart 1",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Pickaxe",
+            "imageName": "Pickaxe",
+            "info": "Single use, breaks up a regular rock",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Ice Coin",
+            "imageName": "Ice Coin",
+            "info": "Collect all 4, find burried treasure (4 coins)",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Ice Axe",
+            "imageName": "Ice Axe",
+            "info": "A mountaineering axe",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Tundra Potion",
+            "imageName": "Tundra Potion",
+            "info": "Fight Monster Heart 1",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Pickaxe",
+            "imageName": "Pickaxe",
+            "info": "Single use, breaks up a regular rock",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Crampons",
+            "imageName": "Crampons",
+            "info": "Foot daggers to help you grip the ice",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Snowsuit",
+            "imageName": "Snowsuit",
+            "info": "Warm and comfy, like snow pajamas",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Tundra Potion",
+            "imageName": "Tundra Potion",
+            "info": "Fight Monster Heart 1",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Ice Coin",
+            "imageName": "Ice Coin",
+            "info": "Collect all 4, find burried treasure (4 coins)",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Pickaxe",
+            "imageName": "Pickaxe",
+            "info": "Single use, breaks up a regular rock ",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Bathrobe",
+            "imageName": "Bathrobe",
+            "info": "Who left a bathrobe out here in the wild?",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Tundra Potion",
+            "imageName": "Tundra Potion",
+            "info": "Fight Monster Heart 1",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Snowshoes",
+            "imageName": "Snowshoes",
+            "info": "Shoes, but for walking on snow",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Pickaxe",
+            "imageName": "Pickaxe",
+            "info": "Single use, breaks up a regular rock ",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Snowsuit",
+            "imageName": "Snowsuit",
+            "info": "Warm and comfy, like snow pajamas",
+            "type": "",
+            "value": 1
+        }
+    ]
+    },
+    {
+    "name": "Lava Loot",
+    "wedges": [
+        {
+            "name": "Lava Potion",
+            "imageName": "Lava Potion",
+            "info": "Maybe not one you should drink",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Pet Fire Fox",
+            "imageName": "Pet Fire Fox",
+            "info": "They are nice if you raise them from a pup",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Rubber Boots",
+            "imageName": "Rubber Boots",
+            "info": "These keep your feel from buring up",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Lava Bucket",
+            "imageName": "Lava Bucket",
+            "info": "Mining away song, this bucket will be handy.",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Lava Coin",
+            "imageName": "Lava Coin",
+            "info": "Collect all 4, find burried treasure (4 coins)",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Cool Pants",
+            "imageName": "Insulated Pants",
+            "info": "Insulated pants to keep your hiney cool.",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Lava Potion",
+            "imageName": "Lava Potion",
+            "info": "Maybe not one you should drink",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Hatchet",
+            "imageName": "Hatchet",
+            "info": "Single use, chops down a regular tree",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Rubber Boots",
+            "imageName": "Rubber Boots",
+            "info": "These keep your feel from buring up",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Dragon Lightning Sword",
+            "imageName": "Dragon Lightning Sword",
+            "info": "This is an awesome +5 weapon.",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Lava Coin",
+            "imageName": "Lava Coin",
+            "info": "Collect all 4, find burried treasure (4 coins)",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Opal",
+            "imageName": "Opal",
+            "info": "Multicolored ore will make you rich",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Heat Goggles",
+            "imageName": "Heat Goggles",
+            "info": "Protects you from fire monster attacks",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Lava Potion",
+            "imageName": "Lava Potion",
+            "info": "Maybe not one you should drink",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Hatchet",
+            "imageName": "Hatchet",
+            "info": "Single use, chops down a regular tree",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Rubber Boots",
+            "imageName": "Rubber Boots",
+            "info": "These keep your feel from buring up",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "The Latest iPhone Phone Phone",
+            "imageName": "The Latest iPhone Phone Phone",
+            "info": "No chargers anywhere though",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Crampons",
+            "imageName": "Crampons",
+            "info": "Foot daggers to help you grip the ice",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Ruby",
+            "imageName": "Ruby",
+            "info": "Blood red, like your gaping wounds",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Lava Potion",
+            "imageName": "Lava Potion",
+            "info": "Maybe not one you should drink",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Lava Coin",
+            "imageName": "Lava Coin",
+            "info": "Collect all 4, find burried treasure (4 coins)",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Hatchet",
+            "imageName": "Hatchet",
+            "info": "Single use, chops down a regular tree",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "The Secret Box of Secrets",
+            "imageName": "Secret Box of Secrets",
+            "info": "What is in the box anyways? It will not open no matter how hard you try. Sometimes it emits strange sounds.",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Rubber Boots",
+            "imageName": "Rubber Boots",
+            "info": "These keep your feel from buring up",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Lava Potion",
+            "imageName": "Lava Potion",
+            "info": "Maybe not one you should drink",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Diamond",
+            "imageName": "Diamond",
+            "info": "Shiny and captivating",
+            "type": "",
+            "value": 1
+        }
+    ]
+    },
+    {
+    "name": "Lava Cave Loot",
+    "wedges": [
+        {
+            "name": "Lava Potion",
+            "imageName": "Lava Potion",
+            "info": "Maybe not one you should drink",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Pet Fire Fox",
+            "imageName": "Pet Fire Fox",
+            "info": "They are nice if you raise them from a pup",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Rubber Boots",
+            "imageName": "Rubber Boots",
+            "info": "These keep your feel from buring up",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Lava Bucket",
+            "imageName": "Lava Bucket",
+            "info": "Mining away song, this bucket will be handy.",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Lava Coin",
+            "imageName": "Lava Coin",
+            "info": "Collect all 4, find burried treasure (4 coins)",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Cool Pants",
+            "imageName": "Insulated Pants",
+            "info": "Insulated pants to keep your hiney cool.",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Lava Potion",
+            "imageName": "Lava Potion",
+            "info": "Maybe not one you should drink",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Hatchet",
+            "imageName": "Hatchet",
+            "info": "Single use, chops down a regular tree",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Rubber Boots",
+            "imageName": "Rubber Boots",
+            "info": "These keep your feel from buring up",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Dragon Lightning Sword",
+            "imageName": "Dragon Lightning Sword",
+            "info": "This is an awesome +5 weapon.",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Lava Coin",
+            "imageName": "Lava Coin",
+            "info": "Collect all 4, find burried treasure (4 coins)",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Opal",
+            "imageName": "Opal",
+            "info": "Multicolored ore will make you rich",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Heat Goggles",
+            "imageName": "Heat Goggles",
+            "info": "Protects you from fire monster attacks",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Lava Potion",
+            "imageName": "Lava Potion",
+            "info": "Maybe not one you should drink",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Hatchet",
+            "imageName": "Hatchet",
+            "info": "Single use, chops down a regular tree",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Rubber Boots",
+            "imageName": "Rubber Boots",
+            "info": "These keep your feel from buring up",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "The Latest iPhone Phone Phone",
+            "imageName": "The Latest iPhone Phone Phone",
+            "info": "No chargers anywhere thoughp",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Crampons",
+            "imageName": "Crampons",
+            "info": "Foot daggers to help you grip the ice",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Ruby",
+            "imageName": "Ruby",
+            "info": "Blood red, like your gaping wounds",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Lava Potion",
+            "imageName": "Lava Potion",
+            "info": "Maybe not one you should drink",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Lava Coin",
+            "imageName": "Lava Coin",
+            "info": "Collect all 4, find burried treasure (4 coins)",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Hatchet",
+            "imageName": "Hatchet",
+            "info": "Single use, chops down a regular tree",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "The Secret Box of Secrets",
+            "imageName": "Secret Box of Secrets",
+            "info": "What is in the box anyways? It will not open no matter how hard you try. Sometimes it emits strange sounds.",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Rubber Boots",
+            "imageName": "Rubber Boots",
+            "info": "These keep your feel from buring up",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Lava Potion",
+            "imageName": "Lava Potion",
+            "info": "Maybe not one you should drink",
+            "type": "",
+            "value": 1
+        },
+        {
+            "name": "Diamond",
+            "imageName": "Diamond",
+            "info": "Shiny and captivating",
+            "type": "",
+            "value": 1
+        }
+    ]
+    },
+    {
+        "name": "Five",
+        "wedges": [
+            {
+                "name": "Zero",
+                "imageName": "Zero",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "One",
+                "imageName": "One",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Two",
+                "imageName": "Two",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Three",
+                "imageName": "Three",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Four",
+                "imageName": "Four",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Five",
+                "imageName": "Five",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Nine",
+        "wedges": [
+            {
+                "name": "Zero",
+                "imageName": "Zero",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "One",
+                "imageName": "One",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Two",
+                "imageName": "Two",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Three",
+                "imageName": "Three",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Four",
+                "imageName": "Four",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Five",
+                "imageName": "Five",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Six",
+                "imageName": "Six",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Seven",
+                "imageName": "Seven",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Eight",
+                "imageName": "Eight",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Nine",
+                "imageName": "Nine",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "New Biome",
+        "wedges": [
+            {
+                "name": "Swamp",
+                "imageName": "Swamp Icon",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Forest",
+                "imageName": "Forest Icon",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Grasslands",
+                "imageName": "Grasslands Icon",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Lines",
+        "wedges": [
+            {
+                "name": "",
+                "imageName": "Diagonal Right",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Diagonal Left",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Diagonal Left",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Diagonal Right",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Diagonal Right",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Diagonal Right",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Diagonal Left",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Diagonal Left",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Diagonal Left",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Diagonal Right",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Diagonal Left",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Diagonal Left",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            }
+        ]
+    },
+        {
+        "name": "Colors",
+        "wedges": [
+            {
+                "name": "",
+                "imageName": "Red",
+                "info": "Color #ce465d",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Orange",
+                "info": "Color #e16b40",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Yellow",
+                "info": "Color #fdf453",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Yellow Green",
+                "info": "Color #87be55",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Green",
+                "info": "Color #508d5d",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Blue Green",
+                "info": "Color #71c6a5",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Blue",
+                "info": "Color #477b73",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Blue Violet",
+                "info": "Color #436fb6",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Violet",
+                "info": "Color #605ca6",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Mauve",
+                "info": "Color #967d99",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Raspberry",
+                "info": "Color #904a6a",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Pink",
+                "info": "Color #db99c6",
+                "type": "",
+                "value": 1
+            }
+        ]
+        },
+        {
+        "name": "Dark Greens",
+        "wedges": [
+            {
+                "name": "",
+                "imageName": "Teal",
+                "info": "Color #477b73",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Green Blue",
+                "info": "Color #508e95",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Pine Green",
+                "info": "Color #4a8369",
+                "type": "",
+                "value": 1
+            }
+        ]
+        },
+        {
+        "name": "Dark Blue",
+        "wedges": [
+            {
+                "name": "",
+                "imageName": "Blue",
+                "info": "Color #3d57d5",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Light Blue",
+                "info": "Color #4f76db",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Cerulean",
+                "info": "Color #5c8ccf",
+                "type": "",
+                "value": 1
+            }
+        ]
+        },
+        {
+        "name": "Dark Brown",
+        "wedges": [
+            {
+                "name": "",
+                "imageName": "Brown",
+                "info": "Color #6f5756",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Tan",
+                "info": "Color #b78b6f",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Light Brown",
+                "info": "Color #9b6d5f",
+                "type": "",
+                "value": 1
+            }
+        ]
+        },
+        {
+        "name": "Biege",
+        "wedges": [
+            {
+                "name": "",
+                "imageName": "Taupe",
+                "info": "Color #a89789",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Peach",
+                "info": "Color #e7c9a6",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Sand",
+                "info": "Color #dbc8ae",
+                "type": "",
+                "value": 1
+            }
+        ]
+        },
+        {
+        "name": "Pink",
+        "wedges": [
+            {
+                "name": "",
+                "imageName": "Pink",
+                "info": "Color #db99c6",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Salmon",
+                "info": "Color #df99a3",
+                "type": "",
+                "value": 1
+            }
+        ]
+        },
+        {
+        "name": "Yellow",
+        "wedges": [
+            {
+                "name": "",
+                "imageName": "Yellow",
+                "info": "Color #fdf453",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Golden Yellow",
+                "info": "Color #f9e73d",
+                "type": "",
+                "value": 1
+            }
+        ]
+        },
+        {
+        "name": "Black",
+        "wedges": [
+            {
+                "name": "",
+                "imageName": "Black",
+                "info": "Color #49434c",
+                "type": "",
+                "value": 1
+            }
+        ]
+        },
+        {
+        "name": "Artifacts",
+        "wedges": [
+            {
+                "name": "",
+                "imageName": "Right Diagonal",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Left Diagonal",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Double Horizontal Lines",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Double Vertical Lines",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Double Right Diagonals",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Double Left Diagonals",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Vertical Center Line",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Horizontal Centered Line",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Large Centered Circle",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "",
+                "imageName": "Small Centered Circle",
+                "info": "Blah",
+                "type": "",
+                "value": 1
+            }
+        ]
+    }
+]

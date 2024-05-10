@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22203.2" systemVersion="23F5074a" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="AdventureEntity" representedClassName="AdventureEntity" syncable="YES">
+        <attribute name="idW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="packDateW" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="packIdW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="packNameW" optional="YES" attributeType="String"/>
+        <attribute name="thumbnailW" optional="YES" attributeType="Binary"/>
+    </entity>
+    <entity name="ArticleEntity" representedClassName="ArticleEntity" syncable="YES">
+        <attribute name="categoryW" optional="YES" attributeType="String"/>
+        <attribute name="collected" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="idW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="infoW" optional="YES" attributeType="String"/>
+        <attribute name="nameW" optional="YES" attributeType="String"/>
+        <attribute name="on" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="packIdW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="permanent" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="typeW" optional="YES" attributeType="String"/>
+        <attribute name="valueW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="packW" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PackEntity" inverseName="articlesW" inverseEntity="PackEntity"/>
+    </entity>
+    <entity name="CanvasEntity" representedClassName="CanvasEntity" syncable="YES">
+        <attribute name="dataW" optional="YES" attributeType="Binary"/>
+        <attribute name="idW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="landIdW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="toolColorW" optional="YES" attributeType="Transformable" valueTransformerName="" customClassName="UIColor"/>
+        <attribute name="toolTypeW" optional="YES" attributeType="String"/>
+        <attribute name="toolWidthW" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" customClassName="CGFloat"/>
+        <relationship name="scribbleW" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ScribbleEntity" inverseName="canvasW" inverseEntity="ScribbleEntity"/>
+    </entity>
+    <entity name="DuelEntity" representedClassName="DuelEntity" syncable="YES">
+        <attribute name="characterHeartsW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="enemyHeartsW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="fightNameW" optional="YES" attributeType="String"/>
+        <attribute name="idW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="landIdW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="showDuelView" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="landW" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LandEntity" inverseName="duelW" inverseEntity="LandEntity"/>
+    </entity>
+    <entity name="FightEntity" representedClassName="FightEntity" syncable="YES">
+        <attribute name="articleW" optional="YES" attributeType="String"/>
+        <attribute name="attackPointsW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="countW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="defensePointsW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="idW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="infoW" optional="YES" attributeType="String"/>
+        <attribute name="isDead" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="landIdW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="levelW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="nameW" optional="YES" attributeType="String"/>
+        <attribute name="nextFightW" optional="YES" attributeType="String"/>
+        <attribute name="on" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="showDefeatedView" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="showDuelView" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="showSpinForLootView" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="landW" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LandEntity" inverseName="fightsW" inverseEntity="LandEntity"/>
+    </entity>
+    <entity name="GoalEntity" representedClassName="GoalEntity" syncable="YES">
+        <attribute name="currentLandW" optional="YES" attributeType="String"/>
+        <attribute name="idW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="nameW" optional="YES" attributeType="String"/>
+        <attribute name="on" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="packIdW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="landW" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LandEntity" inverseName="goalsW" inverseEntity="LandEntity"/>
+    </entity>
+    <entity name="HeartsEntity" representedClassName="HeartsEntity" syncable="YES">
+        <attribute name="countW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="idW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="onW" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="packIdW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="tempCountW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="packW" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PackEntity" inverseName="heartsW" inverseEntity="PackEntity"/>
+    </entity>
+    <entity name="InfoEntity" representedClassName="InfoEntity" syncable="YES">
+        <attribute name="allLevelsW" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="armorNameW" optional="YES" attributeType="String"/>
+        <attribute name="armorValueW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="attackPointsW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="defensePointsW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="helmNameW" optional="YES" attributeType="String"/>
+        <attribute name="helmValueW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="idW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="levelW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="packIdW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="shieldNameW" optional="YES" attributeType="String"/>
+        <attribute name="shieldValueW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="weaponNameW" optional="YES" attributeType="String"/>
+        <attribute name="weaponValueW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="packW" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PackEntity" inverseName="infoW" inverseEntity="PackEntity"/>
+    </entity>
+    <entity name="LandEntity" representedClassName=".LandEntity" syncable="YES">
+        <attribute name="afterLandW" optional="YES" attributeType="String"/>
+        <attribute name="alertTypeW" optional="YES" attributeType="String"/>
+        <attribute name="autoPlaceNamesW" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="currentArticlesW" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="currentFightW" optional="YES" attributeType="String"/>
+        <attribute name="currentMapW" optional="YES" attributeType="String"/>
+        <attribute name="currentTabSpun" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="currentTabW" optional="YES" attributeType="String"/>
+        <attribute name="fightHeadingW" optional="YES" attributeType="String"/>
+        <attribute name="idW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isBackpack" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isFight" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="nameW" optional="YES" attributeType="String"/>
+        <attribute name="overlayTabNameW" optional="YES" attributeType="String"/>
+        <attribute name="overlayTempViewW" optional="YES" attributeType="String"/>
+        <attribute name="packIdW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="previousFightW" optional="YES" attributeType="String"/>
+        <attribute name="priorLandW" optional="YES" attributeType="String"/>
+        <attribute name="questPagesW" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="readInfo" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="scribbleIdW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="spinForLootOn" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="spinnerBackgroundW" optional="YES" attributeType="String"/>
+        <attribute name="tabIdW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="duelW" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DuelEntity" inverseName="landW" inverseEntity="DuelEntity"/>
+        <relationship name="fightsW" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="FightEntity" inverseName="landW" inverseEntity="FightEntity"/>
+        <relationship name="goalsW" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="GoalEntity" inverseName="landW" inverseEntity="GoalEntity"/>
+        <relationship name="packW" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PackEntity" inverseName="landsW" inverseEntity="PackEntity"/>
+        <relationship name="scribbleW" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ScribbleEntity" inverseName="landW" inverseEntity="ScribbleEntity"/>
+        <relationship name="spinnersW" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SpinnerEntity" inverseName="landW" inverseEntity="SpinnerEntity"/>
+        <relationship name="tabW" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="TabEntity" inverseName="landW" inverseEntity="TabEntity"/>
+    </entity>
+    <entity name="LevelEntity" representedClassName="LevelEntity" syncable="YES">
+        <attribute name="idW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="nameW" optional="YES" attributeType="String"/>
+        <attribute name="on" optional="YES" attributeType="Boolean" valueTransformerName="NSSecureUnarchiveFromData" usesScalarValueType="YES"/>
+        <attribute name="packIdW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="packW" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PackEntity" inverseName="levelsW" inverseEntity="PackEntity"/>
+    </entity>
+    <entity name="LifeEntity" representedClassName="LifeEntity" syncable="YES">
+        <attribute name="heartCountW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="heartW" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="idW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="packIdW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="waterCountW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="waterW" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <relationship name="packW" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PackEntity" inverseName="lifeW" inverseEntity="PackEntity"/>
+    </entity>
+    <entity name="NavigateEntity" representedClassName="NavigateEntity" syncable="YES">
+        <attribute name="idW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="menuSelectionW" optional="YES" attributeType="String"/>
+        <attribute name="packIdW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="packW" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PackEntity" inverseName="navigateW" inverseEntity="PackEntity"/>
+    </entity>
+    <entity name="PackEntity" representedClassName="PackEntity" syncable="YES">
+        <attribute name="adventureIdW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="currentLandThumbnailW" optional="YES" attributeType="Binary"/>
+        <attribute name="currentLandW" optional="YES" attributeType="String"/>
+        <attribute name="dateW" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="helpPagesW" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="idW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isDead" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="nameW" optional="YES" attributeType="String"/>
+        <attribute name="typeW" optional="YES" attributeType="String"/>
+        <relationship name="articlesW" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ArticleEntity" inverseName="packW" inverseEntity="ArticleEntity"/>
+        <relationship name="heartsW" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HeartsEntity" inverseName="packW" inverseEntity="HeartsEntity"/>
+        <relationship name="infoW" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InfoEntity" inverseName="packW" inverseEntity="InfoEntity"/>
+        <relationship name="landsW" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="LandEntity" inverseName="packW" inverseEntity="LandEntity"/>
+        <relationship name="levelsW" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="LevelEntity" inverseName="packW" inverseEntity="LevelEntity"/>
+        <relationship name="lifeW" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="LifeEntity" inverseName="packW" inverseEntity="LifeEntity"/>
+        <relationship name="navigateW" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NavigateEntity" inverseName="packW" inverseEntity="NavigateEntity"/>
+        <relationship name="settingsW" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SettingsEntity" inverseName="packW" inverseEntity="SettingsEntity"/>
+        <relationship name="toolsW" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ToolEntity" inverseName="packW" inverseEntity="ToolEntity"/>
+        <relationship name="waterW" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WaterEntity" inverseName="packW" inverseEntity="WaterEntity"/>
+    </entity>
+    <entity name="ScribbleEntity" representedClassName="ScribbleEntity" syncable="YES">
+        <attribute name="backgroundW" optional="YES" attributeType="String"/>
+        <attribute name="elementsW" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="gridSizeW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="idW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="landIdW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="youAreHereXW" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="youAreHereYW" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="canvasW" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CanvasEntity" inverseName="scribbleW" inverseEntity="CanvasEntity"/>
+        <relationship name="landW" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LandEntity" inverseName="scribbleW" inverseEntity="LandEntity"/>
+    </entity>
+    <entity name="SettingsEntity" representedClassName="SettingsEntity" syncable="YES">
+        <attribute name="autofillW" optional="YES" attributeType="String"/>
+        <attribute name="idW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="packIdW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="showCharacter" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="packW" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PackEntity" inverseName="settingsW" inverseEntity="PackEntity"/>
+    </entity>
+    <entity name="SpinnerEntity" representedClassName="SpinnerEntity" syncable="YES">
+        <attribute name="idW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="landIdW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="nameW" optional="YES" attributeType="String"/>
+        <attribute name="showInfo" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="wedgeAngleW" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="wedgeIndexW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="wedgeInfoW" optional="YES" attributeType="String"/>
+        <attribute name="wedgeNamesW" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="wedgeNameW" optional="YES" attributeType="String"/>
+        <relationship name="landW" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LandEntity" inverseName="spinnersW" inverseEntity="LandEntity"/>
+    </entity>
+    <entity name="TabEntity" representedClassName="TabEntity" syncable="YES">
+        <attribute name="backgroundNameW" optional="YES" attributeType="String"/>
+        <attribute name="idW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="landIdW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="nameW" optional="YES" attributeType="String"/>
+        <attribute name="spinnerImageNamesW" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="spinnerNamesW" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <relationship name="landW" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LandEntity" inverseName="tabW" inverseEntity="LandEntity"/>
+    </entity>
+    <entity name="ToolEntity" representedClassName="ToolEntity" syncable="YES">
+        <attribute name="idW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="infoW" optional="YES" attributeType="String"/>
+        <attribute name="nameW" optional="YES" attributeType="String"/>
+        <attribute name="on" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="packIdW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="pointW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="packW" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PackEntity" inverseName="toolsW" inverseEntity="PackEntity"/>
+    </entity>
+    <entity name="WaterEntity" representedClassName="WaterEntity" syncable="YES">
+        <attribute name="countW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="idW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="onW" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="packIdW" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="tempCountW" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="packW" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PackEntity" inverseName="waterW" inverseEntity="PackEntity"/>
+    </entity>
+</model>
