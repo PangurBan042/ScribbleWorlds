@@ -85,7 +85,6 @@
 		7890F2E42BEBD30500A11ED4 /* LandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7890F2CC2BEBD30400A11ED4 /* LandViewModel.swift */; };
 		7890F2E52BEBD30500A11ED4 /* UpdateInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7890F2CD2BEBD30500A11ED4 /* UpdateInfo.swift */; };
 		7890F2E62BEBD30500A11ED4 /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7890F2CE2BEBD30500A11ED4 /* DataViewModel.swift */; };
-		7890F2E72BEBD30500A11ED4 /* UpdateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7890F2CF2BEBD30500A11ED4 /* UpdateManager.swift */; };
 		7890F2E82BEBD30500A11ED4 /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7890F2D02BEBD30500A11ED4 /* ViewManager.swift */; };
 		7890F2EA2BEBD30500A11ED4 /* CanvasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7890F2D22BEBD30500A11ED4 /* CanvasViewModel.swift */; };
 		7890F2EB2BEBD30500A11ED4 /* UpdateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7890F2D32BEBD30500A11ED4 /* UpdateViewModel.swift */; };
@@ -96,7 +95,6 @@
 		7890F2F12BEBD30500A11ED4 /* NavigateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7890F2D92BEBD30500A11ED4 /* NavigateViewModel.swift */; };
 		7890F2F22BEBD30500A11ED4 /* SpinnerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7890F2DA2BEBD30500A11ED4 /* SpinnerViewModel.swift */; };
 		7890F2F32BEBD30500A11ED4 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7890F2DB2BEBD30500A11ED4 /* ArticleViewModel.swift */; };
-		7890F2F42BEBD30500A11ED4 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7890F2DC2BEBD30500A11ED4 /* DataManager.swift */; };
 		7890F34C2BEBD35C00A11ED4 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7890F3432BEBD35C00A11ED4 /* Article.swift */; };
 		7890F34D2BEBD35C00A11ED4 /* Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7890F3442BEBD35C00A11ED4 /* Fight.swift */; };
 		7890F34E2BEBD35C00A11ED4 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7890F3452BEBD35C00A11ED4 /* Goal.swift */; };
@@ -217,7 +215,6 @@
 		7890F2CC2BEBD30400A11ED4 /* LandViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandViewModel.swift; sourceTree = "<group>"; };
 		7890F2CD2BEBD30500A11ED4 /* UpdateInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateInfo.swift; sourceTree = "<group>"; };
 		7890F2CE2BEBD30500A11ED4 /* DataViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewModel.swift; sourceTree = "<group>"; };
-		7890F2CF2BEBD30500A11ED4 /* UpdateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateManager.swift; sourceTree = "<group>"; };
 		7890F2D02BEBD30500A11ED4 /* ViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewManager.swift; path = ScribbleWorlds/ViewModel/ViewManager.swift; sourceTree = SOURCE_ROOT; };
 		7890F2D22BEBD30500A11ED4 /* CanvasViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasViewModel.swift; sourceTree = "<group>"; };
 		7890F2D32BEBD30500A11ED4 /* UpdateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateViewModel.swift; sourceTree = "<group>"; };
@@ -228,7 +225,6 @@
 		7890F2D92BEBD30500A11ED4 /* NavigateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigateViewModel.swift; sourceTree = "<group>"; };
 		7890F2DA2BEBD30500A11ED4 /* SpinnerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerViewModel.swift; sourceTree = "<group>"; };
 		7890F2DB2BEBD30500A11ED4 /* ArticleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
-		7890F2DC2BEBD30500A11ED4 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		7890F3432BEBD35C00A11ED4 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		7890F3442BEBD35C00A11ED4 /* Fight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fight.swift; sourceTree = "<group>"; };
 		7890F3452BEBD35C00A11ED4 /* Goal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
@@ -340,7 +336,6 @@
 				7890F2D02BEBD30500A11ED4 /* ViewManager.swift */,
 				7890F2DB2BEBD30500A11ED4 /* ArticleViewModel.swift */,
 				7890F2D22BEBD30500A11ED4 /* CanvasViewModel.swift */,
-				7890F2DC2BEBD30500A11ED4 /* DataManager.swift */,
 				7890F2CE2BEBD30500A11ED4 /* DataViewModel.swift */,
 				7890F2C52BEBD30400A11ED4 /* DuelViewModel.swift */,
 				7890F2D72BEBD30500A11ED4 /* FightViewModel.swift */,
@@ -356,7 +351,6 @@
 				7890F2DA2BEBD30500A11ED4 /* SpinnerViewModel.swift */,
 				7890F2C92BEBD30400A11ED4 /* TabViewModel.swift */,
 				7890F2CD2BEBD30500A11ED4 /* UpdateInfo.swift */,
-				7890F2CF2BEBD30500A11ED4 /* UpdateManager.swift */,
 				7890F2D32BEBD30500A11ED4 /* UpdateViewModel.swift */,
 			);
 			path = ViewModel;
@@ -697,7 +691,6 @@
 				783C526D2BEE81C00062F12D /* ArticleEntity+CoreDataClass.swift in Sources */,
 				783C52842BEE81C00062F12D /* ToolEntity+CoreDataClass.swift in Sources */,
 				7890F2AA2BEBD29300A11ED4 /* ThirstyView.swift in Sources */,
-				7890F2E72BEBD30500A11ED4 /* UpdateManager.swift in Sources */,
 				783C52882BEE81C00062F12D /* NavigateEntity+CoreDataProperties.swift in Sources */,
 				7890F2A82BEBD29300A11ED4 /* HelpView.swift in Sources */,
 				783C52762BEE81C00062F12D /* ToolEntity+CoreDataProperties.swift in Sources */,
@@ -724,7 +717,6 @@
 				783C52722BEE81C00062F12D /* InfoEntity+CoreDataProperties.swift in Sources */,
 				783C527F2BEE81C00062F12D /* HeartsEntity+CoreDataProperties.swift in Sources */,
 				783C52732BEE81C00062F12D /* SettingsEntity+CoreDataClass.swift in Sources */,
-				7890F2F42BEBD30500A11ED4 /* DataManager.swift in Sources */,
 				783C528C2BEE81C00062F12D /* ScribbleEntity+CoreDataProperties.swift in Sources */,
 				7890F2B72BEBD2A900A11ED4 /* TabsView.swift in Sources */,
 				7890F34D2BEBD35C00A11ED4 /* Fight.swift in Sources */,

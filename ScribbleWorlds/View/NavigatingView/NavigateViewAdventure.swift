@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftUI
+import Spinner
 
 struct NavigateViewAdventure: View {
     
@@ -55,7 +56,6 @@ struct NavigateViewAdventure: View {
         self._shareSnapshot = shareSnapshot
         self._showDrawing = showDrawing
         
-        
        // _lifeViewModel = StateObject(wrappedValue: { LifeViewModel(packId:landViewModel.packId) }())
     }
 
@@ -70,6 +70,7 @@ struct NavigateViewAdventure: View {
                 landViewModel.readInfo = true
                 navigateViewModel.menuSelection = ""
                 currentLand = landViewModel.priorLand
+                
             } label: {
                 Image(systemName: "chevron.left")
                     .foregroundColor(.gray)
@@ -224,14 +225,7 @@ struct NavigateViewAdventure: View {
                         navigateViewModel.menuSelection.contains("Backpack") ||
                         navigateViewModel.menuSelection.contains("Help") {
                         showDrawing = false } else { showDrawing = true }
-                    updateViewModel.updateWedge.toggle()
-                    let _ = print("In NavigateView/HomeIcon")
-                    navigateViewModel.updateData()
-                    takeSnapshot = true
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.2)  {
-                    activeSheet = Optional.none
-                        UIView.setAnimationsEnabled(false)
-                    }
+                        updateViewModel.updateWedge.toggle()
                    
                 } label: {
                     Image("Home Icon")
@@ -246,6 +240,7 @@ struct NavigateViewAdventure: View {
                     landViewModel.readInfo = true
                     navigateViewModel.menuSelection = ""
                     currentLand = landViewModel.afterLand
+                    
                 } label: {
                     Image(systemName: "chevron.right")
                         .foregroundColor(.gray)
@@ -268,6 +263,14 @@ struct NavigateViewAdventure: View {
         .onChange(of:updateViewModel.resetTempOverlay) {
             if navigateViewModel.menuSelection != "" {
                 navigateViewModel.menuSelection = ""
+            }
+        }
+        .onChange(of:updateViewModel.spinnerSavedTakeSnapshot) {
+            takeSnapshot = true
+            let _ = print("In NavigateViewAdventure.... onChangeSnapshot")
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2)  {
+            activeSheet = Optional.none
+                UIView.setAnimationsEnabled(false)
             }
         }
 //        .onBackground {

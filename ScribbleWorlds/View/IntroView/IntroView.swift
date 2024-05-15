@@ -97,7 +97,7 @@ struct IntroView: View, Equatable {
                     AboutView(activeSheet: $activeSheet)
                     
                 case .viewControllerAdventure:
-                    ViewControllerAdventure(activeSheet: $activeSheet, packId:packId, viewManager:viewManager, packViewModel: packViewModel)
+                    ViewControllerAdventure(activeSheet: $activeSheet, viewManager:viewManager, packViewModel: packViewModel)
                     
                 case .viewControllerCreating:
                     EmptyView()

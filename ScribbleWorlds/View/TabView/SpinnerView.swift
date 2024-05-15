@@ -22,7 +22,7 @@ struct SpinnerContainer: View {
     @Binding var updateDuelData: Bool
     @Binding var updateViewModel: UpdateViewModel
     
-    var futureWedge: Wedge = Wedge()
+    @State var futureWedge: Wedge = Wedge()
     @State var wedge: Wedge = Wedge()
     @State var alertTime: DispatchTime = DispatchTime.now()
     @State var spinnerViewModel: SpinnerViewModel = SpinnerViewModel()
@@ -44,7 +44,7 @@ struct SpinnerContainer: View {
             SpinnerViewController(spinnerName: $spinnerName,
                                   spinnerId: $spinnerId,
                                   wedge: wedge,
-                                  futureWedge: futureWedge,
+                                  futureWedge: $futureWedge,
                                   saveData: saveData,
                                   alertType: alertType,
                                   alertTime: $alertTime,
@@ -59,18 +59,16 @@ struct SpinnerContainer: View {
                 tabViewModel.name.contains("Fight") {
                 alertType = tabViewModel.name
             }
-            let _ = print("In Onappear")
             spinnerViewModel.getData(landId:landViewModel.id, name: landViewModel.currentTab)
             spinnerId   = spinnerViewModel.id
             spinnerName = spinnerViewModel.name
             duelViewModel.getData(landId: tabViewModel.landId)
-            
             futureWedge.name  = spinnerViewModel.wedgeName
             futureWedge.index = spinnerViewModel.wedgeIndex
             futureWedge.info  = spinnerViewModel.wedgeInfo
         })
         .onChange(of: "\(tabViewModel.name) + \(tabViewModel.landId)") {
-        
+            let _ = print("")
             //Get old spinnerId
             oldSpinnerManagerId = spinnerViewModel.id
             if isSpinning {
@@ -93,8 +91,9 @@ struct SpinnerContainer: View {
             duelViewModel.getData(landId: tabViewModel.landId)
         }
         .onChange(of:updateViewModel.updateWedge) {
-            let _ = print("In SpinnerContainer/onChange/updateWedge...")
+            oldSpinnerManagerId = spinnerViewModel.id
             saveData()
+            updateViewModel.spinnerSavedTakeSnapshot.toggle()
         }
         
         .onReceive(Just(alertTime)) { alertTime in
@@ -125,7 +124,6 @@ struct SpinnerContainer: View {
             checkSpin(spinnerName: oldSpinnerName)
             oldIsSpinning = false
         }
-        
     }
     
     func checkSpin (spinnerName: String) {
@@ -292,7 +290,6 @@ struct SpinnerView: View {
     
     
     @ObservedObject var viewManager: ViewManager
-   // @ObservedObject var spinnerViewModel: SpinnerViewModel
     @ObservedObject var landViewModel: LandViewModel
     @ObservedObject var articleViewModel: ArticleViewModel
     @ObservedObject var infoViewModel: InfoViewModel
@@ -494,7 +491,8 @@ struct TabAndSpinnerView: View{
             
             HStack (alignment: .center, spacing:0) {
                 
-                SpinnerContainer(viewManager: viewManager,                         tabViewModel: tabViewModel,
+                SpinnerContainer(viewManager: viewManager,
+                                 tabViewModel: tabViewModel,
                                  landViewModel: landViewModel,
                                  articleViewModel: articleViewModel,
                                  heartsViewModel: heartsViewModel,
@@ -538,7 +536,7 @@ struct TabAndSpinnerView: View{
 //    var futureWedge: Wedge = Wedge()
 //    @State var wedge: Wedge = Wedge()
 //    @State var alertTime: DispatchTime = DispatchTime.now()
-//    @State var spinnerViewModel: SpinnerViewModel = SpinnerViewModel()
+//    @State var spinnerViewModel: SpinnerViewModel = ()
 //    @State var duelViewModel: DuelViewModel = DuelViewModel()
 //    @State var alertType: String = ""
 //    @State var spinnerId: UUID = UUID()

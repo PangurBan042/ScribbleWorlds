@@ -9,6 +9,7 @@ import Foundation
 
 public class SpinnerViewModel: ObservableObject {
     
+
     var name:String = ""
     var id = UUID()
     var landId:UUID = UUID()

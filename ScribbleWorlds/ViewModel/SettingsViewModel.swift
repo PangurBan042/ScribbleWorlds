@@ -34,11 +34,4 @@ public class SettingsViewModel: ObservableObject {
             showCharacter = settingsData.showCharacter
     }
     
-//    func updateData() {
-//        CoreDataManager.instance.updateSettings(
-//            packId: packId,
-//            autofill: autofill,
-//            showCharacter: showCharacter)
-//    }
-    
 }

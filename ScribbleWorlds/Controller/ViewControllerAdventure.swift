@@ -14,7 +14,6 @@ import LinkPresentation
 struct ViewControllerAdventure: View {
     
     @Binding var activeSheet: ActiveSheet?
-    var packId: UUID
     @ObservedObject var viewManager:ViewManager
     @ObservedObject var packViewModel: PackViewModel
     @StateObject var canvasViewModel = CanvasViewModel()
@@ -38,7 +37,7 @@ struct ViewControllerAdventure: View {
             
             if  currentLand != "" {
                
-                SpinnerAndCanvasView(activeSheet: $activeSheet,                        packId: packViewModel.id,
+                SpinnerAndCanvasView(activeSheet: $activeSheet,
                                      viewManager: viewManager,
                                      packViewModel: packViewModel,
                                      canvasViewModel: canvasViewModel,
@@ -54,11 +53,11 @@ struct ViewControllerAdventure: View {
                 ZStack {
                     GoalView(viewManager: viewManager,
                              currentLand: $currentLand,
-                             packId: packId)
+                             packId: packViewModel.id)
                     
                     if !readInfo {
                         Rectangle()
-                            .frame(width: UIScreen.main.bounds.width, height: .infinity)
+                           // .frame(width: UIScreen.main.bounds.width, height: .infinity)
                             .foregroundColor(.gray)
                             .opacity(opacityLevel)
                             .ignoresSafeArea()
@@ -72,8 +71,6 @@ struct ViewControllerAdventure: View {
         .border(!shareSnapshot && takeSnapshot  ? .gray : .clear, width: 1)
         .onAppear(perform: {
             UIView.setAnimationsEnabled(true)
-            //why do i need to reload data
-           // packViewModel.getData(packId: packId)
             currentLand = packViewModel.currentLand
             
             
@@ -104,7 +101,7 @@ struct ViewControllerAdventure: View {
             shareImage = postContent()
             let thumbnail = shareImage.preparingThumbnail(of: CGSize(width:UIScreen.main.bounds.width/2, height:UIScreen.main.bounds.width/2))
             let adventureViewModel = AdventureViewModel()
-            adventureViewModel.getData(packId: packId)
+            adventureViewModel.getData(packId: packViewModel.id)
             adventureViewModel.packDate = Date()
             adventureViewModel.thumbnail = thumbnail?.pngData() ?? Data()
             
@@ -222,7 +219,6 @@ extension View {
 struct SpinnerAndCanvasView: View {
     
     @Binding var activeSheet: ActiveSheet?
-    var packId: UUID
     @ObservedObject var viewManager:ViewManager
     @ObservedObject var packViewModel:PackViewModel
     @ObservedObject var canvasViewModel: CanvasViewModel
@@ -238,7 +234,6 @@ struct SpinnerAndCanvasView: View {
     @StateObject var infoViewModel: InfoViewModel
     var dataViewModel = DataViewModel()
     @StateObject var fightViewModel: FightViewModel = FightViewModel()
-   // @StateObject var spinnerViewModel = SpinnerViewModel()
     @StateObject var articleViewModel = ArticleViewModel()
     
     
@@ -247,7 +242,6 @@ struct SpinnerAndCanvasView: View {
     var opacityLevel = 0.6
     
     init(activeSheet: Binding<ActiveSheet?>,
-         packId:UUID,
          viewManager: ViewManager,
          packViewModel: PackViewModel,
          canvasViewModel: CanvasViewModel,
@@ -260,7 +254,6 @@ struct SpinnerAndCanvasView: View {
          showDrawing: Binding<Bool>) {
         
         self._activeSheet = activeSheet
-        self.packId = packId
         self.viewManager = viewManager
         self.packViewModel = packViewModel
         self.canvasViewModel = canvasViewModel
@@ -298,7 +291,6 @@ struct SpinnerAndCanvasView: View {
                         
                         SpinnerView(
                             viewManager: viewManager,
-                        //    spinnerViewModel: spinnerViewModel,
                             landViewModel: landViewModel,
                             articleViewModel: articleViewModel,
                             infoViewModel: infoViewModel,
@@ -323,7 +315,6 @@ struct SpinnerAndCanvasView: View {
                 
                 
                 NavigateAndScribbleView(activeSheet: $activeSheet,
-                                        packId: packId,
                                         viewManager: viewManager,
                                         packViewModel: packViewModel,
                                         landViewModel: landViewModel,
@@ -347,7 +338,7 @@ struct SpinnerAndCanvasView: View {
             }
             .onAppear(perform: {
                 readInfo = landViewModel.readInfo
-                landViewModel.getData(packId: packId, name: currentLand)
+                landViewModel.getData(packId: packViewModel.id, name: currentLand)
                 fightViewModel.getData(landId: landViewModel.id, name: landViewModel.currentFight)
                 canvasViewModel.getData(landId: landViewModel.id)
                 canvasViewModel.updateData()
@@ -360,7 +351,7 @@ struct SpinnerAndCanvasView: View {
                 readInfo = landViewModel.readInfo
                 canvasViewModel.updateData()
                 landViewModel.updateData()
-                landViewModel.getData(packId: packId, name: currentLand)
+                landViewModel.getData(packId: packViewModel.id, name: currentLand)
                 fightViewModel.getData(landId: landViewModel.id, name: landViewModel.currentFight)
                 canvasViewModel.getData(landId: landViewModel.id)
             }
@@ -378,7 +369,6 @@ struct NavigateAndScribbleView: View {
     
     
     @Binding var activeSheet: ActiveSheet?
-    var packId: UUID
     @ObservedObject var viewManager: ViewManager
     @ObservedObject var packViewModel: PackViewModel
     @ObservedObject var landViewModel: LandViewModel
@@ -405,7 +395,6 @@ struct NavigateAndScribbleView: View {
     var opacityLevel = 0.6
     
     init(activeSheet: Binding<ActiveSheet?>,
-         packId:UUID,
          viewManager: ViewManager,
          packViewModel: PackViewModel,
          landViewModel: LandViewModel,
@@ -426,7 +415,6 @@ struct NavigateAndScribbleView: View {
          helpPages: [String]) {
         
         self._activeSheet = activeSheet
-        self.packId = packId
         self.viewManager = viewManager
         self.packViewModel = packViewModel
         self.landViewModel = landViewModel

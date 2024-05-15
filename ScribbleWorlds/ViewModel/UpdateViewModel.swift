@@ -42,5 +42,5 @@ struct UpdateViewModel {
     var health: Health = Health()
     var updateHeartsToTrue: Bool = false
     var updateWatersToTrue: Bool = false
-    
+    var spinnerSavedTakeSnapshot: Bool = false
 }
