@@ -11,7 +11,6 @@ struct NewAdventureView: View {
     @ObservedObject var viewManager: ViewManager
     @ObservedObject var packViewModel: PackViewModel
     @Binding var activeSheet:ActiveSheet?
-    @Binding var packId: UUID
     
     var body: some View {
         ZStack {
@@ -19,7 +18,6 @@ struct NewAdventureView: View {
         .onAppear(perform: {
             if activeSheet == .newAdventure {
                 packViewModel.addData(packName:"The Original Adventure")
-                packId = packViewModel.id
                 activeSheet = .viewControllerAdventure
             }
         })

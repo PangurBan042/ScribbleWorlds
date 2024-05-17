@@ -20,11 +20,11 @@ extension PackEntity {
     @NSManaged public var typeW: String?
     @NSManaged public var helpPagesW: [String]?
     @NSManaged public var currentLandW: String?
+    @NSManaged public var characterIsDead: Bool
     @NSManaged public var dateW: Date?
     @NSManaged public var idW: UUID?
     @NSManaged public var landsW: NSSet?
     @NSManaged public var articlesW: NSSet?
-    @NSManaged public var lifeW: LifeEntity?
     @NSManaged public var settingsW: SettingsEntity?
     
     public var name: String {
@@ -65,11 +65,6 @@ extension PackEntity {
     
     public var articles: [ArticleEntity] {
         Array(articlesW as? Set<ArticleEntity> ?? [])
-    }
-    
-    public var life: LifeEntity {
-        set{lifeW = newValue}
-        get{lifeW ?? LifeEntity()}
     }
     
     public var settings: SettingsEntity {

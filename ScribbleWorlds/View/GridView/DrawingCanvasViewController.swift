@@ -58,12 +58,8 @@ extension DrawingCanvasViewController: PKToolPickerObserver, PKCanvasViewDelegat
     
     func canvasViewDrawingDidChange(_ canvasView: PKCanvasView) {
         drawingChanged(canvasView.drawing.dataRepresentation())
-        let _ = print("In canvasViewDrawingDidChange")
     }
     
     func toolPickerSelectedToolDidChange(_ toolPicker: PKToolPicker) {
-        let _ = print("In toolPickerSelectedToolDidChange")
-//        let inkingTool = toolPicker.selectedTool
-//        toolChanged(inkingTool as! PKInkingTool)
     }
 }

@@ -12,11 +12,8 @@ struct SettingsView: View {
     
     @ObservedObject var viewManager: ViewManager
     @ObservedObject var settingsViewModel: SettingsViewModel
-    @State var autofill: String = "None"
-    @State var showCharacter: Bool = true
     
     var color = #colorLiteral(red: 0.3412033021, green: 0.3035173118, blue: 0.2637621462, alpha: 1)
-    var backgroundColor = #colorLiteral(red: 0.8627451062, green: 0.8627452254, blue: 0.8670507073, alpha: 1)
     var autoFillOptions = ["Off", "Trace", "Color"]
     var showCharacterOptions = ["On", "Off"]
     
@@ -50,7 +47,7 @@ struct SettingsView: View {
                         .foregroundColor(Color(color))
                     
                     Menu {
-                        Picker(selection: $autofill) {
+                        Picker(selection: $settingsViewModel.autofill) {
                             ForEach(autoFillOptions, id: \.self) { value in
                                 Text(value)
                                 
@@ -71,7 +68,7 @@ struct SettingsView: View {
                 .frame(width:viewManager.gridView.grid.frameDim * 0.80,
                        height:viewManager.gridView.grid.frameDim * 0.10, alignment: .leading)
                 
-                Toggle("ShowCharacter", isOn: $showCharacter)
+                Toggle("ShowCharacter", isOn: $settingsViewModel.showCharacter)
                     .tint(Color(color))
                     .lineLimit(1)
                     .minimumScaleFactor(0.5)
@@ -87,29 +84,28 @@ struct SettingsView: View {
             .opacity(0.70)
         }
         .onAppear {
-            autofill = settingsViewModel.autofill
-            showCharacter = settingsViewModel.showCharacter
             if settingsViewModel.autofill != "Off" {
                 settingsViewModel.showCharacter = true
             }
             if !settingsViewModel.showCharacter {
                 settingsViewModel.autofill = "Off"
             }
+            settingsViewModel.updateData()
         }
-        .onChange(of: autofill) {
-            settingsViewModel.autofill = autofill
+        .onChange(of: settingsViewModel.autofill) {
             if settingsViewModel.autofill != "Off" {
                 settingsViewModel.showCharacter = true
+                settingsViewModel.updateData()
             }
         }
-        .onChange(of: showCharacter) {
-            settingsViewModel.showCharacter = showCharacter
+        .onChange(of: settingsViewModel.showCharacter) {
             if !settingsViewModel.showCharacter {
                 settingsViewModel.autofill = "Off"
             }
             if settingsViewModel.showCharacter && settingsViewModel.autofill == "Off" {
                 settingsViewModel.autofill = "Color"
             }
+           settingsViewModel.updateData()
         }
        
         .frame(width:viewManager.gridView.grid.frameDim, height:viewManager.gridView.grid.frameDim)

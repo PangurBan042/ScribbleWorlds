@@ -30,8 +30,16 @@ public class SettingsViewModel: ObservableObject {
     func getData(packId:UUID) {
             let settingsData =  CoreDataManager.instance.getSettings(packId:packId)
             id = settingsData.id
+            self.packId = packId
             autofill = settingsData.autofill
             showCharacter = settingsData.showCharacter
+    }
+    
+    func updateData() {
+        CoreDataManager.instance.updateSettings(id: id,
+                                            packId: packId,
+                                            autofill: autofill,
+                                            showCharacter: showCharacter)
     }
     
 }

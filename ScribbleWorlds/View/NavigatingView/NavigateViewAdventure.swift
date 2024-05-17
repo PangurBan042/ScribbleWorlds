@@ -23,15 +23,7 @@ struct NavigateViewAdventure: View {
     @Binding var takeSnapshot: Bool
     @Binding var shareSnapshot: Bool
     @Binding var showDrawing: Bool
-    
-   
-
-    
-    
-    @StateObject var lifeViewModel: LifeViewModel = LifeViewModel()
-    @State var image = UIImage()
-    @State var oldLand: String = ""
-   // @State var water: [Bool] = []
+    @Binding var characterIsDead: Bool
     
     init(viewManager:ViewManager,
          landViewModel: LandViewModel,
@@ -43,7 +35,8 @@ struct NavigateViewAdventure: View {
          activeSheet: Binding<ActiveSheet?>,
          takeSnapshot: Binding<Bool>,
          shareSnapshot: Binding<Bool>,
-         showDrawing: Binding<Bool>) {
+         showDrawing: Binding<Bool>,
+         characterIsDead: Binding<Bool>) {
         self.viewManager = viewManager
         self.landViewModel = landViewModel
         self.navigateViewModel = navigateViewModel
@@ -55,8 +48,8 @@ struct NavigateViewAdventure: View {
         self._takeSnapshot = takeSnapshot
         self._shareSnapshot = shareSnapshot
         self._showDrawing = showDrawing
+        self._characterIsDead = characterIsDead
         
-       // _lifeViewModel = StateObject(wrappedValue: { LifeViewModel(packId:landViewModel.packId) }())
     }
 
 
@@ -69,6 +62,7 @@ struct NavigateViewAdventure: View {
             Button {
                 landViewModel.readInfo = true
                 navigateViewModel.menuSelection = ""
+                navigateViewModel.updateData()
                 currentLand = landViewModel.priorLand
                 
             } label: {
@@ -89,6 +83,7 @@ struct NavigateViewAdventure: View {
                 } else {
                     navigateViewModel.menuSelection = "Backpack"
                 }
+                navigateViewModel.updateData()
                
             } label: {
                 Image("Backpack")
@@ -116,6 +111,7 @@ struct NavigateViewAdventure: View {
                         navigateViewModel.menuSelection = "Book"
                     }
                 }
+                navigateViewModel.updateData()
 
                 
             } label: {
@@ -139,6 +135,7 @@ struct NavigateViewAdventure: View {
                 } else {
                     navigateViewModel.menuSelection = "Help"
                 }
+                navigateViewModel.updateData()
             } label: {
                 Image("Help Icon")
                     .resizable()
@@ -153,16 +150,17 @@ struct NavigateViewAdventure: View {
             
             
             // Stats Buttons
-            if lifeViewModel.packId == landViewModel.packId {
+           // if heartViewModel.packId == landViewModel.packId {
            
                 VStack {
-                    HeartsView(viewManager: viewManager, heartsViewModel: heartsViewModel, updateViewModel: $updateViewModel)
+                    HeartsView(viewManager: viewManager, heartsViewModel: heartsViewModel, updateViewModel: $updateViewModel,
+                        characterIsDead: $characterIsDead)
 
                     WaterView(viewManager: viewManager,         waterViewModel: waterViewModel, updateViewModel: $updateViewModel)
                 
                 }
                 .frame(width:viewManager.navigateView.stats.width, height:viewManager.navigateView.stats.height)
-            }
+          //  }
             
                 // Stats Padding
                 Text("")
@@ -226,7 +224,7 @@ struct NavigateViewAdventure: View {
                         navigateViewModel.menuSelection.contains("Help") {
                         showDrawing = false } else { showDrawing = true }
                         updateViewModel.updateWedge.toggle()
-                   
+                        navigateViewModel.updateData()
                 } label: {
                     Image("Home Icon")
                         .resizable()
@@ -239,6 +237,7 @@ struct NavigateViewAdventure: View {
                 Button {
                     landViewModel.readInfo = true
                     navigateViewModel.menuSelection = ""
+                    navigateViewModel.updateData()
                     currentLand = landViewModel.afterLand
                     
                 } label: {
@@ -254,12 +253,6 @@ struct NavigateViewAdventure: View {
             }
                 
         .frame(width: viewManager.navigateView.width, height: viewManager.navigateView.height)
-        .onAppear(perform: {
-            lifeViewModel.getData(packId: landViewModel.packId)
-            lifeViewModel.heartCount = 2
-            lifeViewModel.heart = [true,true,false,false,false,false, false, false, false, false]
-            
-        })
         .onChange(of:updateViewModel.resetTempOverlay) {
             if navigateViewModel.menuSelection != "" {
                 navigateViewModel.menuSelection = ""
@@ -267,7 +260,6 @@ struct NavigateViewAdventure: View {
         }
         .onChange(of:updateViewModel.spinnerSavedTakeSnapshot) {
             takeSnapshot = true
-            let _ = print("In NavigateViewAdventure.... onChangeSnapshot")
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.2)  {
             activeSheet = Optional.none
                 UIView.setAnimationsEnabled(false)
@@ -334,6 +326,7 @@ struct HeartsView: View {
     @ObservedObject var viewManager: ViewManager
     @ObservedObject var heartsViewModel: HeartsViewModel
     @Binding var updateViewModel: UpdateViewModel
+    @Binding var characterIsDead: Bool
     
     
     var body: some View {
@@ -351,6 +344,7 @@ struct HeartsView: View {
         .onChange(of: updateViewModel.waterLossOfHeart) {
             if let heartIndex = heartsViewModel.on.lastIndex(of:true) {
                 heartsViewModel.on[heartIndex].toggle()
+                heartsViewModel.updateData()
                 updateViewModel.animateThirsty = true
             }
             if !heartsViewModel.on.allSatisfy({$0 == false}) {
@@ -359,11 +353,12 @@ struct HeartsView: View {
                     updateViewModel.animateThirsty = false
                 }
             } else {
-                updateViewModel.isDead = true
+                characterIsDead = true
             }
         }
         .onChange(of: updateViewModel.updateHeartsToTrue) {
             heartsViewModel.on =  heartsViewModel.on.map { _ in true }
+            heartsViewModel.updateData()
         }
         
         .frame(width:viewManager.navigateView.stats.width,
@@ -387,6 +382,7 @@ struct WaterView: View {
                 ForEach(0...waterViewModel.count-1, id: \.self) { index in
                     Button {
                         waterViewModel.on[index].toggle()
+                        waterViewModel.updateData()
                         if waterViewModel.on.allSatisfy({$0 == false}){
                             updateViewModel.waterLossOfHeart.toggle()
 
@@ -402,6 +398,7 @@ struct WaterView: View {
                    height: viewManager.navigateView.stats.height/2)
             .onChange(of:updateViewModel.updateWatersToTrue) {
                 waterViewModel.on =  waterViewModel.on.map { _ in true }
+                waterViewModel.updateData()
             }
     }
 }

@@ -20,6 +20,7 @@ struct ScribbleView: View {
     @ObservedObject var infoViewModel: InfoViewModel
     @ObservedObject var fightViewModel: FightViewModel
     var dataViewModel: DataViewModel
+    @Binding var characterIsDead: Bool
     var helpPages: [String]
     
     @State var nodesX: [Int] = []
@@ -41,6 +42,7 @@ struct ScribbleView: View {
          infoViewModel: InfoViewModel,
          fightViewModel: FightViewModel,
          dataViewModel: DataViewModel,
+         characterIsDead: Binding<Bool>,
          helpPages: [String]) {
         self.viewManager = viewManager
         self._updateViewModel = updateViewModel
@@ -52,6 +54,7 @@ struct ScribbleView: View {
         self.infoViewModel = infoViewModel
         self.fightViewModel = fightViewModel
         self.dataViewModel = dataViewModel
+        self._characterIsDead = characterIsDead
         self.helpPages = helpPages
         
         _scribbleViewModel = StateObject(wrappedValue: { ScribbleViewModel(scribbleId: landViewModel.scribbleId) }())
@@ -65,11 +68,12 @@ struct ScribbleView: View {
         
         let squareSize = viewManager.gridView.grid.frameDim / Double(scribbleViewModel.gridSize)
      
-        let scribbleCanvasView = ScribbleCanvasView(viewManager: viewManager,
-                                            scribbleViewModel: scribbleViewModel,
-                                            canvasViewModel: canvasViewModel,
-                                                    settingsViewModel: settingsViewModel,
-                                            squareSize: squareSize)
+        let scribbleCanvasView = ScribbleCanvasView(
+                                    viewManager: viewManager,
+                                    scribbleViewModel: scribbleViewModel,
+                                    canvasViewModel: canvasViewModel,
+                                    settingsViewModel: settingsViewModel,
+                                    squareSize: squareSize)
         
         
         ZStack (alignment: .center){
@@ -94,14 +98,15 @@ struct ScribbleView: View {
         .onChange(of: "\(landViewModel.id)") {
             scribbleViewModel.updateData()
             scribbleViewModel.getData(scribbleId: landViewModel.scribbleId)
+            settingsViewModel.getData(packId: landViewModel.packId)
         }
-       .overlay(landViewModel.overlayTabName == "Fight"  ? FightView(viewManager: viewManager, landViewModel: landViewModel, articleViewModel: articleViewModel, fightViewModel: fightViewModel,  updateViewModel: $updateViewModel) : nil)
-        .overlay(navigateViewModel.menuSelection == "Backpack" || landViewModel.overlayTabName == "Loot" ? BackpackView(viewManager:viewManager, landViewModel: landViewModel, articleViewModel: articleViewModel, heartsViewModel: heartsViewModel, infoViewModel: infoViewModel,dataViewModel: dataViewModel, updateViewModel: $updateViewModel) : nil)
+       .overlay(landViewModel.currentTab == "Fight"  ? FightView(viewManager: viewManager, landViewModel: landViewModel, articleViewModel: articleViewModel, fightViewModel: fightViewModel,  updateViewModel: $updateViewModel) : nil)
+        .overlay(navigateViewModel.menuSelection == "Backpack" || landViewModel.currentTab == "Loot" ? BackpackView(viewManager:viewManager, landViewModel: landViewModel, articleViewModel: articleViewModel, heartsViewModel: heartsViewModel, infoViewModel: infoViewModel,dataViewModel: dataViewModel, updateViewModel: $updateViewModel) : nil)
         .overlay(navigateViewModel.menuSelection == "Book" ? BookView(viewManager: viewManager, landViewModel: landViewModel) : nil)
         .overlay(!landViewModel.readInfo ? ReadIntroView(viewManager: viewManager, landViewModel: landViewModel) : nil)
         .overlay(navigateViewModel.menuSelection == "Settings" ? SettingsView(viewManager: viewManager, settingsViewModel: settingsViewModel) : nil)
         .overlay(navigateViewModel.menuSelection == "Help" ? HelpView(viewManager: viewManager, helpPages: helpPages) : nil)
-        .overlay(updateViewModel.isDead ?  DeadView(viewManager: viewManager, updateViewModel: $updateViewModel) : nil)
+        .overlay(characterIsDead ?  DeadView(viewManager: viewManager, updateViewModel: $updateViewModel, characterIsDead: $characterIsDead) : nil)
 
 //        .onChange(of: updateManager.autoFill)  {
 //            autoFill = update.autoFill

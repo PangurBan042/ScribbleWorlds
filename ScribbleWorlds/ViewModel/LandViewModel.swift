@@ -29,13 +29,8 @@ class LandViewModel: ObservableObject {
     var alertType: String = ""
     var questPages: [String] = [""]
     var autoPlaceNames: [String] = [""]
-    var currentTabSpun: Bool = false
     var spinnerBackground: String = ""
     var currentFight: String = ""
-    
-    var isFight: Bool = false
-    
-    var isBackpack: Bool = false
     var currentArticles: [String] = [""]
     
     init(packId:UUID, name: String){
@@ -67,13 +62,9 @@ class LandViewModel: ObservableObject {
                     questPages: questPages,
                     autoPlaceNames: autoPlaceNames,
                     currentTab: currentTab,
-                    currentTabSpun: currentTabSpun,
                     spinnerBackground: spinnerBackground,
                     currentFight: currentFight,
-                    spinForLootOn: spinForLootOn,
-                    isFight: isFight,
                     readInfo: readInfo,
-                    isBackpack: isBackpack,
                     currentArticles: currentArticles)
     }
    
@@ -88,15 +79,11 @@ class LandViewModel: ObservableObject {
         priorLand = landData.priorLand
         afterLand = landData.afterLand
         currentTab = landData.currentTab
-        currentTabSpun = landData.currentTabSpun
         spinnerBackground = landData.spinnerBackground
         currentFight = landData.currentFight
         fightHeading = landData.fightHeading
         alertType = landData.alertType
-        spinForLootOn = landData.spinForLootOn
-        isFight = landData.isFight
         readInfo = landData.readInfo
-        isBackpack = landData.isBackpack
         autoPlaceNames = landData.autoPlaceNames
         currentArticles = landData.currentArticles
     }

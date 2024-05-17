@@ -34,7 +34,7 @@ public class HeartsViewModel: ObservableObject {
     }
 
     
-    func updateHearts() {
+    func updateData() {
         CoreDataManager.instance.updateHearts(packId: packId,
                                             on: on,
                                             count: count,

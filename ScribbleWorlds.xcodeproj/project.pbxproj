@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78378B802BF693F4007514F4 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78378B7F2BF693F4007514F4 /* CoreDataManager.swift */; };
 		783C526C2BEE81C00062F12D /* SettingsEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783C52452BEE81BD0062F12D /* SettingsEntity+CoreDataProperties.swift */; };
 		783C526D2BEE81C00062F12D /* ArticleEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783C52462BEE81BD0062F12D /* ArticleEntity+CoreDataClass.swift */; };
 		783C526E2BEE81C00062F12D /* SpinnerEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783C52472BEE81BD0062F12D /* SpinnerEntity+CoreDataProperties.swift */; };
@@ -18,11 +19,9 @@
 		783C52742BEE81C00062F12D /* DuelEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783C524D2BEE81BD0062F12D /* DuelEntity+CoreDataProperties.swift */; };
 		783C52752BEE81C00062F12D /* GoalEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783C524E2BEE81BD0062F12D /* GoalEntity+CoreDataProperties.swift */; };
 		783C52762BEE81C00062F12D /* ToolEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783C524F2BEE81BE0062F12D /* ToolEntity+CoreDataProperties.swift */; };
-		783C52772BEE81C00062F12D /* LifeEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783C52502BEE81BE0062F12D /* LifeEntity+CoreDataProperties.swift */; };
 		783C52782BEE81C00062F12D /* PackEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783C52512BEE81BE0062F12D /* PackEntity+CoreDataProperties.swift */; };
 		783C52792BEE81C00062F12D /* WaterEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783C52522BEE81BE0062F12D /* WaterEntity+CoreDataProperties.swift */; };
 		783C527A2BEE81C00062F12D /* ArticleEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783C52532BEE81BE0062F12D /* ArticleEntity+CoreDataProperties.swift */; };
-		783C527B2BEE81C00062F12D /* LifeEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783C52542BEE81BE0062F12D /* LifeEntity+CoreDataClass.swift */; };
 		783C527C2BEE81C00062F12D /* InfoEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783C52552BEE81BE0062F12D /* InfoEntity+CoreDataClass.swift */; };
 		783C527D2BEE81C00062F12D /* TabEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783C52562BEE81BE0062F12D /* TabEntity+CoreDataProperties.swift */; };
 		783C527E2BEE81C00062F12D /* LandEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783C52572BEE81BE0062F12D /* LandEntity+CoreDataClass.swift */; };
@@ -42,7 +41,6 @@
 		783C528C2BEE81C00062F12D /* ScribbleEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783C52662BEE81C00062F12D /* ScribbleEntity+CoreDataProperties.swift */; };
 		783C528D2BEE81C00062F12D /* SpinnerEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783C52672BEE81C00062F12D /* SpinnerEntity+CoreDataClass.swift */; };
 		783C528E2BEE81C00062F12D /* HeartsEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783C52682BEE81C00062F12D /* HeartsEntity+CoreDataClass.swift */; };
-		783C528F2BEE81C00062F12D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783C52692BEE81C00062F12D /* CoreDataManager.swift */; };
 		783C52902BEE81C00062F12D /* PackEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783C526A2BEE81C00062F12D /* PackEntity+CoreDataClass.swift */; };
 		783C52912BEE81C00062F12D /* WaterEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783C526B2BEE81C00062F12D /* WaterEntity+CoreDataClass.swift */; };
 		783C52952BEE88DE0062F12D /* WaterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783C52942BEE88DE0062F12D /* WaterViewModel.swift */; };
@@ -134,6 +132,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78378B7F2BF693F4007514F4 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		783C52442BEE7FBF0062F12D /* ScribbleWorlds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScribbleWorlds.entitlements; sourceTree = "<group>"; };
 		783C52452BEE81BD0062F12D /* SettingsEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SettingsEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		783C52462BEE81BD0062F12D /* ArticleEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ArticleEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -146,11 +145,9 @@
 		783C524D2BEE81BD0062F12D /* DuelEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DuelEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		783C524E2BEE81BD0062F12D /* GoalEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GoalEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		783C524F2BEE81BE0062F12D /* ToolEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ToolEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		783C52502BEE81BE0062F12D /* LifeEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LifeEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		783C52512BEE81BE0062F12D /* PackEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PackEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		783C52522BEE81BE0062F12D /* WaterEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WaterEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		783C52532BEE81BE0062F12D /* ArticleEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ArticleEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		783C52542BEE81BE0062F12D /* LifeEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LifeEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		783C52552BEE81BE0062F12D /* InfoEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InfoEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		783C52562BEE81BE0062F12D /* TabEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TabEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		783C52572BEE81BE0062F12D /* LandEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LandEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -170,7 +167,6 @@
 		783C52662BEE81C00062F12D /* ScribbleEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScribbleEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		783C52672BEE81C00062F12D /* SpinnerEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SpinnerEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		783C52682BEE81C00062F12D /* HeartsEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HeartsEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
-		783C52692BEE81C00062F12D /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		783C526A2BEE81C00062F12D /* PackEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PackEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		783C526B2BEE81C00062F12D /* WaterEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WaterEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		783C52942BEE88DE0062F12D /* WaterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaterViewModel.swift; path = "../../../ScribbleWorlds - Mostly cleaned up/ScribbleWorlds/Manager/WaterViewModel.swift"; sourceTree = "<group>"; };
@@ -473,7 +469,7 @@
 			isa = PBXGroup;
 			children = (
 				783C52632BEE81BF0062F12D /* CoreDataContainer.xcdatamodeld */,
-				783C52692BEE81C00062F12D /* CoreDataManager.swift */,
+				78378B7F2BF693F4007514F4 /* CoreDataManager.swift */,
 				783C525B2BEE81BF0062F12D /* AdventureEntity+CoreDataClass.swift */,
 				783C525A2BEE81BF0062F12D /* AdventureEntity+CoreDataProperties.swift */,
 				783C52462BEE81BD0062F12D /* ArticleEntity+CoreDataClass.swift */,
@@ -492,8 +488,6 @@
 				783C524B2BEE81BD0062F12D /* InfoEntity+CoreDataProperties.swift */,
 				783C52572BEE81BE0062F12D /* LandEntity+CoreDataClass.swift */,
 				783C524A2BEE81BD0062F12D /* LandEntity+CoreDataProperties.swift */,
-				783C52542BEE81BE0062F12D /* LifeEntity+CoreDataClass.swift */,
-				783C52502BEE81BE0062F12D /* LifeEntity+CoreDataProperties.swift */,
 				783C52482BEE81BD0062F12D /* NavigateEntity+CoreDataClass.swift */,
 				783C52612BEE81BF0062F12D /* NavigateEntity+CoreDataProperties.swift */,
 				783C526A2BEE81C00062F12D /* PackEntity+CoreDataClass.swift */,
@@ -649,7 +643,6 @@
 				783C528D2BEE81C00062F12D /* SpinnerEntity+CoreDataClass.swift in Sources */,
 				7890F2BE2BEBD2C100A11ED4 /* DrawingCanvasView.swift in Sources */,
 				7890F2972BEBD27600A11ED4 /* NewAdventureView.swift in Sources */,
-				783C528F2BEE81C00062F12D /* CoreDataManager.swift in Sources */,
 				7890F2E82BEBD30500A11ED4 /* ViewManager.swift in Sources */,
 				7890F2B22BEBD29300A11ED4 /* DefeatedView.swift in Sources */,
 				783C527D2BEE81C00062F12D /* TabEntity+CoreDataProperties.swift in Sources */,
@@ -676,7 +669,6 @@
 				783C52952BEE88DE0062F12D /* WaterViewModel.swift in Sources */,
 				7890F2E12BEBD30500A11ED4 /* TabViewModel.swift in Sources */,
 				7890F28D2BEBD1F700A11ED4 /* ViewControllerAdventure.swift in Sources */,
-				783C527B2BEE81C00062F12D /* LifeEntity+CoreDataClass.swift in Sources */,
 				783C52862BEE81C00062F12D /* CanvasEntity+CoreDataClass.swift in Sources */,
 				7890F3512BEBD35C00A11ED4 /* ViewModel.swift in Sources */,
 				7890F2B12BEBD29300A11ED4 /* ShareView.swift in Sources */,
@@ -687,10 +679,10 @@
 				7890F2AD2BEBD29300A11ED4 /* FightView.swift in Sources */,
 				783C52792BEE81C00062F12D /* WaterEntity+CoreDataProperties.swift in Sources */,
 				783C526C2BEE81C00062F12D /* SettingsEntity+CoreDataProperties.swift in Sources */,
-				783C52772BEE81C00062F12D /* LifeEntity+CoreDataProperties.swift in Sources */,
 				783C526D2BEE81C00062F12D /* ArticleEntity+CoreDataClass.swift in Sources */,
 				783C52842BEE81C00062F12D /* ToolEntity+CoreDataClass.swift in Sources */,
 				7890F2AA2BEBD29300A11ED4 /* ThirstyView.swift in Sources */,
+				78378B802BF693F4007514F4 /* CoreDataManager.swift in Sources */,
 				783C52882BEE81C00062F12D /* NavigateEntity+CoreDataProperties.swift in Sources */,
 				7890F2A82BEBD29300A11ED4 /* HelpView.swift in Sources */,
 				783C52762BEE81C00062F12D /* ToolEntity+CoreDataProperties.swift in Sources */,

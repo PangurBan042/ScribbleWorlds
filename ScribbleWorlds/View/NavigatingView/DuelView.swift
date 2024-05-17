@@ -12,14 +12,8 @@ struct DuelView: View {
     
     @ObservedObject var viewManager: ViewManager
     @ObservedObject var duelViewModel: DuelViewModel
-    var wedge: Wedge
     
     @State var radius: Double = 0.0
-    @State var specialRadius: Double = 0.0
-    @State var bonusAttackPoints: Int = 0
-    @State var bonusDefensePoints: Int = 0
-    @State var yourHearts: Int = 0
-    @State var enemyHearts: Int = 0
     
     var body: some View {
         

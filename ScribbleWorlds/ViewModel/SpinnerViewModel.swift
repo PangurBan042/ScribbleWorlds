@@ -28,7 +28,6 @@ public class SpinnerViewModel: ObservableObject {
 //    }
     
     func updateWedgeName () {
-        let _ = print("In SpinnerTestManager/updateWedgeName... wedgeName:\(wedgeName)")
         CoreDataManager.instance.updateSpinnerWedgeName(spinnerId: id, wedgeName: wedgeName)
     }
     

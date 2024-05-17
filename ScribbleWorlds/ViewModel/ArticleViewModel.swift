@@ -72,7 +72,6 @@ public class ArticleViewModel: ObservableObject {
 
     func turnOffAllArticlesOfType() -> [Article] {
         var articles = getAllArticlesOfAType()
-        let _ = print("In ArticleTestManager... articles: \(articles)")
         for index in 0..<articles.count {
             if articles[index].on != [] { articles[index].on = [false] }
             CoreDataManager.instance.updateArticleOn(article:articles[index])
@@ -199,7 +198,6 @@ public class ArticleViewModel: ObservableObject {
     
     
     func getAllArticlesOfAType() -> [Article] {
-        let _ = print("In ArticleTestManager... article.packId: \(article.packId)")
         let articles = CoreDataManager.instance.getAllArticles(packId: article.packId)
         return articles.filter{ $0.type == article.category }
     }

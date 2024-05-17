@@ -13,7 +13,6 @@ struct SpinForLootView: View {
     @ObservedObject var landViewModel: LandViewModel
     @ObservedObject var articleViewModel: ArticleViewModel
     @ObservedObject var fightViewModel: FightViewModel
-    @Binding var updateViewModel: UpdateViewModel
    
     var body: some View {
         let _ = print("!!!In SpinForLootView!!!")

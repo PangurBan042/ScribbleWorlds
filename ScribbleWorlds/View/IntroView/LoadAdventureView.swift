@@ -11,7 +11,6 @@ struct LoadAdventureView: View {
     @ObservedObject var viewManager: ViewManager
     @ObservedObject var packViewModel: PackViewModel = PackViewModel()
     @Binding var activeSheet:ActiveSheet?
-    @Binding var packId: UUID
     
     @State var adventureViewModel: AdventureViewModel = AdventureViewModel()
     @State var allAdventurePacks: [Adventure] = [Adventure]()
@@ -78,7 +77,6 @@ struct LoadAdventureView: View {
                             
                             Button {
                                packViewModel.getData(packId: adventure.packId)
-                                packId = packViewModel.id
                                 activeSheet = .viewControllerAdventure
                             } label : {
                                 VStack (spacing:0){

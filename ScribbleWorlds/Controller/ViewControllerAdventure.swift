@@ -24,6 +24,7 @@ struct ViewControllerAdventure: View {
     @State var takeSnapshot: Bool = false
     @State var shareSnapshot: Bool = false
     @State var showDrawing: Bool = true
+    @State var characterIsDead: Bool = false
     @State var height:CGFloat = .infinity
     var opacityLevel = 0.6
     
@@ -47,7 +48,8 @@ struct ViewControllerAdventure: View {
                                      readInfo: $readInfo,
                                      takeSnapshot: $takeSnapshot,
                                      shareSnapshot: $shareSnapshot,
-                                     showDrawing: $showDrawing)
+                                     showDrawing: $showDrawing,
+                                     characterIsDead: $characterIsDead)
                 .frame(height: viewManager.spinnerView.height + viewManager.gridView.grid.frameDim + viewManager.navigateView.height )
                 
                 ZStack {
@@ -72,11 +74,13 @@ struct ViewControllerAdventure: View {
         .onAppear(perform: {
             UIView.setAnimationsEnabled(true)
             currentLand = packViewModel.currentLand
+            characterIsDead = packViewModel.characterIsDead
             
             
         })
         .onChange(of: currentLand) {
             packViewModel.currentLand = currentLand
+            packViewModel.characterIsDead = characterIsDead
             packViewModel.updateData()
         }
         .onChange(of: takeSnapshot) {
@@ -95,7 +99,7 @@ struct ViewControllerAdventure: View {
     
     
     func getSnapshot() {
-        let _ = print("In ViewControllerAdventure/getSnapshot...")
+        packViewModel.characterIsDead = characterIsDead
         canvasViewModel.updateData()
         Task {
             shareImage = postContent()
@@ -229,6 +233,7 @@ struct SpinnerAndCanvasView: View {
     @Binding var takeSnapshot: Bool
     @Binding var shareSnapshot: Bool
     @Binding var showDrawing: Bool
+    @Binding var characterIsDead: Bool
     @StateObject var landViewModel: LandViewModel
     @StateObject var heartsViewModel: HeartsViewModel
     @StateObject var infoViewModel: InfoViewModel
@@ -251,7 +256,8 @@ struct SpinnerAndCanvasView: View {
          readInfo: Binding<Bool>,
          takeSnapshot: Binding<Bool>,
          shareSnapshot: Binding<Bool>,
-         showDrawing: Binding<Bool>) {
+         showDrawing: Binding<Bool>,
+         characterIsDead: Binding<Bool>) {
         
         self._activeSheet = activeSheet
         self.viewManager = viewManager
@@ -264,6 +270,7 @@ struct SpinnerAndCanvasView: View {
         self._takeSnapshot = takeSnapshot
         self._shareSnapshot = shareSnapshot
         self._showDrawing = showDrawing
+        self._characterIsDead = characterIsDead
         
         
         _landViewModel = StateObject(wrappedValue: { LandViewModel(packId:packViewModel.id, name: packViewModel.currentLand)}())
@@ -278,10 +285,6 @@ struct SpinnerAndCanvasView: View {
     
     
     var body: some View {
-        
-        
-        let _ = print("In SpinnerAndCanvasView.....")
-       
             VStack(alignment:.center, spacing: 0) {
                 
                 
@@ -298,7 +301,8 @@ struct SpinnerAndCanvasView: View {
                             fightViewModel: fightViewModel,
                             dataViewModel: dataViewModel,
                             updateViewModel: $updateViewModel,
-                            currentLand: $currentLand)
+                            currentLand: $currentLand,
+                            characterIsDead: $characterIsDead)
                         
                         if !landViewModel.readInfo {
                             Rectangle()
@@ -332,6 +336,7 @@ struct SpinnerAndCanvasView: View {
                                         takeSnapshot: $takeSnapshot,
                                         shareSnapshot: $shareSnapshot,
                                         showDrawing: $showDrawing,
+                                        characterIsDead: $characterIsDead,
                                         helpPages: packViewModel.helpPages)
                 
                 
@@ -386,6 +391,7 @@ struct NavigateAndScribbleView: View {
     @Binding var takeSnapshot:Bool
     @Binding var shareSnapshot:Bool
     @Binding var showDrawing:Bool
+    @Binding var characterIsDead:Bool
     var helpPages: [String]
     @StateObject var waterViewModel: WaterViewModel
     @StateObject var navigateViewModel: NavigateViewModel
@@ -412,6 +418,7 @@ struct NavigateAndScribbleView: View {
          takeSnapshot: Binding<Bool>,
          shareSnapshot: Binding<Bool>,
          showDrawing: Binding<Bool>,
+         characterIsDead: Binding<Bool>,
          helpPages: [String]) {
         
         self._activeSheet = activeSheet
@@ -432,6 +439,7 @@ struct NavigateAndScribbleView: View {
         self._takeSnapshot = takeSnapshot
         self._shareSnapshot = shareSnapshot
         self._showDrawing = showDrawing
+        self._characterIsDead = characterIsDead
         self.helpPages = helpPages
         
         _waterViewModel = StateObject(wrappedValue: { WaterViewModel(packId:packViewModel.id)}())
@@ -445,11 +453,6 @@ struct NavigateAndScribbleView: View {
     
     
     var body: some View {
-        
-        
-        let _ = print("In SpinnerAndCanvasView.....")
-        
-        
         
         VStack(alignment:.center, spacing: 0) {
             
@@ -466,7 +469,8 @@ struct NavigateAndScribbleView: View {
                     activeSheet: $activeSheet,
                     takeSnapshot: $takeSnapshot,
                     shareSnapshot: $shareSnapshot,
-                    showDrawing: $showDrawing)
+                    showDrawing: $showDrawing,
+                    characterIsDead: $characterIsDead)
                 .frame(width: viewManager.navigateView.width, height: viewManager.navigateView.height)
                 
                 if !landViewModel.readInfo {
@@ -495,6 +499,7 @@ struct NavigateAndScribbleView: View {
                              infoViewModel: infoViewModel,
                              fightViewModel: fightViewModel,
                              dataViewModel: dataViewModel,
+                             characterIsDead: $characterIsDead,
                              helpPages: helpPages)
                 
                 .frame(width: viewManager.gridView.grid.frameDim, height: viewManager.gridView.grid.frameDim)

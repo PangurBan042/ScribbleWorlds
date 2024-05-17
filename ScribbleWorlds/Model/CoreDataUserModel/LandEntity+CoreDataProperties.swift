@@ -24,7 +24,6 @@ extension LandEntity {
     @NSManaged public var afterLandW: String?
     @NSManaged public var priorLandW: String?
     @NSManaged public var currentTabW: String?
-    @NSManaged public var currentTabSpun: Bool
     @NSManaged public var spinnerBackgroundW: String?
     @NSManaged public var currentFightW: String?
     @NSManaged public var fightHeadingW: String?

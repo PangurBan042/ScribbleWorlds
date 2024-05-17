@@ -11,9 +11,7 @@ import SwiftUI
 
 struct IntroView: View, Equatable {
     @StateObject var packViewModel: PackViewModel = PackViewModel()
-    @State var opacityValue = 1.0
     @State var activeSheet: ActiveSheet? = nil
-    @State var packId: UUID = UUID()
     @StateObject var viewManager:ViewManager = ViewManager()
     
     private var dontUpdate = true
@@ -87,11 +85,11 @@ struct IntroView: View, Equatable {
                 
                 switch item {
                 case .newAdventure:
-                    NewAdventureView(viewManager: viewManager, packViewModel: packViewModel, activeSheet: $activeSheet, packId: $packId)
+                    NewAdventureView(viewManager: viewManager, packViewModel: packViewModel, activeSheet: $activeSheet)
 
 
                 case .loadAdventure:
-                    LoadAdventureView(viewManager: viewManager, packViewModel: packViewModel, activeSheet: $activeSheet, packId: $packId)
+                    LoadAdventureView(viewManager: viewManager, packViewModel: packViewModel, activeSheet: $activeSheet)
                  
                 case .about:
                     AboutView(activeSheet: $activeSheet)

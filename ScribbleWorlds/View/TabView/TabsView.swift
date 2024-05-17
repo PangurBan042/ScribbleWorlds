@@ -14,6 +14,7 @@ struct TabsView: View {
     @ObservedObject var tabViewModel: TabViewModel
     
     @State var height: Double = 0
+    
     var body: some View {
         let _ = print("!!!In TabsView!!!")
         let heightOffsets = viewManager.calculateTabHeights(numberOfTabs: tabViewModel.spinnerImageNames.count)

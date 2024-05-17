@@ -10,10 +10,11 @@ import SwiftUI
 struct DeadView: View {
     @ObservedObject var viewManager: ViewManager
     @Binding var updateViewModel: UpdateViewModel
+    @Binding var characterIsDead: Bool
     
-    @State var radius: Double = 0.0
-    @State var specialRadius: Double = 0.0
     let color = #colorLiteral(red: 0.9981341958, green: 0.579616487, blue: 0, alpha: 1)
+    
+    
     var body: some View {
         
         ZStack(alignment: .center){
@@ -41,7 +42,7 @@ struct DeadView: View {
                 Button ("I'm not ready to be vanquished!!!"){
                     updateViewModel.updateHeartsToTrue.toggle()
                     updateViewModel.updateWatersToTrue.toggle()
-                    updateViewModel.isDead = false
+                    characterIsDead = false
                 }
                 .scaledFont(name: "WalterTurncoat-Regular", size: 40)
                 .multilineTextAlignment(.center)

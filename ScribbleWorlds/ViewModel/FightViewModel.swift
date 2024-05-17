@@ -101,8 +101,7 @@ public class FightViewModel: ObservableObject {
 
     
     func getData(landId:UUID, name:String) {
-        let _ = print("WTF")
-        let _ = print("In FightViewModel/getData... name: \(name)")
+    
         if name != "Defeated" {
             let fightData =  CoreDataManager.instance.getFight(landId: landId, name:name)
             fight.id = fightData.id

@@ -20,16 +20,7 @@ struct FightView: View {
     @State var fights = [Fight()]
     @State var land = ""
     @State var numberOfCols = 0
-    @State var numberOfRows = 0
-    @State var fightIndex = 0
-    @State var xoffset = 1.0
-    @State var yoffset = 0.0
-    
-    @State var currentFight = ""
-    @State var previousFight = ""
-    
     @State var showDefeatedView: Bool = false
-    @State var showSpinForLootView: Bool = false
     
     var body: some View {
         
@@ -149,7 +140,7 @@ struct FightView: View {
             }
             .frame(width:viewManager.fightView.majorFightAndTitle.width, height:viewManager.fightView.majorFightAndTitle.height)
             
-            .overlay(fightViewModel.showSpinForLootView  ? SpinForLootView(viewManager: viewManager, landViewModel: landViewModel, articleViewModel: articleViewModel, fightViewModel: fightViewModel, updateViewModel: $updateViewModel) : nil)
+            .overlay(fightViewModel.showSpinForLootView  ? SpinForLootView(viewManager: viewManager, landViewModel: landViewModel, articleViewModel: articleViewModel, fightViewModel: fightViewModel) : nil)
             .overlay(showDefeatedView  ? DefeatedView(viewManager: viewManager, land:$land) : nil)
            
             

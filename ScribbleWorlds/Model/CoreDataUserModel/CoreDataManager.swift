@@ -51,7 +51,7 @@ class CoreDataManager {
         packEntity.type = packDefault.type
         packEntity.helpPages = packDefault.helpPages
         packEntity.currentLand = packDefault.currentLand
-        let _ = print("In CoreDataManager... packEntity.currentLand: \(packEntity.currentLand)")
+        packEntity.characterIsDead = false
         
         let settingsEntity = SettingsEntity(context: persistentContainer.viewContext)
         settingsEntity.id = UUID()
@@ -61,21 +61,12 @@ class CoreDataManager {
         packEntity.settings = settingsEntity
         saveData()
         
-        let lifeEntity = LifeEntity(context: persistentContainer.viewContext)
         let heartsEntity = HeartsEntity(context: persistentContainer.viewContext)
-        
         heartsEntity.id = UUID()
         heartsEntity.packId = packEntity.id
         heartsEntity.on = packDefault.heart
         heartsEntity.count = packDefault.heart.filter{$0 == true}.count
         heartsEntity.tempCount = heartsEntity.count
-        lifeEntity.id = UUID()
-        lifeEntity.packId = packEntity.id
-        lifeEntity.heart = packDefault.heart
-        lifeEntity.heartCount = packDefault.heart.count
-        lifeEntity.water = packDefault.water
-        lifeEntity.waterCount = packDefault.water.count
-        packEntity.life = lifeEntity
         saveData()
         
         let waterEntity = WaterEntity(context: persistentContainer.viewContext)
@@ -163,7 +154,6 @@ class CoreDataManager {
             landEntity.fightHeading = land.fightHeading
             landEntity.alertType = ""
             landEntity.currentTab = land.currentTab
-            landEntity.currentTabSpun = false
             landEntity.spinnerBackground = land.spinnerBackground
             landEntity.autoPlaceNames = land.autoPlaceNames
             packEntity.addToLandsW(landEntity)
@@ -553,23 +543,6 @@ class CoreDataManager {
 //        return settingsEntity
 //    }
     
-    func getLife(packId: UUID) -> LifeEntity {
-        let request: NSFetchRequest<LifeEntity> = LifeEntity.fetchRequest()
-        let filter = NSPredicate(format: "packIdW == %@", packId as CVarArg)
-        request.predicate = filter
-        request.returnsObjectsAsFaults = false
-        var lifeEntity:LifeEntity
-        
-        do {
-            lifeEntity = try persistentContainer.viewContext.fetch(request).first ?? LifeEntity()
-        } catch {
-            lifeEntity = LifeEntity()
-            print("Fetching Failed")
-        }
-        
-        return lifeEntity
-    }
-    
     
     func getArticle(articleId: UUID) -> ArticleEntity {
         let request: NSFetchRequest<ArticleEntity> = ArticleEntity.fetchRequest()
@@ -778,7 +751,6 @@ class CoreDataManager {
         do {
             fetchResult = try persistentContainer.viewContext.fetch(request).first ?? AdventureEntity()
             fetchResult?.thumbnail = adventure.thumbnail
-            let _ = print("In CoreDataManager/updateAdventureThumbnail... thumbnail: \(String(describing: fetchResult?.thumbnail))")
             saveData()
         } catch {
             print("Fetching Failed")
@@ -1139,13 +1111,9 @@ class CoreDataManager {
                     questPages: [String],
                     autoPlaceNames: [String],
                     currentTab: String,
-                    currentTabSpun: Bool,
                     spinnerBackground: String,
                     currentFight: String,
-                    spinForLootOn:Bool,
-                    isFight:Bool,
                     readInfo: Bool,
-                    isBackpack:Bool,
                     currentArticles: [String]) {
         
         let request: NSFetchRequest<LandEntity> = LandEntity.fetchRequest()
@@ -1167,13 +1135,9 @@ class CoreDataManager {
             fetchResult?.questPages = questPages
             fetchResult?.autoPlaceNames = autoPlaceNames
             fetchResult?.currentTab = currentTab
-            fetchResult?.currentTabSpun = currentTabSpun
             fetchResult?.spinnerBackground = spinnerBackground
             fetchResult?.currentFight = currentFight
-            fetchResult?.isFight = isFight
             fetchResult?.readInfo = readInfo
-            fetchResult?.isBackpack = isBackpack
-            fetchResult?.spinForLootOn = spinForLootOn
             fetchResult?.currentArticles = currentArticles
             saveData()
         } catch {
@@ -1206,7 +1170,8 @@ class CoreDataManager {
     
     func updatePack(packId:UUID,
                     date:Date,
-                    currentLand: String)
+                    currentLand: String,
+                    characterIsDead: Bool)
     {
         let request: NSFetchRequest<PackEntity> = PackEntity.fetchRequest()
         let filter = NSPredicate(format: "idW == %@", packId as CVarArg)
@@ -1219,6 +1184,7 @@ class CoreDataManager {
             
             fetchResult?.date  = date
             fetchResult?.currentLand = currentLand
+            fetchResult?.characterIsDead = characterIsDead
           
             saveData()
         } catch {
@@ -1290,24 +1256,7 @@ class CoreDataManager {
         }
     }
     
-    func updateLife(packId: UUID, heart: [Bool], water: [Bool], heartCount: Int, waterCount: Int ){
-        let request: NSFetchRequest<LifeEntity> = LifeEntity.fetchRequest()
-        let filter = NSPredicate(format: "packIdW == %@", packId as CVarArg)
-        request.predicate = filter
-        request.returnsObjectsAsFaults = false
-        var fetchResult:LifeEntity?
-        do {
-            fetchResult = try persistentContainer.viewContext.fetch(request).first ?? LifeEntity()
-            fetchResult?.heart = heart
-            fetchResult?.water = water
-            fetchResult?.heartCount = heartCount
-            fetchResult?.waterCount = waterCount
-            saveData()
-        } catch {
-            print("Fetching Failed")
-        }
-    }
-    
+
     func updateHearts(packId: UUID, on: [Bool], count: Int, tempCount: Int){
         let request: NSFetchRequest<HeartsEntity> = HeartsEntity.fetchRequest()
         let filter = NSPredicate(format: "packIdW == %@", packId as CVarArg)
@@ -1372,7 +1321,6 @@ class CoreDataManager {
                       toolWidth: CGFloat)
     //,toolColor:UIColor,toolWidth:CGFloat)
     {
-        let _ = print("In CoreDataManager/updateCanvas... ")
         let request: NSFetchRequest<CanvasEntity> = CanvasEntity.fetchRequest()
         let filter = NSPredicate(format: "idW == %@", id as CVarArg)
         request.predicate = filter
@@ -1400,7 +1348,7 @@ class CoreDataManager {
                        wedgeIndex: Int,
                        wedgeNames: [String],
                        showInfo: Bool) {
-        let _ = print("In CoreDataManager/updateSpinner... wedgeName: \(wedgeName)")
+       
         let request: NSFetchRequest<SpinnerEntity> = SpinnerEntity.fetchRequest()
         let filter = NSPredicate(format: "idW == %@", id as CVarArg)
         request.predicate = filter
@@ -1558,6 +1506,30 @@ class CoreDataManager {
             fetchResult?.characterHearts = characterHearts
             fetchResult?.fightName = fightName
             fetchResult?.showDuelView = showDuelView
+            saveData()
+        } catch {
+            print("Fetching Failed")
+        }
+    }
+    
+    
+    func updateSettings(id: UUID,
+                        packId: UUID,
+                        autofill: String,
+                        showCharacter: Bool) {
+        
+        let request: NSFetchRequest<SettingsEntity> = SettingsEntity.fetchRequest()
+        let filter = NSPredicate(format: "idW == %@", id as CVarArg)
+        request.predicate = filter
+        request.returnsObjectsAsFaults = false
+        var fetchResult: SettingsEntity?
+        
+        do {
+            fetchResult = try persistentContainer.viewContext.fetch(request).first ?? SettingsEntity()
+            fetchResult?.id = id
+            fetchResult?.packId = packId
+            fetchResult?.autofill = autofill
+            fetchResult?.showCharacter = showCharacter
             saveData()
         } catch {
             print("Fetching Failed")
