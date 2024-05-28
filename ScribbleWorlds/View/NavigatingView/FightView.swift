@@ -53,7 +53,7 @@ struct FightView: View {
                             .scaledFont(name: "Chalkduster", size: 20)
                             .frame(width:viewManager.spinnerView.stats.pointsWidth, height: viewManager.spinnerView.stats.levelNameHeight)
                             .background(
-                                Image("Attack Points")
+                                Image("Attack Points None")
                                     .resizable()
                                     .scaledToFit()
                                     .foregroundColor(.gray)
@@ -63,7 +63,7 @@ struct FightView: View {
                             .scaledFont(name: "Chalkduster", size: 20)
                             .frame(width:viewManager.spinnerView.stats.pointsWidth, height: viewManager.spinnerView.stats.levelNameHeight)
                             .background(
-                                Image("Defense Points")
+                                Image("Defense Points None")
                                     .resizable()
                                     .scaledToFit()
                                     .foregroundColor(.gray)
@@ -140,9 +140,9 @@ struct FightView: View {
             }
             .frame(width:viewManager.fightView.majorFightAndTitle.width, height:viewManager.fightView.majorFightAndTitle.height)
             
-            .overlay(fightViewModel.showSpinForLootView  ? SpinForLootView(viewManager: viewManager, landViewModel: landViewModel, articleViewModel: articleViewModel, fightViewModel: fightViewModel) : nil)
-            .overlay(showDefeatedView  ? DefeatedView(viewManager: viewManager, land:$land) : nil)
-           
+            .overlay(fightViewModel.showSpinForLootView  ? SpinForLootView(viewManager: viewManager, landViewModel: landViewModel, articleViewModel: articleViewModel, fightViewModel: fightViewModel, updateViewModel: $updateViewModel) : nil)
+            .overlay(fightViewModel.showDefeatedView ? DefeatedView(viewManager: viewManager,land: $landViewModel.name) : nil)
+            
             
             
             
@@ -188,6 +188,9 @@ struct FightView: View {
         .onChange(of:fightViewModel.name) {
             updateFight()
         }
+        .onChange(of:fightViewModel.isDead) {
+            updateFight()
+        }
        .frame(width:viewManager.fightView.width, height:viewManager.fightView.height)
         .border(.gray)
         .opacity(1.0)
@@ -203,11 +206,11 @@ struct FightView: View {
             numberOfCols += 1
         }
         
-        showDefeatedView  = false
-        land = landViewModel.name
-        if landViewModel.spinForLootOn && fightViewModel.nextFight == "Defeated" {
-            showDefeatedView  = true
-        }
+//        showDefeatedView  = false
+//        land = landViewModel.name
+//        if landViewModel.spinForLootOn && fightViewModel.nextFight == "Defeated" {
+//            showDefeatedView  = true
+//        }
     }
 }
 

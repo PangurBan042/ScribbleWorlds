@@ -22,15 +22,25 @@ struct ThirstyView: View {
                 .strokeBorder(.white, lineWidth:2)
                 .background(Circle().fill(.white))
                 .opacity(1.0)
-            
-            Text("YOU RAN OUT OF WATER, LOSE A HEART")
-                .font(.title)
-                .frame(width: radius/2)
+            VStack {
+                Image("protagonistThirsty")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: radius/2)
+                
+                Text("Out of water, lose a heart!")
+                    .font(.custom("Chalkduster", size: 16))
+                    .lineLimit(4)
+                    .minimumScaleFactor(0.3)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.black)
+                    .frame(alignment: .center)
+               
+            }
               
            
         }
         .frame(width:radius, height:radius, alignment: .center)
-        .border(.gray)
         .onAppear(perform: {
             radius = min(viewManager.spinnerView.spinner.width, viewManager.spinnerView.spinner.height) / 1.8
         })

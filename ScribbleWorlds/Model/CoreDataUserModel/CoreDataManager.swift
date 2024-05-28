@@ -21,6 +21,7 @@ class CoreDataManager {
     
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentCloudKitContainer(name:"CoreDataContainer")
+        
         container.loadPersistentStores { (storeDescr, error) in
             if let error = error  as NSError? {
                 fatalError ("Unresolved error: \(error), \(error.userInfo)")
@@ -33,6 +34,7 @@ class CoreDataManager {
     
     func saveData() {
         let context = persistentContainer.viewContext
+        context.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
         if context.hasChanges {
             do {
                 try context.save()
@@ -1102,7 +1104,6 @@ class CoreDataManager {
                     packId: UUID,
                     scribbleId: UUID,
                     tabId: UUID,
-                    previousFight: String,
                     priorLand: String,
                     afterLand: String,
                     name: String,
@@ -1126,7 +1127,6 @@ class CoreDataManager {
             fetchResult = try persistentContainer.viewContext.fetch(request).first ?? LandEntity()
             fetchResult?.scribbleId = scribbleId
             fetchResult?.tabId  = tabId
-            fetchResult?.previousFight  = previousFight
             fetchResult?.priorLand = priorLand
             fetchResult?.afterLand = afterLand
             fetchResult?.name = name

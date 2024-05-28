@@ -107,6 +107,7 @@ struct ScribbleView: View {
         .overlay(navigateViewModel.menuSelection == "Settings" ? SettingsView(viewManager: viewManager, settingsViewModel: settingsViewModel) : nil)
         .overlay(navigateViewModel.menuSelection == "Help" ? HelpView(viewManager: viewManager, helpPages: helpPages) : nil)
         .overlay(characterIsDead ?  DeadView(viewManager: viewManager, updateViewModel: $updateViewModel, characterIsDead: $characterIsDead) : nil)
+        
 
 //        .onChange(of: updateManager.autoFill)  {
 //            autoFill = update.autoFill

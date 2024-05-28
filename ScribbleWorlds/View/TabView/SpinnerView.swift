@@ -93,10 +93,21 @@ struct SpinnerContainer: View {
             firstSpin = false
             duelViewModel.getData(landId: tabViewModel.landId)
         }
-        .onChange(of:updateViewModel.updateWedge) {
+        .onChange(of:updateViewModel.updateWedgeForHome) {
             oldSpinnerManagerId = spinnerViewModel.id
             saveData()
             updateViewModel.spinnerSavedTakeSnapshot.toggle()
+        }
+    
+        .onChange(of:updateViewModel.updateWedgeForShare) {
+            oldSpinnerManagerId = spinnerViewModel.id
+            saveData()
+            updateViewModel.spinnerSavedShareSnapshot.toggle()
+        }
+        .onChange(of:updateViewModel.updateTab) {
+            tabViewModel.name = landViewModel.currentTab
+            tabViewModel.backgroundName = landViewModel.spinnerBackground
+            tabViewModel.updateData()
         }
         
         .onReceive(Just(alertTime)) { alertTime in
@@ -135,21 +146,23 @@ struct SpinnerContainer: View {
             fightViewModel.showSpinForLootView = false
             if !fightViewModel.showSpinForLootView {
                 fightViewModel.getData(landId: landViewModel.id, name: fightViewModel.nextFight)
+                landViewModel.currentFight = fightViewModel.name
             }
             duelViewModel.enemyHearts = 0
             duelViewModel.characterHearts = 0
             duelViewModel.fightName = fightViewModel.name
+            duelViewModel.updateData()
         } else if spinnerName.contains("Fight") {
-            
+            duelViewModel.enemyHearts = 0
+            duelViewModel.characterHearts = 0
             if !duelViewModel.showDuelView {
                 duelViewModel.showDuelView = true
-                
             }
             
             if !fightViewModel.showSpinForLootView {
                 updateDuel()
             }
-
+            
             duelViewModel.updateData()
             setArticles()
         } else {
@@ -217,7 +230,7 @@ struct SpinnerContainer: View {
         
         
         var enemyHearts = fightViewModel.defensePoints - (dataViewModel.characterAttackPoints + bonusAttackPoints)
-        if duelViewModel.showDuelView {
+        if duelViewModel.showDuelView && !fightViewModel.showDefeatedView && !characterIsDead {
             if enemyHearts >= 0  { enemyHearts = 0} else
             {
                 var absEnemyHearts = abs(enemyHearts)
@@ -228,7 +241,9 @@ struct SpinnerContainer: View {
                     fightViewModel.on[enemyHeartIndex - Int(index)] = false
                 }
                 duelViewModel.enemyHearts = enemyHearts
+                duelViewModel.updateData()
                 fightViewModel.count = fightViewModel.on.filter{$0 == true}.count
+            
                 
                 if fightViewModel.count <= 0 {
                     fightViewModel.isDead = true
@@ -254,7 +269,7 @@ struct SpinnerContainer: View {
                         }
                     } else {
                         fightViewModel.showDefeatedView.toggle()
-                        
+                        fightViewModel.isDead = true
                     }
                 }
             }
@@ -273,6 +288,7 @@ struct SpinnerContainer: View {
                     
                 }
                 duelViewModel.characterHearts = yourHearts
+                duelViewModel.updateData()
                 heartsViewModel.count = heartsViewModel.on.filter{$0 == true}.count
                 heartsViewModel.tempCount = heartsViewModel.count
                 heartsViewModel.updateData()

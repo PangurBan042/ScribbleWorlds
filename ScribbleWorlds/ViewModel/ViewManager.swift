@@ -581,6 +581,129 @@ public class ViewManager:ObservableObject {
     }
 
     
+    var spinForLootView:  ViewModel.SpinForLootView{
+        
+        var width:  Double {
+            set {viewModel.spinForLootView.width = newValue}
+            get {return viewModel.spinForLootView.width}
+        }
+        var height:  Double {
+            set {viewModel.spinForLootView.height = newValue}
+            get {return viewModel.spinForLootView.height}
+        }
+        
+        var padding: ViewModel.SpinForLootView.Padding {
+            var width: Double {
+                set {viewModel.spinForLootView.padding.width = newValue}
+                get {return viewModel.spinForLootView.padding.width}
+            }
+            var height: Double {
+                set {viewModel.spinForLootView.padding.height = newValue}
+                get {return viewModel.spinForLootView.padding.height}
+            }
+            return viewModel.spinForLootView.padding
+        }
+        
+        
+        var congrats: ViewModel.SpinForLootView.Congrats {
+            var width: Double {
+                set {viewModel.spinForLootView.congrats.width = newValue}
+                get {return viewModel.spinForLootView.congrats.width}
+            }
+            var height: Double {
+                set {viewModel.spinForLootView.congrats.height = newValue}
+                get {return viewModel.spinForLootView.congrats.height}
+            }
+            return viewModel.spinForLootView.congrats
+        }
+        
+        var fightImage: ViewModel.SpinForLootView.FightImage {
+            var width: Double {
+                set {viewModel.spinForLootView.fightImage.width = newValue}
+                get {return viewModel.spinForLootView.fightImage.width}
+            }
+            var height: Double {
+                set {viewModel.spinForLootView.fightImage.height = newValue}
+                get {return viewModel.spinForLootView.fightImage.height}
+            }
+            return viewModel.spinForLootView.fightImage
+        }
+        
+        var fightName: ViewModel.SpinForLootView.FightName {
+            var width: Double {
+                set {viewModel.spinForLootView.fightName.width = newValue}
+                get {return viewModel.spinForLootView.fightName.width}
+            }
+            var height: Double {
+                set {viewModel.spinForLootView.fightName.height = newValue}
+                get {return viewModel.spinForLootView.fightName.height}
+            }
+            return viewModel.spinForLootView.fightName
+        }
+        
+        var bestowItem: ViewModel.SpinForLootView.BestowItem {
+            var width: Double {
+                set {viewModel.spinForLootView.bestowItem.width = newValue}
+                get {return viewModel.spinForLootView.bestowItem.width}
+            }
+            var height: Double {
+                set {viewModel.spinForLootView.bestowItem.height = newValue}
+                get {return viewModel.spinForLootView.bestowItem.height}
+            }
+            return viewModel.spinForLootView.bestowItem
+        }
+        
+        var itemName: ViewModel.SpinForLootView.ItemName {
+            var width: Double {
+                set {viewModel.spinForLootView.itemName.width = newValue}
+                get {return viewModel.spinForLootView.itemName.width}
+            }
+            var height: Double {
+                set {viewModel.spinForLootView.itemName.height = newValue}
+                get {return viewModel.spinForLootView.itemName.height}
+            }
+            return viewModel.spinForLootView.itemName
+        }
+        
+        var itemImage: ViewModel.SpinForLootView.ItemImage {
+            var width: Double {
+                set {viewModel.spinForLootView.itemImage.width = newValue}
+                get {return viewModel.spinForLootView.itemImage.width}
+            }
+            var height: Double {
+                set {viewModel.spinForLootView.itemImage.height = newValue}
+                get {return viewModel.spinForLootView.itemImage.height}
+            }
+            return viewModel.spinForLootView.itemImage
+        }
+        
+        var itemInfo: ViewModel.SpinForLootView.ItemInfo {
+            var width: Double {
+                set {viewModel.spinForLootView.itemInfo.width = newValue}
+                get {return viewModel.spinForLootView.itemInfo.width}
+            }
+            var height: Double {
+                set {viewModel.spinForLootView.itemInfo.height = newValue}
+                get {return viewModel.spinForLootView.itemInfo.height}
+            }
+            return viewModel.spinForLootView.itemInfo
+        }
+        
+        var tapAndSpin: ViewModel.SpinForLootView.TapAndSpin {
+            var width: Double {
+                set {viewModel.spinForLootView.tapAndSpin.width = newValue}
+                get {return viewModel.spinForLootView.tapAndSpin.width}
+            }
+            var height: Double {
+                set {viewModel.spinForLootView.tapAndSpin.height = newValue}
+                get {return viewModel.spinForLootView.tapAndSpin.height}
+            }
+            return viewModel.spinForLootView.tapAndSpin
+        }
+        
+        return viewModel.spinForLootView
+    }
+    
     var goalView:  ViewModel.GoalView {
         var width:  Double {
             set {viewModel.goalView.width = newValue}
@@ -1010,6 +1133,37 @@ public class ViewManager:ObservableObject {
         
         viewModel.fightView.minorFightName.width = viewModel.fightView.width
         viewModel.fightView.minorFightName.height =  viewModel.fightView.minorFight.height * viewDefaults.percentFightViewMinorFightName
+        
+        
+        
+        
+        
+        viewModel.spinForLootView.width = viewModel.fightView.majorFightAndTitle.width
+        viewModel.spinForLootView.height = viewModel.fightView.majorFightAndTitle.height
+        
+        viewModel.spinForLootView.congrats.width = viewModel.spinForLootView.width
+        viewModel.spinForLootView.congrats.height = viewModel.spinForLootView.height * viewDefaults.percentSpinForLootCongrats
+        
+        viewModel.spinForLootView.fightName.width = viewModel.spinForLootView.width
+        viewModel.spinForLootView.fightName.height = viewModel.spinForLootView.height * viewDefaults.percentSpinForLootFightName
+        
+        viewModel.spinForLootView.fightImage.width = viewModel.spinForLootView.width
+        viewModel.spinForLootView.fightImage.height = viewModel.spinForLootView.height * viewDefaults.percentSpinForLootFightImage
+        
+        viewModel.spinForLootView.itemName.width = viewModel.spinForLootView.width
+        viewModel.spinForLootView.itemName.height = viewModel.spinForLootView.height * viewDefaults.percentSpinForLootItemName
+        
+        viewModel.spinForLootView.bestowItem.width = viewModel.spinForLootView.width
+        viewModel.spinForLootView.bestowItem.height = viewModel.spinForLootView.height * viewDefaults.percentSpinForLootBestowItem
+        
+        viewModel.spinForLootView.itemImage.width = viewModel.spinForLootView.width
+        viewModel.spinForLootView.itemImage.height = viewModel.spinForLootView.height * viewDefaults.percentSpinForLootItemImage
+        
+        viewModel.spinForLootView.itemInfo.width = viewModel.spinForLootView.width
+        viewModel.spinForLootView.itemInfo.height = viewModel.spinForLootView.height * viewDefaults.percentSpinForLootItemInfo
+        
+        viewModel.spinForLootView.tapAndSpin.width = viewModel.spinForLootView.width
+        viewModel.spinForLootView.tapAndSpin.height = viewModel.spinForLootView.height * viewDefaults.percentSpinForLootTapAndSpin
         
         
         

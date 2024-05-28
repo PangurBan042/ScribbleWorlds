@@ -167,18 +167,16 @@ struct NavigateViewAdventure: View {
                     .frame(width: viewManager.navigateView.afterStatsPadding.width, height: viewManager.navigateView.afterStatsPadding.height)
                 
                 Button {
-                        if landViewModel.currentTab.contains("Loot") ||
-                            landViewModel.currentTab.contains("Fight") ||
-                            navigateViewModel.menuSelection.contains("Book") ||
-                            navigateViewModel.menuSelection.contains("Backpack") ||
-                            navigateViewModel.menuSelection.contains("Help") {
-                            showDrawing = false } else { showDrawing = true }
-                        
-                        takeSnapshot.toggle()
-                        shareSnapshot.toggle()
-                    landViewModel.updateData()
-                    navigateViewModel.updateData()
                     
+                    if landViewModel.currentTab.contains("Loot") ||
+                        landViewModel.currentTab.contains("Fight") ||
+                        navigateViewModel.menuSelection.contains("Book") ||
+                        navigateViewModel.menuSelection.contains("Backpack") ||
+                        navigateViewModel.menuSelection.contains("Help") {
+                        showDrawing = false } else { showDrawing = true }
+                        updateViewModel.updateWedgeForShare.toggle()
+                        navigateViewModel.updateData()
+                        
                 } label: {
                     Image("Share Icon")
                         .resizable()
@@ -223,7 +221,7 @@ struct NavigateViewAdventure: View {
                         navigateViewModel.menuSelection.contains("Backpack") ||
                         navigateViewModel.menuSelection.contains("Help") {
                         showDrawing = false } else { showDrawing = true }
-                        updateViewModel.updateWedge.toggle()
+                        updateViewModel.updateWedgeForHome.toggle()
                         navigateViewModel.updateData()
                 } label: {
                     Image("Home Icon")
@@ -259,11 +257,15 @@ struct NavigateViewAdventure: View {
             }
         }
         .onChange(of:updateViewModel.spinnerSavedTakeSnapshot) {
-            takeSnapshot = true
+            takeSnapshot.toggle()
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.2)  {
             activeSheet = Optional.none
                 UIView.setAnimationsEnabled(false)
             }
+        }
+        .onChange(of:updateViewModel.spinnerSavedShareSnapshot) {
+            takeSnapshot.toggle()
+            shareSnapshot.toggle()
         }
 //        .onBackground {
 //            canvasManager.saveCanvasDataToCanvasObject()
@@ -344,20 +346,25 @@ struct HeartsView: View {
         .onChange(of: updateViewModel.waterLossOfHeart) {
             if let heartIndex = heartsViewModel.on.lastIndex(of:true) {
                 heartsViewModel.on[heartIndex].toggle()
+                heartsViewModel.count = heartIndex
+                heartsViewModel.tempCount = heartsViewModel.count
                 heartsViewModel.updateData()
                 updateViewModel.animateThirsty = true
             }
             if !heartsViewModel.on.allSatisfy({$0 == false}) {
                 updateViewModel.updateWatersToTrue.toggle()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                     updateViewModel.animateThirsty = false
                 }
+                
             } else {
                 characterIsDead = true
             }
         }
         .onChange(of: updateViewModel.updateHeartsToTrue) {
             heartsViewModel.on =  heartsViewModel.on.map { _ in true }
+            heartsViewModel.count = heartsViewModel.on.count
+            heartsViewModel.tempCount = heartsViewModel.count
             heartsViewModel.updateData()
         }
         
@@ -385,7 +392,6 @@ struct WaterView: View {
                         waterViewModel.updateData()
                         if waterViewModel.on.allSatisfy({$0 == false}){
                             updateViewModel.waterLossOfHeart.toggle()
-
                         }
                     } label: {
                         Image(waterViewModel.on[index] ? "Drop Filled" : "Drop Empty")
@@ -398,6 +404,8 @@ struct WaterView: View {
                    height: viewManager.navigateView.stats.height/2)
             .onChange(of:updateViewModel.updateWatersToTrue) {
                 waterViewModel.on =  waterViewModel.on.map { _ in true }
+                waterViewModel.count = waterViewModel.on.count
+                waterViewModel.tempCount = waterViewModel.count
                 waterViewModel.updateData()
             }
     }

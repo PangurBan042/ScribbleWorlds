@@ -308,6 +308,71 @@ public class ViewModel {
     }
     
     
+    
+    
+    
+    
+    
+    public struct SpinForLootView {
+        
+        var width: Double
+        var height: Double
+        
+        public struct Padding {
+            var width: Double
+            var height: Double
+        }
+        var padding  = Padding(width:0.0, height: 0.0)
+        
+        public struct Congrats{
+            var width: Double
+            var height: Double
+        }
+        var congrats  = Congrats(width:0.0, height: 0.0)
+        
+        public struct FightImage {
+            var width: Double
+            var height: Double
+        }
+        var fightImage  = FightImage(width:0.0, height: 0.0)
+        
+        public struct FightName {
+            var width: Double
+            var height: Double
+        }
+        var fightName  = FightName(width:0.0, height: 0.0)
+        
+        public struct BestowItem {
+            var width: Double
+            var height: Double
+        }
+        var bestowItem  = BestowItem(width:0.0, height: 0.0)
+        
+        public struct ItemName {
+            var width: Double
+            var height: Double
+        }
+        var itemName  = ItemName(width:0.0, height: 0.0)
+        
+        public struct ItemImage {
+            var width: Double
+            var height: Double
+        }
+        var itemImage  = ItemImage(width:0.0, height: 0.0)
+        
+        public struct ItemInfo {
+            var width: Double
+            var height: Double
+        }
+        var itemInfo  = ItemInfo(width:0.0, height: 0.0)
+        
+        public struct TapAndSpin {
+            var width: Double
+            var height: Double
+        }
+        var tapAndSpin  = TapAndSpin(width:0.0, height: 0.0)
+    }
+    
     public struct BackpackView {
         
         var width: Double
@@ -400,6 +465,7 @@ public class ViewModel {
     public var goalView = GoalView(width: 0.0, height: 0.0)
     public var navigateView = NavigateView(width: 0.0, height: 0.0)
     public var fightView = FightView(width: 0.0, height: 0.0)
+    public var spinForLootView = SpinForLootView(width: 0.0, height: 0.0)
     public var backpackView = BackpackView(width: 0.0, height: 0.0)
     public var deadView = DeadView(width: 0.0, height: 0.0)
     

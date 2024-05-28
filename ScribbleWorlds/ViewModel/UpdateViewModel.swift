@@ -37,10 +37,13 @@ struct UpdateViewModel {
     var isDead: Bool = false
     var resetTempOverlay: Bool = false
     var updateBackpack: Bool = false
-    var updateWedge: Bool = false
+    var updateWedgeForHome: Bool = false
+    var updateWedgeForShare: Bool = false
     var updateInfo: UpdateInfo = UpdateInfo()
+    var updateTab: Bool = false
     var health: Health = Health()
     var updateHeartsToTrue: Bool = false
     var updateWatersToTrue: Bool = false
     var spinnerSavedTakeSnapshot: Bool = false
+    var spinnerSavedShareSnapshot: Bool = false
 }

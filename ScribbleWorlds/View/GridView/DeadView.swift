@@ -42,6 +42,7 @@ struct DeadView: View {
                 Button ("I'm not ready to be vanquished!!!"){
                     updateViewModel.updateHeartsToTrue.toggle()
                     updateViewModel.updateWatersToTrue.toggle()
+                    updateViewModel.animateThirsty = false
                     characterIsDead = false
                 }
                 .scaledFont(name: "WalterTurncoat-Regular", size: 40)

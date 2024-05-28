@@ -34,9 +34,11 @@ struct YouAreHereView: View {
                     
                     scribbleViewModel.youAreHereX = x/squareSize
                     scribbleViewModel.youAreHereY = y/squareSize
+                    scribbleViewModel.updateData()
                     gridX = Int(scribbleViewModel.youAreHereX)
                     gridY = Int(scribbleViewModel.youAreHereY)
                     createAvailableGrid()
+                    
                 }
                 
                 

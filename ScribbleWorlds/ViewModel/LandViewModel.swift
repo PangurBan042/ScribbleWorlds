@@ -16,13 +16,11 @@ class LandViewModel: ObservableObject {
     @Published var readInfo: Bool = false
     @Published var name: String = ""
     @Published var spinForLootOn: Bool = false
-   
     @Published var currentTab: String = ""
     var id: UUID = UUID()
     var packId: UUID = UUID()
     var scribbleId: UUID = UUID()
     var tabId: UUID = UUID()
-    var previousFight: String = ""
     var priorLand: String = ""
     var afterLand: String = ""
     var fightHeading: String = ""
@@ -53,7 +51,6 @@ class LandViewModel: ObservableObject {
                     packId: packId,
                     scribbleId: scribbleId,
                     tabId: tabId,
-                    previousFight: previousFight,
                     priorLand: priorLand,
                     afterLand: afterLand,
                     name: name,
@@ -75,7 +72,6 @@ class LandViewModel: ObservableObject {
         scribbleId = landData.scribbleId
         self.name = landData.name
         questPages = landData.questPages
-        previousFight = landData.previousFight
         priorLand = landData.priorLand
         afterLand = landData.afterLand
         currentTab = landData.currentTab

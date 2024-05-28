@@ -38,6 +38,7 @@ struct DuelView: View {
                     
                     Text("vs")
                         .scaledToFit()
+                        .scaledFont(name: "Chalkduster", size: 20)
                         .frame(width: radius * 1/0, height: radius * 1/0)
                     
                     Text("")

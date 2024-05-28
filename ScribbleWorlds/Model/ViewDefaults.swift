@@ -52,7 +52,7 @@ struct ViewDefaults {
     var percentGoalView:Double = 0.10
     
     
-    // SPINNER/TAB/STAT
+    // SPINNER/TAB/STAT VIEWS
     var percentSpinnerPadding = 0.015
     var percentStat:Double = 0.30
     var percentSpinner:Double = 0.38
@@ -69,7 +69,7 @@ struct ViewDefaults {
    
    
     
-    // NAVIGATION
+    // NAVIGATIONVIEW
     // Percentage of screen for navigation ArrowPadding section
     var percentNavigatingViewIconPadding:Double = 0.02
     // Percentage of screen for navigation LeftArrow section
@@ -103,7 +103,7 @@ struct ViewDefaults {
     
    
     
-    //GOAL Section
+    //GOALVIEW
     // Percentage of screen for goal height padding section
     var percentGoalViewHeightPadding:Double = 0.80
     // Percentage of screen for goal title section
@@ -117,7 +117,7 @@ struct ViewDefaults {
     // Percentage of screen for goal column padding sections
     var percentGoalViewColumnPadding:Double = 0.05
     
-    
+    //FIGHTVIEW
     // Percentage of screen for padding
     var percentFightView: Double = 0.95
     // Percentage of screen for padding
@@ -153,6 +153,32 @@ struct ViewDefaults {
     var percentFightViewMinorFightName: Double = 0.4
     
 
+    //SPINFORLOOT
+    //Percentage of screen for Congrats
+    var percentSpinForLootCongrats: Double = 0.1
+    //Percentage of screen for Name of Fight
+    var percentSpinForLootFightName: Double = 0.1
+    //Percentage of screen for Image of Fight
+    var percentSpinForLootFightImage: Double = 0.1
+    
+    //Percentage of screen for Bestow Item
+    var percentSpinForLootBestowItem: Double = 0.1
+    //Percentage of screen for Won Item Name
+    var percentSpinForLootItemName: Double = 0.1
+    //Percentage of screen for Won Item Image
+    var percentSpinForLootItemImage: Double = 0.2
+    //Percentage of screen for Won Item Info
+    var percentSpinForLootItemInfo: Double = 0.1
+    
+    //Percentage of screen for Spin For Item
+    var percentSpinForLootTapAndSpin: Double = 0.1
+    
+    
+    
+    
+    
+    
+    //BACKPACK
     // Percentage of screen for padding
     var percentBackpackView: Double = 0.9
     

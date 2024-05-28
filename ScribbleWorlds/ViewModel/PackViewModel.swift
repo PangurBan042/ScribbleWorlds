@@ -21,12 +21,15 @@ public class PackViewModel: ObservableObject {
     deinit {
         print("PackManager is deinitialized")
     }
-
+    
+  
 
     func addData(packName: String) {
         let packDefault = PackDefaults.getData(from:packName)
-        CoreDataManager.instance.addData(packDefault: packDefault, packId:id)
-        getData(packId: id)
+        let packId = UUID()
+        id = packId
+        CoreDataManager.instance.addData(packDefault: packDefault, packId:packId)
+        getData(packId:packId)
     }
     
     func getData(packId:UUID) {

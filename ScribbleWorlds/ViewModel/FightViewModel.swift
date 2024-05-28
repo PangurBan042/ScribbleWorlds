@@ -122,6 +122,27 @@ public class FightViewModel: ObservableObject {
             fight.showDuelView = fightData.showDuelView
         }
     }
+    
+    
+//    func updateData() {
+//        CoreDataManager.instance.updateFight(id: id,
+//                    landId: landId,
+//                    info: info,
+//                    name: name,
+//                    nextFight: nextFight,
+//                    info: info,
+//                    article: article,
+//                    level: level,
+//                    attackPoints: attackPoints,
+//                    defensePoints: defensePoints,
+//                    on: on,
+//                    count: count,
+//                    isDead: isDead,
+//                    showDefeatedView: showDefeatedView,
+//                    showSpinForLootView: showSpinForLootView,
+//                    showDuelView: showDuelView)
+//                   
+//    }
   
     func getAllData(landId:UUID) -> [Fight] {
         return  CoreDataManager.instance.getAllFights(landId: landId)
