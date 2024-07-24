@@ -22,7 +22,10 @@ public class InfoViewModel: ObservableObject {
     @Published var helmName: String = ""
     @Published var helmValue: Int = 0
     @Published var attackPoints: Int = 0
+    @Published var attackPointsForOneBattle: Int = 0
+    @Published var defensePointsForOneBattle: Int = 0
     @Published var defensePoints: Int = 0
+    
     
     deinit {
         print("PackManager is deinitialized")
@@ -47,6 +50,8 @@ public class InfoViewModel: ObservableObject {
         helmName = infoData.helmName
         helmValue = infoData.helmValue
         attackPoints = infoData.attackPoints
+        attackPointsForOneBattle = infoData.attackPointsForOneBattle
+        defensePointsForOneBattle = infoData.defensePointsForOneBattle
         defensePoints = infoData.defensePoints
     }
     

@@ -68,6 +68,9 @@ struct YouAreHereView: View {
             y = scribbleViewModel.youAreHereY * squareSize
             gridX = Int(scribbleViewModel.youAreHereX)
             gridY = Int(scribbleViewModel.youAreHereY)
+            //For snapping to center of grid square.
+            x = CGFloat(gridX) * squareSize + squareSize/2
+            y = CGFloat(gridY) * squareSize + squareSize/2
             createAvailableGrid()
         })
         .onChange(of:scribbleViewModel.id) {
@@ -75,6 +78,9 @@ struct YouAreHereView: View {
             y = scribbleViewModel.youAreHereY * squareSize
             gridX = Int(scribbleViewModel.youAreHereX)
             gridY = Int(scribbleViewModel.youAreHereY)
+            //For snapping to center of grid square.
+            x = CGFloat(gridX) * squareSize + squareSize/2
+            y = CGFloat(gridY) * squareSize + squareSize/2
             createAvailableGrid()
         }
     }

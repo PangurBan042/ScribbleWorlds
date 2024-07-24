@@ -20,6 +20,8 @@ extension InfoEntity {
     @NSManaged public var armorNameW: String?
     @NSManaged public var armorValueW: Int16
     @NSManaged public var attackPointsW: Int16
+    @NSManaged public var attackPointsForOneBattleW: Int16
+    @NSManaged public var defensePointsForOneBattleW: Int16
     @NSManaged public var defensePointsW: Int16
     @NSManaged public var helmNameW: String?
     @NSManaged public var helmValueW: Int16
@@ -98,12 +100,21 @@ extension InfoEntity {
         get {Int(attackPointsW)}
     }
     
+    public var attackPointsForOneBattle: Int {
+        set {attackPointsForOneBattleW = Int16(newValue)}
+        get {Int(attackPointsForOneBattleW)}
+    }
+        
     public var defensePoints: Int {
         set {defensePointsW = Int16(newValue)}
         get {Int(defensePointsW)}
     }
     
-    
+    public var defensePointsForOneBattle: Int {
+        set {defensePointsForOneBattleW = Int16(newValue)}
+        get {Int(defensePointsForOneBattleW)}
+    }
+        
     public var pack: PackEntity {
         get {packW ?? PackEntity()}
     }

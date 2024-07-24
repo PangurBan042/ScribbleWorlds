@@ -91,6 +91,7 @@ struct SpinForLootView: View {
             }
         }
         .frame(width:viewManager.spinForLootView.width, height:viewManager.spinForLootView.height)
+       
         
         
     }

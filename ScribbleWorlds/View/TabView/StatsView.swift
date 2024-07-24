@@ -11,6 +11,7 @@ struct StatsView: View {
     
     @ObservedObject var viewManager: ViewManager
     @ObservedObject var infoViewModel: InfoViewModel
+    @Binding var updateViewModel: UpdateViewModel
     let color = #colorLiteral(red: 0.8991737962, green: 0.9104933739, blue: 0.910294354, alpha: 1)
     
     
@@ -51,7 +52,11 @@ struct StatsView: View {
             }
         }
         .frame(width: viewManager.spinnerView.stats.width, height:viewManager.spinnerView.stats.height)
-
+        .onChange(of: updateViewModel.resetPointsAfterOneBattle) {
+            infoViewModel.attackPointsForOneBattle = 0
+            infoViewModel.defensePointsForOneBattle = 0
+        }
+      
     }
 }
 
@@ -101,7 +106,7 @@ struct LevelandPointsView: View {
                     .frame(width:viewManager.spinnerView.stats.columnPadding, height: viewManager.spinnerView.stats.levelNameHeight)
                 
                 
-                Text("\(infoViewModel.attackPoints + infoViewModel.level)")
+                Text("\(infoViewModel.attackPoints + infoViewModel.level + infoViewModel.attackPointsForOneBattle)")
                     .scaledFont(name: "Chalkduster", size: 15)
                     .frame(width:viewManager.spinnerView.stats.pointsWidth, height: viewManager.spinnerView.stats.levelNameHeight)
                     .background(
@@ -110,7 +115,7 @@ struct LevelandPointsView: View {
                             .scaledToFit()
                             .foregroundColor(.gray)
                     )
-                Text("\(infoViewModel.defensePoints)")
+                Text("\(infoViewModel.defensePoints + infoViewModel.defensePointsForOneBattle)")
                     .scaledFont(name: "Chalkduster", size: 15)
                     .frame(width:viewManager.spinnerView.stats.pointsWidth, height: viewManager.spinnerView.stats.levelNameHeight)
                     .background(

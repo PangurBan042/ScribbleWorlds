@@ -1145,7 +1145,7 @@
                 "imageName": "Defense Points Zero",
                 "info": "Blah",
                 "type": "",
-                "value": 1
+                "value": 0
             },
             {
                 "name": "Defend Yourself with a +1 defense points",
@@ -1159,7 +1159,7 @@
                 "imageName": "Defense Points Positive 2",
                 "info": "Blah",
                 "type": "",
-                "value": 3
+                "value": 2
             },
             {
                 "name": "Defend Yourself with a +3 defense points",
@@ -2930,6 +2930,13 @@
                 "name": "Grass Armor",
                 "imageName": "Grass Armor",
                 "info": "Fight Monster Heart 1",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Water Skin",
+                "imageName": "Water Skin",
+                "info": "Single use, refills your canteen",
                 "type": "",
                 "value": 1
             },

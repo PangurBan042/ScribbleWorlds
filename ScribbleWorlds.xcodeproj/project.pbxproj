@@ -414,12 +414,12 @@
 			isa = PBXGroup;
 			children = (
 				7890F29F2BEBD29200A11ED4 /* BackpackView.swift */,
+				7890F2A32BEBD29200A11ED4 /* NavigateViewAdventure.swift */,
 				7890F2A02BEBD29200A11ED4 /* BookView.swift */,
 				7890F2A62BEBD29300A11ED4 /* DefeatedView.swift */,
 				7890F2A22BEBD29200A11ED4 /* DuelView.swift */,
 				7890F2A12BEBD29200A11ED4 /* FightView.swift */,
 				7890F29C2BEBD29200A11ED4 /* HelpView.swift */,
-				7890F2A32BEBD29200A11ED4 /* NavigateViewAdventure.swift */,
 				7890F2A42BEBD29200A11ED4 /* ReadIntroView.swift */,
 				7890F29D2BEBD29200A11ED4 /* SettingsView.swift */,
 				7890F2A52BEBD29300A11ED4 /* ShareView.swift */,
@@ -442,10 +442,10 @@
 		7890F2912BEBD22D00A11ED4 /* GridView */ = {
 			isa = PBXGroup;
 			children = (
+				7890F2BB2BEBD2C100A11ED4 /* ScribbleView.swift */,
 				7890F2BA2BEBD2C100A11ED4 /* DeadView.swift */,
 				7890F2B92BEBD2C100A11ED4 /* DrawingCanvasView.swift */,
 				7890F2BD2BEBD2C100A11ED4 /* DrawingCanvasViewController.swift */,
-				7890F2BB2BEBD2C100A11ED4 /* ScribbleView.swift */,
 				7890F2BC2BEBD2C100A11ED4 /* YouAreHereView.swift */,
 			);
 			path = GridView;

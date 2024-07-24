@@ -10,7 +10,7 @@ import SwiftUI
 struct DeadView: View {
     @ObservedObject var viewManager: ViewManager
     @Binding var updateViewModel: UpdateViewModel
-    @Binding var characterIsDead: Bool
+
     
     let color = #colorLiteral(red: 0.9981341958, green: 0.579616487, blue: 0, alpha: 1)
     
@@ -43,7 +43,8 @@ struct DeadView: View {
                     updateViewModel.updateHeartsToTrue.toggle()
                     updateViewModel.updateWatersToTrue.toggle()
                     updateViewModel.animateThirsty = false
-                    characterIsDead = false
+                    updateViewModel.characterIsDead = false
+                    updateViewModel.resetPointsAfterOneBattle.toggle()
                 }
                 .scaledFont(name: "WalterTurncoat-Regular", size: 40)
                 .multilineTextAlignment(.center)

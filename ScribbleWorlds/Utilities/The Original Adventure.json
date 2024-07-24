@@ -387,8 +387,8 @@
           },
           {
              "name":"Water Skin",
-             "category":"Tool",
-             "type":"Water",
+             "category":"Character Attack",
+             "type":"Character Attack",
              "permanent":false,
              "info":"Single use, refills your canteen",
              "value": 1,
@@ -404,11 +404,11 @@
           },
           {
              "name":"Grass Potion",
-             "category":"Potion",
-             "type":"Heart",
+             "category":"Character Defense",
+             "type":"Character Defense",
              "permanent":false,
              "info":"Tastes terrible, but restores one heart",
-             "value": 1,
+             "value": 2,
              "on":[
                 false,
                 false,
@@ -1778,7 +1778,7 @@
                "info":"Angry, hungry, probably evil. A gopher pops out of the ground ready to rumble and make you regret your day.",
                "article": "Grass Potion",
                "level":0,
-               "attackPoints": 0,
+               "attackPoints": 3,
                "defensePoints": 0,
                "on":[
                   true,

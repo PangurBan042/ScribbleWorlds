@@ -301,8 +301,7 @@ struct SpinnerAndCanvasView: View {
                             fightViewModel: fightViewModel,
                             dataViewModel: dataViewModel,
                             updateViewModel: $updateViewModel,
-                            currentLand: $currentLand,
-                            characterIsDead: $characterIsDead)
+                            currentLand: $currentLand)
                         
                         if !landViewModel.readInfo {
                             Rectangle()
@@ -345,6 +344,8 @@ struct SpinnerAndCanvasView: View {
                 readInfo = landViewModel.readInfo
                 landViewModel.getData(packId: packViewModel.id, name: currentLand)
                 fightViewModel.getData(landId: landViewModel.id, name: landViewModel.currentFight)
+                articleViewModel.getData(packId:packViewModel.id, name: fightViewModel.article)
+                updateViewModel.characterIsDead = characterIsDead
                 canvasViewModel.getData(landId: landViewModel.id)
                 canvasViewModel.updateData()
                 
@@ -358,7 +359,9 @@ struct SpinnerAndCanvasView: View {
                 landViewModel.updateData()
                 landViewModel.getData(packId: packViewModel.id, name: currentLand)
                 fightViewModel.getData(landId: landViewModel.id, name: landViewModel.currentFight)
+                articleViewModel.getData(packId:packViewModel.id, name: fightViewModel.article)
                 canvasViewModel.getData(landId: landViewModel.id)
+                canvasViewModel.updateData()
             }
         
             .frame(width: viewManager.gridView.grid.frameDim, height: viewManager.gridView.grid.frameDim)
@@ -469,8 +472,7 @@ struct NavigateAndScribbleView: View {
                     activeSheet: $activeSheet,
                     takeSnapshot: $takeSnapshot,
                     shareSnapshot: $shareSnapshot,
-                    showDrawing: $showDrawing,
-                    characterIsDead: $characterIsDead)
+                    showDrawing: $showDrawing)
                 .frame(width: viewManager.navigateView.width, height: viewManager.navigateView.height)
                 
                 if !landViewModel.readInfo {
@@ -496,6 +498,7 @@ struct NavigateAndScribbleView: View {
                              articleViewModel: articleViewModel,
                              navigateViewModel: navigateViewModel,
                              heartsViewModel: heartsViewModel,
+                             waterViewModel: waterViewModel,
                              infoViewModel: infoViewModel,
                              fightViewModel: fightViewModel,
                              dataViewModel: dataViewModel,

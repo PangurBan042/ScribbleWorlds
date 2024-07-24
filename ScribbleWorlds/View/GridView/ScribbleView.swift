@@ -17,6 +17,7 @@ struct ScribbleView: View {
     @ObservedObject var articleViewModel: ArticleViewModel
     @ObservedObject var navigateViewModel: NavigateViewModel
     @ObservedObject var heartsViewModel: HeartsViewModel
+    @ObservedObject var waterViewModel: WaterViewModel
     @ObservedObject var infoViewModel: InfoViewModel
     @ObservedObject var fightViewModel: FightViewModel
     var dataViewModel: DataViewModel
@@ -39,6 +40,7 @@ struct ScribbleView: View {
          articleViewModel: ArticleViewModel,
          navigateViewModel: NavigateViewModel,
          heartsViewModel: HeartsViewModel,
+         waterViewModel: WaterViewModel,
          infoViewModel: InfoViewModel,
          fightViewModel: FightViewModel,
          dataViewModel: DataViewModel,
@@ -51,6 +53,7 @@ struct ScribbleView: View {
         self.articleViewModel = articleViewModel
         self.navigateViewModel = navigateViewModel
         self.heartsViewModel = heartsViewModel
+        self.waterViewModel = waterViewModel
         self.infoViewModel = infoViewModel
         self.fightViewModel = fightViewModel
         self.dataViewModel = dataViewModel
@@ -101,12 +104,12 @@ struct ScribbleView: View {
             settingsViewModel.getData(packId: landViewModel.packId)
         }
        .overlay(landViewModel.currentTab == "Fight"  ? FightView(viewManager: viewManager, landViewModel: landViewModel, articleViewModel: articleViewModel, fightViewModel: fightViewModel,  updateViewModel: $updateViewModel) : nil)
-        .overlay(navigateViewModel.menuSelection == "Backpack" || landViewModel.currentTab == "Loot" ? BackpackView(viewManager:viewManager, landViewModel: landViewModel, articleViewModel: articleViewModel, heartsViewModel: heartsViewModel, infoViewModel: infoViewModel,dataViewModel: dataViewModel, updateViewModel: $updateViewModel) : nil)
+       .overlay(navigateViewModel.menuSelection == "Backpack" || landViewModel.currentTab == "Loot" ? BackpackView(viewManager:viewManager, landViewModel: landViewModel, articleViewModel: articleViewModel, heartsViewModel: heartsViewModel, waterViewModel: waterViewModel, infoViewModel: infoViewModel,  fightViewModel: fightViewModel, dataViewModel: dataViewModel, updateViewModel: $updateViewModel) : nil)
         .overlay(navigateViewModel.menuSelection == "Book" ? BookView(viewManager: viewManager, landViewModel: landViewModel) : nil)
         .overlay(!landViewModel.readInfo ? ReadIntroView(viewManager: viewManager, landViewModel: landViewModel) : nil)
         .overlay(navigateViewModel.menuSelection == "Settings" ? SettingsView(viewManager: viewManager, settingsViewModel: settingsViewModel) : nil)
         .overlay(navigateViewModel.menuSelection == "Help" ? HelpView(viewManager: viewManager, helpPages: helpPages) : nil)
-        .overlay(characterIsDead ?  DeadView(viewManager: viewManager, updateViewModel: $updateViewModel, characterIsDead: $characterIsDead) : nil)
+        .overlay(updateViewModel.characterIsDead ?  DeadView(viewManager: viewManager, updateViewModel: $updateViewModel) : nil)
         
 
 //        .onChange(of: updateManager.autoFill)  {

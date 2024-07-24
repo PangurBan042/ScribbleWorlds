@@ -29,6 +29,7 @@ struct UpdateViewModel {
     var shareSnapshot: Bool = false
     var takeSnapshot: Bool = false
     var heartsCount: Int = 0
+    var waterCount: Int = 0
     var waterLossOfHeart: Bool = false
     var animateThirsty: Bool = false
     var animateBackpack: Bool = false
@@ -46,4 +47,7 @@ struct UpdateViewModel {
     var updateWatersToTrue: Bool = false
     var spinnerSavedTakeSnapshot: Bool = false
     var spinnerSavedShareSnapshot: Bool = false
+    var characterIsDead: Bool = false
+    var resetPointsAfterOneBattle: Bool = false
+   
 }

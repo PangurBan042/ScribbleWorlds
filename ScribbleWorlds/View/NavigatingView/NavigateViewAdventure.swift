@@ -23,7 +23,6 @@ struct NavigateViewAdventure: View {
     @Binding var takeSnapshot: Bool
     @Binding var shareSnapshot: Bool
     @Binding var showDrawing: Bool
-    @Binding var characterIsDead: Bool
     
     init(viewManager:ViewManager,
          landViewModel: LandViewModel,
@@ -35,8 +34,7 @@ struct NavigateViewAdventure: View {
          activeSheet: Binding<ActiveSheet?>,
          takeSnapshot: Binding<Bool>,
          shareSnapshot: Binding<Bool>,
-         showDrawing: Binding<Bool>,
-         characterIsDead: Binding<Bool>) {
+         showDrawing: Binding<Bool>) {
         self.viewManager = viewManager
         self.landViewModel = landViewModel
         self.navigateViewModel = navigateViewModel
@@ -48,7 +46,7 @@ struct NavigateViewAdventure: View {
         self._takeSnapshot = takeSnapshot
         self._shareSnapshot = shareSnapshot
         self._showDrawing = showDrawing
-        self._characterIsDead = characterIsDead
+       
         
     }
 
@@ -153,8 +151,7 @@ struct NavigateViewAdventure: View {
            // if heartViewModel.packId == landViewModel.packId {
            
                 VStack {
-                    HeartsView(viewManager: viewManager, heartsViewModel: heartsViewModel, updateViewModel: $updateViewModel,
-                        characterIsDead: $characterIsDead)
+                    HeartsView(viewManager: viewManager, heartsViewModel: heartsViewModel, updateViewModel: $updateViewModel)
 
                     WaterView(viewManager: viewManager,         waterViewModel: waterViewModel, updateViewModel: $updateViewModel)
                 
@@ -328,7 +325,6 @@ struct HeartsView: View {
     @ObservedObject var viewManager: ViewManager
     @ObservedObject var heartsViewModel: HeartsViewModel
     @Binding var updateViewModel: UpdateViewModel
-    @Binding var characterIsDead: Bool
     
     
     var body: some View {
@@ -358,7 +354,7 @@ struct HeartsView: View {
                 }
                 
             } else {
-                characterIsDead = true
+                updateViewModel.characterIsDead = true
             }
         }
         .onChange(of: updateViewModel.updateHeartsToTrue) {
@@ -388,11 +384,20 @@ struct WaterView: View {
             HStack {
                 ForEach(0...waterViewModel.count-1, id: \.self) { index in
                     Button {
-                        waterViewModel.on[index].toggle()
-                        waterViewModel.updateData()
-                        if waterViewModel.on.allSatisfy({$0 == false}){
-                            updateViewModel.waterLossOfHeart.toggle()
+                        let tempOn = waterViewModel.on[index]
+                        var lastIndex = waterViewModel.on.lastIndex(of:true)!
+                        if !tempOn {
+                            lastIndex += 1
                         }
+                        if lastIndex == index {
+                            waterViewModel.on[index].toggle()
+                            waterViewModel.tempCount = waterViewModel.on.lastIndex(of:true)! + 1
+                            waterViewModel.updateData()
+                            if waterViewModel.on.allSatisfy({$0 == false}){
+                                updateViewModel.waterLossOfHeart.toggle()
+                            }
+                        }
+                         
                     } label: {
                         Image(waterViewModel.on[index] ? "Drop Filled" : "Drop Empty")
                             .resizable()
