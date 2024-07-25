@@ -189,8 +189,10 @@ struct SpinnerContainer: View {
     
     func updateDuel() {
         let _ = print("In SpinnView/updateDuel....")
-        var spunAttackPoints = 0
-        var spunDefensePoints = 0
+        var spunCharacterAttackPoints = 0
+        var spunCharacterDefensePoints = 0
+        var spunEnemyAttackPoints = 0
+        var spunEnemyDefensePoints = 0
         var enemyHeartIndex =  -1
         
         duelViewModel.fightName = fightViewModel.name
@@ -203,16 +205,18 @@ struct SpinnerContainer: View {
             yourHeartIndex = heartsViewModel.count - 1
         }
         
-        if wedge.imageName.contains("Attack") {
-            spunAttackPoints = wedge.value
-            spunDefensePoints = 0
-        } else if wedge.imageName.contains("Defense") {
-            spunDefensePoints = wedge.value
-            spunAttackPoints = 0
+        if wedge.imageName.contains("Character Attack") {
+            spunCharacterAttackPoints = wedge.value
+        } else if wedge.imageName.contains("Character Defense") {
+            spunCharacterDefensePoints = wedge.value
+        } else if wedge.imageName.contains("Enemy Attack"){
+            spunEnemyAttackPoints = wedge.value
+        } else if wedge.imageName.contains("Enemy Defense") {
+            spunEnemyDefensePoints = wedge.value
         }
         
         
-        var enemyHearts = fightViewModel.defensePoints - (dataViewModel.characterAttackPoints + spunAttackPoints)
+        var enemyHearts = (fightViewModel.defensePoints + spunEnemyDefensePoints) - (dataViewModel.characterAttackPoints + spunCharacterAttackPoints)
        
         if duelViewModel.showDuelView && !fightViewModel.showDefeatedView && !updateViewModel.characterIsDead {
             if enemyHearts >= 0  { enemyHearts = 0} else
@@ -260,7 +264,7 @@ struct SpinnerContainer: View {
             }
             updateViewModel.resetPointsAfterOneBattle.toggle()
             
-            var yourHearts =  (dataViewModel.characterDefensePoints + spunDefensePoints) - fightViewModel.attackPoints
+            var yourHearts =  (dataViewModel.characterDefensePoints + spunCharacterDefensePoints) - (fightViewModel.attackPoints + spunEnemyAttackPoints)
             if yourHearts >= 0 || yourHeartIndex < 0 { yourHearts = 0} else {
                 
                 var absYourHearts = abs(yourHearts)

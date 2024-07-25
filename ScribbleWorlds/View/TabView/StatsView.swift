@@ -110,7 +110,7 @@ struct LevelandPointsView: View {
                     .scaledFont(name: "Chalkduster", size: 15)
                     .frame(width:viewManager.spinnerView.stats.pointsWidth, height: viewManager.spinnerView.stats.levelNameHeight)
                     .background(
-                        Image("Attack Points None")
+                        Image("Character Attack None")
                             .resizable()
                             .scaledToFit()
                             .foregroundColor(.gray)
@@ -119,7 +119,7 @@ struct LevelandPointsView: View {
                     .scaledFont(name: "Chalkduster", size: 15)
                     .frame(width:viewManager.spinnerView.stats.pointsWidth, height: viewManager.spinnerView.stats.levelNameHeight)
                     .background(
-                        Image("Defense Points None")
+                        Image("Character Defense None")
                             .resizable()
                             .scaledToFit()
                             .foregroundColor(.gray)

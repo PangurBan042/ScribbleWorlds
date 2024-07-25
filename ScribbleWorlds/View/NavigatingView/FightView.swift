@@ -49,23 +49,23 @@ struct FightView: View {
                         Spacer()
                             .frame(width:20)
                         
-                        Text("\(fightViewModel.attackPoints)")
-                            .scaledFont(name: "Chalkduster", size: 20)
+                        Text("\(fightViewModel.attackPoints) ")
+                            .scaledFont(name: "Chalkduster", size: 15)
                             .frame(width:viewManager.spinnerView.stats.pointsWidth, height: viewManager.spinnerView.stats.levelNameHeight)
                             .background(
-                                Image("Attack Points None")
+                                Image("Enemy Attack None")
                                     .resizable()
-                                    .scaledToFit()
+                                    .scaledToFill()
                                     .foregroundColor(.gray)
                             )
                         
                         Text("\(fightViewModel.defensePoints)")
-                            .scaledFont(name: "Chalkduster", size: 20)
+                            .scaledFont(name: "Chalkduster", size: 15)
                             .frame(width:viewManager.spinnerView.stats.pointsWidth, height: viewManager.spinnerView.stats.levelNameHeight)
                             .background(
-                                Image("Defense Points None")
+                                Image("Enemy Defense None")
                                     .resizable()
-                                    .scaledToFit()
+                                    .scaledToFill()
                                     .foregroundColor(.gray)
                             )
                         

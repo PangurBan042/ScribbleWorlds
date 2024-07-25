@@ -1778,7 +1778,7 @@
                "info":"Angry, hungry, probably evil. A gopher pops out of the ground ready to rumble and make you regret your day.",
                "article": "Grass Potion",
                "level":0,
-               "attackPoints": 3,
+               "attackPoints": 0,
                "defensePoints": 0,
                "on":[
                   true,

@@ -1141,123 +1141,123 @@
         "name": "Fight",
         "wedges": [
             {
-                "name": "Defend Yourself",
-                "imageName": "Defense Points Zero",
-                "info": "Blah",
+                "name": "Character Defense 0",
+                "imageName": "Character Defense 0",
+                "info": "Defend yourself with 0 additional points!",
                 "type": "",
                 "value": 0
             },
             {
-                "name": "Defend Yourself with a +1 defense points",
-                "imageName": "Defense Points Positive 1",
-                "info": "Blah",
+                "name": "Character Defense +1",
+                "imageName": "Character Defense +1",
+                "info": "Defend yourself with a +1 additional points!",
                 "type": "",
                 "value": 1
             },
             {
-                "name": "Defend Yourself with a +2 defense points",
-                "imageName": "Defense Points Positive 2",
-                "info": "Blah",
+                "name": "Character Defense +2",
+                "imageName": "Character Defense +2",
+                "info": "Defend yourself with a +2 additional points!",
                 "type": "",
                 "value": 2
             },
             {
-                "name": "Defend Yourself with a +3 defense points",
-                "imageName": "Defense Points Positive 3",
-                "info": "Blah",
+                "name": "Character Defense +3",
+                "imageName": "Character Defense +3",
+                "info": "Defend yourself with a +3 additional points!",
                 "type": "",
                 "value": 3
             },
             {
-                "name": "Defend Yourself with a +4 defense points",
-                "imageName": "Defense Points Positive 4",
-                "info": "Blah",
+                "name": "Character Defense +4",
+                "imageName": "Character Defense +4",
+                "info": "Defend yourself with +4 additional points!",
                 "type": "",
                 "value": 4
             },
             {
-                "name": "Defend Yourself with a -1 defense points",
-                "imageName": "Defense Points Negative 1",
-                "info": "Blah",
-                "type": "",
-                "value": -1
-            },
-            {
-                "name": "Defend Yourself with a -2 defense points",
-                "imageName": "Defense Points Negative 2",
-                "info": "Blah",
-                "type": "",
-                "value": -2
-            },
-            {
-                "name": "Defend Yourself with a -3 defense points",
-                "imageName": "Defense Points Negative 3",
-                "info": "Blah",
-                "type": "",
-                "value": -3
-            },
-            {
-                "name": "Attack with a +1 attack points",
-                "imageName": "Attack Points Positive 1",
-                "info": "Blah",
+                "name": "Enemy Attack +1",
+                "imageName": "Enemy Attack +1",
+                "info": "Enemy attacks with +1 additional points!",
                 "type": "",
                 "value": 1
             },
             {
-                "name": "Attack with a +2 attack points",
-                "imageName": "Attack Points Positive 2",
-                "info": "Blah",
+                "name": "Enemy Attack +2",
+                "imageName": "Enemy Attack +2",
+                "info": "Enemy attacks with +2 additional points!",
                 "type": "",
                 "value": 2
             },
             {
-                "name": "Attack with a +3 attack points",
-                "imageName": "Attack Points Positive 3",
-                "info": "Blah",
+                "name": "Enemy Attack +3",
+                "imageName": "Enemy Attack +3",
+                "info": "Enemy attacks with +3 additional points!",
                 "type": "",
                 "value": 3
             },
             {
-                "name": "Attack with a +4 attack points",
-                "imageName": "Attack Points Positive 4",
-                "info": "Blah",
+                "name": "Character Attack +1",
+                "imageName": "Character Attack +1",
+                "info": "Attack with +1 additional points!",
+                "type": "",
+                "value": 1
+            },
+            {
+                "name": "Character Attack +2",
+                "imageName": "Character Attack +2",
+                "info": "Attack with +2 additional points!",
+                "type": "",
+                "value": 2
+            },
+            {
+                "name": "Character Attack +3",
+                "imageName": "Character Attack +3",
+                "info": "Attack with +3 additional points!",
+                "type": "",
+                "value": 3
+            },
+            {
+                "name": "Character Attack +4",
+                "imageName": "Character Attack +4",
+                "info": "Attack with +4 additional points!",
                 "type": "",
                 "value": 4
             },
             {
-                "name": "Attack with a -1 attack points",
-                "imageName": "Attack Points Negative 1",
-                "info": "Blah",
-                "type": "",
-                "value": -1
-            },
-            {
-                "name": "Attack with a -2 attack points",
-                "imageName": "Attack Points Negative 2",
-                "info": "Blah",
-                "type": "",
-                "value": -2
-            },
-            {
-                "name": "Attack with a -3 attack points",
-                "imageName": "Attack Points Negative 3",
-                "info": "Blah",
-                "type": "",
-                "value": -3
-            },
-            {
-                "name": "Attack with a +1 attack points",
-                "imageName": "Attack Points Positive 1",
-                "info": "Blah",
+                "name": "Enemy Defense +1",
+                "imageName": "Enemy Defense +1",
+                "info": "Enemy defends with +1 additional points!",
                 "type": "",
                 "value": 1
             },
             {
-                "name": "Attack with a +1 attack points",
-                "imageName": "Attack Points Positive 1",
-                "info": "Blah",
+                "name": "Enemy Defense +2",
+                "imageName": "Enemy Defense +2",
+                "info": "Enemy defends with +2 additional points!",
                 "type": "",
-                "value": 1
+                "value": 2
+            },
+            {
+                "name": "Enemy Defense +3",
+                "imageName": "Enemy Defense +3",
+                "info": "Enemy defends with +3 additional points!",
+                "type": "",
+                "value": 3
+            },
+            {
+                "name": "Enemy Defense+4",
+                "imageName": "Enemy Defense +4",
+                "info": "Enemy defends with +4 additional points!",
+                "type": "",
+                "value": 4
+            },
+            {
+                "name": "Enemy Defense 0",
+                "imageName": "Enemy Defense 0",
+                "info": "Enemy defends with 0 additional points!",
+                "type": "",
+                "value": 0
             }
         ]
     },
