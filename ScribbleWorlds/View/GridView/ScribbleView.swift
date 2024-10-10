@@ -103,6 +103,13 @@ struct ScribbleView: View {
             scribbleViewModel.getData(scribbleId: landViewModel.scribbleId)
             settingsViewModel.getData(packId: landViewModel.packId)
         }
+        .onChange(of: "\(landViewModel.readInfo)") {
+            let _ = print("IN SCRIBBLEVIEW/onChage/readInfo")
+            scribbleViewModel.updateData()
+            scribbleViewModel.getData(scribbleId: landViewModel.scribbleId)
+            settingsViewModel.getData(packId: landViewModel.packId)
+            canvasViewModel.data = Data()
+        }
        .overlay(landViewModel.currentTab == "Fight"  ? FightView(viewManager: viewManager, landViewModel: landViewModel, articleViewModel: articleViewModel, fightViewModel: fightViewModel,  updateViewModel: $updateViewModel) : nil)
        .overlay(navigateViewModel.menuSelection == "Backpack" || landViewModel.currentTab == "Loot" ? BackpackView(viewManager:viewManager, landViewModel: landViewModel, articleViewModel: articleViewModel, heartsViewModel: heartsViewModel, waterViewModel: waterViewModel, infoViewModel: infoViewModel,  fightViewModel: fightViewModel, dataViewModel: dataViewModel, updateViewModel: $updateViewModel) : nil)
         .overlay(navigateViewModel.menuSelection == "Book" ? BookView(viewManager: viewManager, landViewModel: landViewModel) : nil)
@@ -240,8 +247,11 @@ struct ScribbleCanvasView: View {
             .resizable()
             .scaledToFit()
             .frame(width: viewManager.gridView.grid.frameDim, height: viewManager.gridView.grid.frameDim))
+        let _ = print("In ScribbleCanvasView... canvasViewModel.data: \(canvasViewModel.data)")
         DrawingCanvasView(canvasViewModel: canvasViewModel)
-            .frame(width:viewManager.gridView.grid.frameDim, height:viewManager.gridView.grid.frameDim)
+           .frame(width:viewManager.gridView.grid.frameDim, height:viewManager.gridView.grid.frameDim)
+       
+            
         
     }
 }

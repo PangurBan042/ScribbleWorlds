@@ -15,8 +15,9 @@ struct ReadIntroView: View {
     
     
     var body: some View {
-        
+
         ZStack(alignment: .top) {
+            let _ = print("In ReadIntroView...")
             BookView(viewManager: viewManager, landViewModel: landViewModel)
             HStack(alignment: .top) {
                 Spacer()

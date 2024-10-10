@@ -207,6 +207,7 @@ class CoreDataManager {
             for fight in land.fights {
                 let fightEntity = FightEntity(context: persistentContainer.viewContext)
                 let duelEntity = DuelEntity(context: persistentContainer.viewContext)
+                
                 fightEntity.id = UUID()
                 fightEntity.landId = landEntity.id
                 fightEntity.name = fight.name
@@ -236,6 +237,12 @@ class CoreDataManager {
                 spinnerEntity.id = UUID()
                 spinnerEntity.landId = landEntity.id
                 spinnerEntity.name = spinner
+                spinnerEntity.wedgeAngle = 0
+                spinnerEntity.wedgeIndex = 0
+//                if spinnerEntity.wedgeName == "" {
+//                    spinnerEntity.wedgeIndex = 0
+//                }
+                //spinnerEntity.wedgeName = spinnerEntity.wedgeName
                 landEntity.addToSpinnersW(spinnerEntity)
                 saveData()
             }
@@ -856,6 +863,38 @@ class CoreDataManager {
         }
     }
     
+    func updateFightAttackPointsForOneBattle(fight: Fight){
+        let request: NSFetchRequest<FightEntity> = FightEntity.fetchRequest()
+        let filter = NSPredicate(format: "idW == %@", fight.id as CVarArg)
+        request.predicate = filter
+        request.returnsObjectsAsFaults = false
+        var fightEntity:FightEntity
+        
+        do {
+            fightEntity = try persistentContainer.viewContext.fetch(request).first ?? FightEntity()
+            fightEntity.attackPointsForOneBattle = fight.attackPointsForOneBattle
+            saveData()
+        } catch {
+            print("Fetching Failed")
+        }
+    }
+    
+    func updateFightDefensePointsForOneBattle(fight: Fight){
+        let request: NSFetchRequest<FightEntity> = FightEntity.fetchRequest()
+        let filter = NSPredicate(format: "idW == %@", fight.id as CVarArg)
+        request.predicate = filter
+        request.returnsObjectsAsFaults = false
+        var fightEntity:FightEntity
+        
+        do {
+            fightEntity = try persistentContainer.viewContext.fetch(request).first ?? FightEntity()
+            fightEntity.defensePointsForOneBattle = fight.defensePointsForOneBattle
+            saveData()
+        } catch {
+            print("Fetching Failed")
+        }
+    }
+    
     func updateFightCount(fight: Fight){
         let request: NSFetchRequest<FightEntity> = FightEntity.fetchRequest()
         let filter = NSPredicate(format: "idW == %@", fight.id as CVarArg)
@@ -1346,6 +1385,7 @@ class CoreDataManager {
                        wedgeName: String,
                        wedgeInfo: String,
                        wedgeIndex: Int,
+                       wedgeAngle: Double,
                        wedgeNames: [String],
                        showInfo: Bool) {
        
@@ -1363,6 +1403,7 @@ class CoreDataManager {
             fetchResult?.wedgeName = wedgeName
             fetchResult?.wedgeInfo = wedgeInfo
             fetchResult?.wedgeIndex = wedgeIndex
+            fetchResult?.wedgeAngle = wedgeAngle
             fetchResult?.wedgeNames = wedgeNames
             fetchResult?.showInfo = showInfo
             saveData()

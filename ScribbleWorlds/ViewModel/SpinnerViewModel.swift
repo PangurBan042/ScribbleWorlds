@@ -17,6 +17,7 @@ public class SpinnerViewModel: ObservableObject {
     var wedgeIndex:Int = 0
     var wedgeInfo:String = ""
     var wedgeNames:[String] = [""]
+    var wedgeAngle:Double = 0
     var showInfo:Bool = false
     
     deinit {
@@ -58,6 +59,7 @@ public class SpinnerViewModel: ObservableObject {
         wedgeInfo = spinnerData.wedgeInfo
         wedgeIndex = spinnerData.wedgeIndex
         wedgeNames = spinnerData.wedgeNames
+        wedgeAngle = spinnerData.wedgeAngle
         showInfo = spinnerData.showInfo
        
     }
@@ -71,18 +73,20 @@ public class SpinnerViewModel: ObservableObject {
         wedgeInfo = spinnerData.wedgeInfo
         wedgeIndex = spinnerData.wedgeIndex
         wedgeNames = spinnerData.wedgeNames
+        wedgeAngle = spinnerData.wedgeAngle
         showInfo = spinnerData.showInfo
     }
     
     
     func updateData() {
         CoreDataManager.instance.updateSpinner(id: id,
-                                            landId: landId,
-                                            name: name,
-                                            wedgeName: wedgeName,
-                                            wedgeInfo: wedgeInfo,
-                                            wedgeIndex: wedgeIndex,
-                                            wedgeNames: wedgeNames,
-                                            showInfo: showInfo)
+                    landId: landId,
+                    name: name,
+                    wedgeName: wedgeName,
+                    wedgeInfo: wedgeInfo,
+                    wedgeIndex: wedgeIndex,
+                    wedgeAngle: wedgeAngle,
+                    wedgeNames: wedgeNames,
+                    showInfo: showInfo)
     }
 }

@@ -21,12 +21,14 @@ class CanvasViewModel: ObservableObject {
     
     
     func updateData() {
+        let _ = print("In CanvasViewModel/updateData... landId: \(landId)")
         CoreDataManager.instance.updateCanvas(id:id,
                                               landId: landId,
                                               data:data,
                                               toolColor: toolColor,
                                               toolType: toolType,
                                               toolWidth: toolWidth)
+        let _ = print("In CanvasViewModel/updateData... data: \(data)")
         }
     
     func convertCanvasDataToPNG() -> Image{
@@ -41,7 +43,7 @@ class CanvasViewModel: ObservableObject {
     }
     
     func getData(landId:UUID) {
-        
+        let _ = print("In CanvasViewModel/getData... landId: \(landId)")
         let canvasData =  CoreDataManager.instance.getCanvas(landId: landId)
         id = canvasData.id
         self.landId = canvasData.landId
@@ -49,6 +51,7 @@ class CanvasViewModel: ObservableObject {
         toolColor = canvasData.toolColor
         toolType = canvasData.toolType
         toolWidth = canvasData.toolWidth
+        let _ = print("In CanvasViewModel/getData... data: \(data)")
     
     }
 }

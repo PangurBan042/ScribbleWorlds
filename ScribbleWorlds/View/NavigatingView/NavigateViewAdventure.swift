@@ -391,9 +391,10 @@ struct WaterView: View {
                         }
                         if lastIndex == index {
                             waterViewModel.on[index].toggle()
-                            waterViewModel.tempCount = waterViewModel.on.lastIndex(of:true)! + 1
+                            if index != 0 { waterViewModel.tempCount = waterViewModel.on.lastIndex(of:true)! + 1}
                             waterViewModel.updateData()
                             if waterViewModel.on.allSatisfy({$0 == false}){
+                                waterViewModel.tempCount = 0
                                 updateViewModel.waterLossOfHeart.toggle()
                             }
                         }

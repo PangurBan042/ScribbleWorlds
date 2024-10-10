@@ -114,6 +114,7 @@ struct ViewControllerAdventure: View {
                 isReady.toggle()
             }
         }
+       
     }
     
     private func postContent() -> UIImage {
@@ -134,6 +135,8 @@ struct ViewControllerAdventure: View {
             if showDrawing {drawingImage.draw(in: area, blendMode: .normal, alpha: 1)}
             let renderedImage = UIGraphicsGetImageFromCurrentImageContext() ?? UIImage()
             UIGraphicsEndImageContext()
+            
+            let _ = print("In ViewControllerAdventure/getSnapshot... canvasViewModel.data: \(canvasViewModel.data)")
             return renderedImage
         } catch { return UIImage()}
     }
@@ -203,7 +206,7 @@ extension View {
     
     func snapshot() -> UIImage {
         
-        
+        let _ = print("In SNAPSHOT!!!!!!...")
         let controller = UIHostingController(rootView: self)
         
         let view = controller.view
@@ -344,10 +347,13 @@ struct SpinnerAndCanvasView: View {
                 readInfo = landViewModel.readInfo
                 landViewModel.getData(packId: packViewModel.id, name: currentLand)
                 fightViewModel.getData(landId: landViewModel.id, name: landViewModel.currentFight)
-                articleViewModel.getData(packId:packViewModel.id, name: fightViewModel.article)
+                if fightViewModel.article != "" {
+                    articleViewModel.getData(packId:packViewModel.id, name: fightViewModel.article)
+                }
                 updateViewModel.characterIsDead = characterIsDead
                 canvasViewModel.getData(landId: landViewModel.id)
                 canvasViewModel.updateData()
+                let _ = print("In SpinnerAndCanvasView/onChange... landViewModel.id: \(landViewModel.id)")
                 
             })
             .onChange(of: landViewModel.readInfo){
@@ -359,8 +365,12 @@ struct SpinnerAndCanvasView: View {
                 landViewModel.updateData()
                 landViewModel.getData(packId: packViewModel.id, name: currentLand)
                 fightViewModel.getData(landId: landViewModel.id, name: landViewModel.currentFight)
-                articleViewModel.getData(packId:packViewModel.id, name: fightViewModel.article)
+                if fightViewModel.article != "" {
+                    articleViewModel.getData(packId:packViewModel.id, name: fightViewModel.article)
+                }
+                
                 canvasViewModel.getData(landId: landViewModel.id)
+                let _ = print("In SpinnerAndCanvasView/onChange... landViewModel.id: \(landViewModel.id)")
                 canvasViewModel.updateData()
             }
         

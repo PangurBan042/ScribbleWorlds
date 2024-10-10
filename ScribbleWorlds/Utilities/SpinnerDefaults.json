@@ -31,13 +31,6 @@
                 "value": 1
             },
             {
-                "name": "Grass Cave",
-                "imageName": "Grass Cave",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
                 "name": "Big Tree",
                 "imageName": "Big Tree",
                 "info": "Blocks your path unless you have two hatchets",
@@ -108,13 +101,6 @@
                 "value": 1
             },
             {
-                "name": "Grass Cave",
-                "imageName": "Grass Cave",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
                 "name": "Water",
                 "imageName": "Water",
                 "info": "Blocks your path",
@@ -125,13 +111,6 @@
                 "name": "Tall Grass",
                 "imageName": "Tall Grass",
                 "info": "Hard to walk through",
-                "type": "",
-                "value": 1
-            },
-            {
-                "name": "New Biome",
-                "imageName": "New Biome",
-                "info": "Blah",
                 "type": "",
                 "value": 1
             },
@@ -267,13 +246,6 @@
                 "value": 1
             },
             {
-                "name": "Swamp Cave",
-                "imageName": "Swamp Cave",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
                 "name": "Big Water",
                 "imageName": "Big Water",
                 "info": "Blah",
@@ -344,13 +316,6 @@
                 "value": 1
             },
             {
-                "name": "Swamp Cave",
-                "imageName": "Swamp Cave",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
                 "name": "Water",
                 "imageName": "Water",
                 "info": "Blah",
@@ -360,13 +325,6 @@
             {
                 "name": "Tall Grass",
                 "imageName": "Tall Grass",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
-                "name": "New Biome",
-                "imageName": "New Biome",
                 "info": "Blah",
                 "type": "",
                 "value": 1
@@ -489,13 +447,6 @@
                 "value": 1
             },
             {
-                "name": "Cave Ladder",
-                "imageName": "Cave Ladder",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
                 "name": "Big Rock",
                 "imageName": "Big Rock",
                 "info": "Blah",
@@ -561,13 +512,6 @@
             {
                 "name": "Rock",
                 "imageName": "Rock",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
-                "name": "Cave Ladder",
-                "imageName": "Cave Ladder",
                 "info": "Blah",
                 "type": "",
                 "value": 1
@@ -718,13 +662,6 @@
                 "value": 1
             },
             {
-                "name": "Grass Cave",
-                "imageName": "Grass Cave",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
                 "name": "Big Tree",
                 "imageName": "Big Tree",
                 "info": "Blah",
@@ -795,13 +732,6 @@
                 "value": 1
             },
             {
-                "name": "Grass Cave",
-                "imageName": "Grass Cave",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
                 "name": "Water",
                 "imageName": "Water",
                 "info": "Blah",
@@ -811,13 +741,6 @@
             {
                 "name": "Small Tree",
                 "imageName": "Small Tree",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
-                "name": "New Biome",
-                "imageName": "New Biome",
                 "info": "Blah",
                 "type": "",
                 "value": 1
@@ -947,13 +870,6 @@
                 "value": 1
             },
             {
-                "name": "Desert Cave",
-                "imageName": "Desert Cave",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
                 "name": "Big Rock",
                 "imageName": "Big Rock",
                 "info": "Blah",
@@ -1024,13 +940,6 @@
                 "value": 1
             },
             {
-                "name": "Desert Cave",
-                "imageName": "Desert Cave",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
                 "name": "Water",
                 "imageName": "Water",
                 "info": "Blah",
@@ -1040,13 +949,6 @@
             {
                 "name": "Desert Deep Sand",
                 "imageName": "Desert Deep Sand",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
-                "name": "New Biome",
-                "imageName": "New Biome",
                 "info": "Blah",
                 "type": "",
                 "value": 1
@@ -1300,13 +1202,6 @@
                 "value": 1
             },
             {
-                "name": "Desert Ladder",
-                "imageName": "Desert Ladder",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
                 "name": "Desert Key",
                 "imageName": "Desert Key",
                 "info": "Blah",
@@ -1372,13 +1267,6 @@
             {
                 "name": "Desert Sand",
                 "imageName": "Desert Sand",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
-                "name": "Desert Ladder",
-                "imageName": "Desert Ladder",
                 "info": "Blah",
                 "type": "",
                 "value": 1
@@ -1529,13 +1417,6 @@
                 "value": 1
             },
             {
-                "name": "Grass Cave",
-                "imageName": "Grass Cave",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
                 "name": "Big Pine Tree",
                 "imageName": "Big Pine Tree",
                 "info": "Blah",
@@ -1606,13 +1487,6 @@
                 "value": 1
             },
             {
-                "name": "Grass Cave",
-                "imageName": "Grass Cave",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
                 "name": "Water",
                 "imageName": "Water",
                 "info": "Blah",
@@ -1622,20 +1496,6 @@
             {
                 "name": "Rock",
                 "imageName": "Rock",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
-                "name": "New Biome",
-                "imageName": "New Biome",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
-                "name": "Grass Cave",
-                "imageName": "Grass Cave",
                 "info": "Blah",
                 "type": "",
                 "value": 1
@@ -1870,13 +1730,6 @@
                 "value": 1
             },
             {
-                "name": "New Biome",
-                "imageName": "New Biome",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
                 "name": "Mine Chest",
                 "imageName": "Mine Chest",
                 "info": "Blah",
@@ -2092,13 +1945,6 @@
                 "value": 1
             },
             {
-                "name": "New Biome",
-                "imageName": "New Biome",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
                 "name": "Snow Chest",
                 "imageName": "Snow Chest",
                 "info": "Blah",
@@ -2295,13 +2141,6 @@
             {
                 "name": "Deep Snow",
                 "imageName": "Deep Snow",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
-                "name": "New Biome",
-                "imageName": "New Biome",
                 "info": "Blah",
                 "type": "",
                 "value": 1
@@ -2536,13 +2375,6 @@
                 "value": 1
             },
             {
-                "name": "New Biome",
-                "imageName": "New Biome",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
                 "name": "Lava Chest",
                 "imageName": "Lava Chest",
                 "info": "Blah",
@@ -2760,13 +2592,6 @@
             {
                 "name": "Lava Cave Spiky Rocks",
                 "imageName": "Lava Cave Spiky Rocks",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
-                "name": "New Biome",
-                "imageName": "New Biome",
                 "info": "Blah",
                 "type": "",
                 "value": 1
@@ -4678,32 +4503,6 @@
             {
                 "name": "Nine",
                 "imageName": "Nine",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            }
-        ]
-    },
-    {
-        "name": "New Biome",
-        "wedges": [
-            {
-                "name": "Swamp",
-                "imageName": "Swamp Icon",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
-                "name": "Forest",
-                "imageName": "Forest Icon",
-                "info": "Blah",
-                "type": "",
-                "value": 1
-            },
-            {
-                "name": "Grasslands",
-                "imageName": "Grasslands Icon",
                 "info": "Blah",
                 "type": "",
                 "value": 1

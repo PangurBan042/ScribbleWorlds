@@ -19,6 +19,8 @@ struct Fight: Identifiable {
     public var level: Int = Int()
     public var attackPoints: Int = 0
     public var defensePoints: Int = 0
+    public var attackPointsForOneBattle: Int = 0
+    public var defensePointsForOneBattle: Int = 0
     public var on: [Bool] = []
     public var count: Int = 0
     public var isDead: Bool = false

@@ -60,6 +60,22 @@ public class FightViewModel: ObservableObject {
         get { return fight.defensePoints }
     }
     
+    public var attackPointsForOneBattle: Int {
+        get { return fight.attackPointsForOneBattle }
+        set {
+            fight.attackPointsForOneBattle = newValue
+            CoreDataManager.instance.updateFightAttackPointsForOneBattle(fight:fight)
+        }
+    }
+    
+    public var defensePointsForOneBattle: Int {
+        get { return fight.defensePointsForOneBattle }
+        set {
+            fight.defensePointsForOneBattle = newValue
+            CoreDataManager.instance.updateFightDefensePointsForOneBattle(fight:fight)
+        }
+    }
+    
     public var on: [Bool] {
         get { return fight.on }
         set {
@@ -114,12 +130,15 @@ public class FightViewModel: ObservableObject {
             fight.level = fightData.level
             fight.attackPoints = fightData.attackPoints
             fight.defensePoints = fightData.defensePoints
+            fight.attackPointsForOneBattle = fightData.attackPointsForOneBattle
+            fight.defensePointsForOneBattle = fightData.defensePointsForOneBattle
             fight.on = fightData.on
             fight.count = fightData.count
             fight.isDead = fightData.isDead
             fight.showDefeatedView = fightData.showDefeatedView
             fight.showSpinForLootView = fightData.showSpinForLootView
             fight.showDuelView = fightData.showDuelView
+            
         }
     }
     

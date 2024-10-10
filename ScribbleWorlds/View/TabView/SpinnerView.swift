@@ -18,6 +18,7 @@ struct SpinnerContainer: View {
     @ObservedObject var articleViewModel: ArticleViewModel
     @ObservedObject var heartsViewModel: HeartsViewModel
     @ObservedObject var fightViewModel: FightViewModel
+    @ObservedObject var infoViewModel: InfoViewModel
     var dataViewModel: DataViewModel
     @Binding var updateDuelData: Bool
     @Binding var updateViewModel: UpdateViewModel
@@ -66,12 +67,12 @@ struct SpinnerContainer: View {
             futureWedge.name  = spinnerViewModel.wedgeName
             futureWedge.index = spinnerViewModel.wedgeIndex
             futureWedge.info  = spinnerViewModel.wedgeInfo
+            futureWedge.angle = spinnerViewModel.wedgeAngle
             futureWedge.showInfo = spinnerViewModel.showInfo
         })
-        .onChange(of: "\(tabViewModel.name) + \(tabViewModel.landId)") {
-            let _ = print("In newTab... ")
+        .onChange(of: "\(tabViewModel.name) + \(tabViewModel.landId)" ) {
+            
             //Get old spinnerId
-           
             oldSpinnerManagerId = spinnerViewModel.id
             if isSpinning {
                 oldIsSpinning = true
@@ -83,6 +84,7 @@ struct SpinnerContainer: View {
             }
             
             //Get new spinner info
+            //spinnerViewModel.updateData()
             spinnerViewModel.getData(landId:tabViewModel.landId, name: tabViewModel.name)
             spinnerId   = spinnerViewModel.id
             spinnerName = spinnerViewModel.name
@@ -90,6 +92,7 @@ struct SpinnerContainer: View {
             futureWedge.index = spinnerViewModel.wedgeIndex
             futureWedge.info  = spinnerViewModel.wedgeInfo
             futureWedge.showInfo = spinnerViewModel.showInfo
+            futureWedge.angle = spinnerViewModel.wedgeAngle
             firstSpin = false
             duelViewModel.getData(landId: tabViewModel.landId)
         }
@@ -131,6 +134,7 @@ struct SpinnerContainer: View {
         saveSpinnerViewModel.wedgeName = wedge.name
         saveSpinnerViewModel.wedgeIndex = wedge.index
         saveSpinnerViewModel.showInfo = wedge.showInfo
+        saveSpinnerViewModel.wedgeAngle = wedge.angle
         saveSpinnerViewModel.updateData()
         if oldIsSpinning {
             checkSpin(spinnerName: oldSpinnerName)
@@ -193,6 +197,8 @@ struct SpinnerContainer: View {
         var spunCharacterDefensePoints = 0
         var spunEnemyAttackPoints = 0
         var spunEnemyDefensePoints = 0
+       
+        
         var enemyHeartIndex =  -1
         
         duelViewModel.fightName = fightViewModel.name
@@ -216,7 +222,10 @@ struct SpinnerContainer: View {
         }
         
         
-        var enemyHearts = (fightViewModel.defensePoints + spunEnemyDefensePoints) - (dataViewModel.characterAttackPoints + spunCharacterAttackPoints)
+        
+        var enemyHearts = (max(fightViewModel.defensePoints + fightViewModel.defensePointsForOneBattle, 0) + spunEnemyDefensePoints) - (
+            infoViewModel.attackPoints +
+            infoViewModel.attackPointsForOneBattle + spunCharacterAttackPoints)
        
         if duelViewModel.showDuelView && !fightViewModel.showDefeatedView && !updateViewModel.characterIsDead {
             if enemyHearts >= 0  { enemyHearts = 0} else
@@ -263,8 +272,13 @@ struct SpinnerContainer: View {
                 }
             }
             updateViewModel.resetPointsAfterOneBattle.toggle()
-            
-            var yourHearts =  (dataViewModel.characterDefensePoints + spunCharacterDefensePoints) - (fightViewModel.attackPoints + spunEnemyAttackPoints)
+           
+            var yourHearts =  (infoViewModel.defensePoints +
+                               infoViewModel.defensePointsForOneBattle +
+                               spunCharacterDefensePoints) - (max(fightViewModel.attackPoints +
+                                    fightViewModel.attackPointsForOneBattle,0)
+                                                              +
+                                    spunEnemyAttackPoints)
             if yourHearts >= 0 || yourHeartIndex < 0 { yourHearts = 0} else {
                 
                 var absYourHearts = abs(yourHearts)
@@ -355,6 +369,7 @@ struct SpinnerView: View {
                               tabViewModel: tabViewModel,
                               heartsViewModel: heartsViewModel,
                               fightViewModel: fightViewModel,
+                              infoViewModel: infoViewModel,
                               dataViewModel: dataViewModel,
                               updateDuelData: $updateDuelData,
                               updateViewModel: $updateViewModel)
@@ -456,6 +471,7 @@ struct TabAndSpinnerView: View{
     @ObservedObject var tabViewModel: TabViewModel
     @ObservedObject var heartsViewModel: HeartsViewModel
     @ObservedObject var fightViewModel: FightViewModel
+    @ObservedObject var infoViewModel: InfoViewModel
     var dataViewModel: DataViewModel
     
     @Binding var updateDuelData: Bool
@@ -470,6 +486,7 @@ struct TabAndSpinnerView: View{
          tabViewModel: TabViewModel,
          heartsViewModel: HeartsViewModel,
          fightViewModel: FightViewModel,
+         infoViewModel: InfoViewModel,
          dataViewModel: DataViewModel,
          updateDuelData: Binding<Bool>,
          updateViewModel: Binding<UpdateViewModel>) {
@@ -479,6 +496,7 @@ struct TabAndSpinnerView: View{
         self.tabViewModel = tabViewModel
         self.heartsViewModel = heartsViewModel
         self.fightViewModel = fightViewModel
+        self.infoViewModel = infoViewModel
         self.dataViewModel = dataViewModel
         self._updateDuelData = updateDuelData
         self._updateViewModel = updateViewModel
@@ -503,6 +521,7 @@ struct TabAndSpinnerView: View{
                                  articleViewModel: articleViewModel,
                                  heartsViewModel: heartsViewModel,
                                  fightViewModel: fightViewModel,
+                                 infoViewModel: infoViewModel,
                                  dataViewModel: dataViewModel,
                                  updateDuelData: $updateDuelData,
                                  updateViewModel: $updateViewModel)

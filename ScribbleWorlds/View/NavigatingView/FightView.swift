@@ -49,7 +49,7 @@ struct FightView: View {
                         Spacer()
                             .frame(width:20)
                         
-                        Text("\(fightViewModel.attackPoints) ")
+                        Text("\(max(fightViewModel.attackPoints + fightViewModel.attackPointsForOneBattle,0))")
                             .scaledFont(name: "Chalkduster", size: 15)
                             .frame(width:viewManager.spinnerView.stats.pointsWidth, height: viewManager.spinnerView.stats.levelNameHeight)
                             .background(
@@ -59,7 +59,7 @@ struct FightView: View {
                                     .foregroundColor(.gray)
                             )
                         
-                        Text("\(fightViewModel.defensePoints)")
+                        Text("\(max(fightViewModel.defensePoints + fightViewModel.defensePointsForOneBattle,0))")
                             .scaledFont(name: "Chalkduster", size: 15)
                             .frame(width:viewManager.spinnerView.stats.pointsWidth, height: viewManager.spinnerView.stats.levelNameHeight)
                             .background(
@@ -185,6 +185,10 @@ struct FightView: View {
         .onAppear(perform: {
             updateFight()
         })
+        .onChange(of: updateViewModel.resetPointsAfterOneBattle) {
+            fightViewModel.attackPointsForOneBattle = 0
+            fightViewModel.defensePointsForOneBattle = 0
+        }
         .onChange(of:fightViewModel.name) {
             updateFight()
         }

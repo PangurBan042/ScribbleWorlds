@@ -180,14 +180,9 @@ struct DisplayBackpackContent: View {
         articleViewModel.getData(articleId: article.id)
         articleViewModel.on[onIndex] = tempOn
         if tempOn {
-            
             infoViewModel.updateInfoOn(category: article.category, name: article.name, value: article.value)
-            dataViewModel.characterAttackPoints = infoViewModel.attackPoints
-            dataViewModel.characterDefensePoints = infoViewModel.defensePoints
         } else {
             infoViewModel.updateInfoOff(category: article.category, value: article.value)
-            dataViewModel.characterAttackPoints = infoViewModel.attackPoints
-            dataViewModel.characterDefensePoints = infoViewModel.defensePoints
         }
     }
     
@@ -198,6 +193,8 @@ struct DisplayBackpackContent: View {
             case "Enemy Heart": checkEnemyHeart(index: onIndex)
             case "Character Attack": checkCharacterAttack(index: onIndex)
             case "Character Defense": checkCharacterDefense(index: onIndex)
+            case "Enemy Attack": checkEnemyAttack(index: onIndex)
+            case "Enemy Defense": checkEnemyDefense(index: onIndex)
             default: updateArticle(index:onIndex)
         }
     }
@@ -467,7 +464,6 @@ struct DisplayBackpackContent: View {
         var tempOn = article.on[index]
         tempOn.toggle()
         infoViewModel.attackPointsForOneBattle  += article.value
-        dataViewModel.characterAttackPoints += article.value 
         updateArticle(index:index)
       
     }
@@ -477,7 +473,24 @@ struct DisplayBackpackContent: View {
         var tempOn = article.on[index]
         tempOn.toggle()
         infoViewModel.defensePointsForOneBattle  += article.value
-        dataViewModel.characterDefensePoints += article.value
+        updateArticle(index:index)
+      
+    }
+    
+    func checkEnemyAttack(index:Int) {
+       
+        var tempOn = article.on[index]
+        tempOn.toggle()
+        fightViewModel.attackPointsForOneBattle  += article.value
+        updateArticle(index:index)
+      
+    }
+    
+    func checkEnemyDefense(index:Int) {
+       
+        var tempOn = article.on[index]
+        tempOn.toggle()
+        fightViewModel.defensePointsForOneBattle  += article.value
         updateArticle(index:index)
       
     }
